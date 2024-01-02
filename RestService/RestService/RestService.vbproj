@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{E598DA7C-D11C-45BA-851E-B4091BC93156}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RestService</RootNamespace>
+    <AssemblyName>RestService</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>RestService.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>RestService.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <IncludeIisSettings>false</IncludeIisSettings>
+    <IncludeAppPool>false</IncludeAppPool>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\Downloads\Json100r2\Bin\net35\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="vEncrypt_TDES">
+      <HintPath>..\..\..\WebServices\CRMWS\CRMWS\bin\vEncrypt_TDES.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.ServiceModel" />
+    <Import Include="System.ServiceModel.Web" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Runtime.Serialization" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="customerDetail.svc" />
+    <Content Include="customerProductDetail.svc" />
+    <Content Include="DemoTasklist.svc" />
+    <Content Include="getPPC.svc" />
+    <Content Include="inquiry.svc" />
+    <Content Include="json_activity_list.svc" />
+    <Content Include="json_line.svc" />
+    <Content Include="json_trb.svc" />
+    <Content Include="json_trb_loan.svc" />
+    <Content Include="json_trb_saving.svc" />
+    <Content Include="level.svc" />
+    <Content Include="login.svc" />
+    <Content Include="logout.svc" />
+    <Content Include="NProspect.svc" />
+    <Content Include="ppcInfo.svc" />
+    <Content Include="productDetail.svc" />
+    <Content Include="productList.svc" />
+    <Content Include="reassign.svc" />
+    <Content Include="system_alert.svc" />
+    <Content Include="tasklist.svc" />
+    <Content Include="tasklistDetail.svc" />
+    <Content Include="user.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WFService.svc" />
+    <Content Include="Workflow.svc" />
+    <Content Include="ws_tasklist.svc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="customerDetail.svc.vb">
+      <DependentUpon>customerDetail.svc</DependentUpon>
+    </Compile>
+    <Compile Include="customerProductDetail.svc.vb">
+      <DependentUpon>customerProductDetail.svc</DependentUpon>
+    </Compile>
+    <Compile Include="dataContract\DC_Msg.vb" />
+    <Compile Include="dataContract\DC_offer.vb" />
+    <Compile Include="dataContract\DC_workflow.vb" />
+    <Compile Include="dataContract_Workflow.vb" />
+    <Compile Include="DemoTasklist.svc.vb">
+      <DependentUpon>DemoTasklist.svc</DependentUpon>
+    </Compile>
+    <Compile Include="getPPC.svc.vb">
+      <DependentUpon>getPPC.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IDemoTasklist.vb" />
+    <Compile Include="ljsonWS\IWFService.vb" />
+    <Compile Include="ljsonWS\IWorkflow.vb" />
+    <Compile Include="Iws_tasklist.vb" />
+    <Compile Include="ljsonWS\Ilevel.vb" />
+    <Compile Include="ljsonWS\Iuser.vb" />
+    <Compile Include="level.svc.vb">
+      <DependentUpon>level.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ljsonWS\Ireassign.vb" />
+    <Compile Include="ljsonWS\INProspect.vb" />
+    <Compile Include="ljsonWS\Isystem_alert.vb" />
+    <Compile Include="ljsonWS\Ijson_activity_list.vb" />
+    <Compile Include="ljsonWS\Ijson_line.vb" />
+    <Compile Include="ljsonWS\Ijson_trb_loan.vb" />
+    <Compile Include="ljsonWS\Ijson_trb_saving.vb" />
+    <Compile Include="json_activity_list.svc.vb">
+      <DependentUpon>json_activity_list.svc</DependentUpon>
+    </Compile>
+    <Compile Include="json_line.svc.vb">
+      <DependentUpon>json_line.svc</DependentUpon>
+    </Compile>
+    <Compile Include="json_trb_loan.svc.vb">
+      <DependentUpon>json_trb_loan.svc</DependentUpon>
+    </Compile>
+    <Compile Include="json_trb_saving.svc.vb">
+      <DependentUpon>json_trb_saving.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ljsonWS\Ijson_trb.vb" />
+    <Compile Include="json_trb.svc.vb">
+      <DependentUpon>json_trb.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ljsonWS\IgetPPC.vb" />
+    <Compile Include="ljsonWS\IppcInfo.vb" />
+    <Compile Include="ljsonWS\IproductDetail.vb" />
+    <Compile Include="ljsonWS\ItasklistDetail.vb" />
+    <Compile Include="ljsonWS\IcustomerProductDetail.vb" />
+    <Compile Include="ljsonWS\Itasklist.vb" />
+    <Compile Include="ljsonWS\IproductList.vb" />
+    <Compile Include="ljsonWS\IcustomerDetail.vb" />
+    <Compile Include="ljsonWS\Iinquiry.vb" />
+    <Compile Include="inquiry.svc.vb">
+      <DependentUpon>inquiry.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ljsonWS\Ilogout.vb" />
+    <Compile Include="ljsonWS\Ilogin.vb" />
+    <Compile Include="ljsonWS\IrestService.vb" />
+    <Compile Include="ljsonWS\person.vb" />
+    <Compile Include="llibs\dbConn.vb" />
+    <Compile Include="llibs\lFunction.vb" />
+    <Compile Include="llibs\lGeneral.vb" />
+    <Compile Include="llibs\lGlobal.vb" />
+    <Compile Include="llibs\lUser.vb" />
+    <Compile Include="llibs\lWFService.vb" />
+    <Compile Include="llibs\lworkflow.vb" />
+    <Compile Include="login.svc.vb">
+      <DependentUpon>login.svc</DependentUpon>
+    </Compile>
+    <Compile Include="logout.svc.vb">
+      <DependentUpon>logout.svc</DependentUpon>
+    </Compile>
+    <Compile Include="lssgWS\lwsToSSG.vb" />
+    <Compile Include="NProspect.svc.vb">
+      <DependentUpon>NProspect.svc</DependentUpon>
+    </Compile>
+    <Compile Include="customerProspect.vb" />
+    <Compile Include="postUSer.vb" />
+    <Compile Include="ppcInfo.svc.vb">
+      <DependentUpon>ppcInfo.svc</DependentUpon>
+    </Compile>
+    <Compile Include="productDetail.svc.vb">
+      <DependentUpon>productDetail.svc</DependentUpon>
+    </Compile>
+    <Compile Include="productList.svc.vb">
+      <DependentUpon>productList.svc</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="reassign.svc.vb">
+      <DependentUpon>reassign.svc</DependentUpon>
+    </Compile>
+    <Compile Include="system_alert.svc.vb">
+      <DependentUpon>system_alert.svc</DependentUpon>
+    </Compile>
+    <Compile Include="tasklist.svc.vb">
+      <DependentUpon>tasklist.svc</DependentUpon>
+    </Compile>
+    <Compile Include="tasklistDetail.svc.vb">
+      <DependentUpon>tasklistDetail.svc</DependentUpon>
+    </Compile>
+    <Compile Include="user.svc.vb">
+      <DependentUpon>user.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WFService.svc.vb">
+      <DependentUpon>WFService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Workflow.svc.vb">
+      <DependentUpon>Workflow.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ws_tasklist.svc.vb">
+      <DependentUpon>ws_tasklist.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54238</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/RestService</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <EnableWcfTestClientForSVCDefaultValue>True</EnableWcfTestClientForSVCDefaultValue>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="RestService.json_activity_list" CodeBehind="json_activity_list.svc.vb" %>

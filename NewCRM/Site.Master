@@ -1,0 +1,370 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="NewCRM.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%: Page.Title %></title>
+    
+    <!-- Bootstrap -->
+    <link href="~/Content/Themes1/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="~/Content/Themes1/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Switchery -->
+    <link href="~/Content/Themes1/switchery/dist/switchery.min.css" rel="stylesheet" />
+    <!-- bootstrap-progressbar -->
+    <link href="~/Content/Themes1/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- data table -->
+    <%--<link href="~/Content/Themes1/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet" />--%>
+
+    <!-- Custom Theme Style -->
+    <link href="~/Content/Themes1/build/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/organizationChart.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/Treant.css" rel="stylesheet" />
+
+     <!-- FullCalendar -->
+    <link href="~/Content/Themes1/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print" />
+
+    <!-- jQuery custom content scroller -->
+    <link href="~/Content/Themes1/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+
+    <!-- jQuery -->
+    <script src="/NewCRM/Content/Themes1/jquery/dist/jquery.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/jquery/dist/jquery-1.12.4.js"></script>
+    <script src="/NewCRM/Content/Themes1/jquery/dist/jquery-ui.js"></script>
+    <script src="/NewCRM/Content/jquery.hotkeys.js"></script>
+
+
+ 
+    <!-- ECharts -->
+    <script src="/NewCRM/Content/Themes1/echarts/dist/echarts.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/echarts/map/js/world.js"></script>
+        
+    <script src="/NewCRM/Content/Themes1/build/js/raphael.js"></script>
+    <script src="/NewCRM/Content/Themes1/build/js/Treant.js"></script>
+   
+      <!-- Sweet -->
+    <script src="/NewCRM/Content/Themes1/sweet/sweetalert.js"></script>
+    <link href="~/Content/Themes1/sweet/sweetalert.css" rel="stylesheet" />
+
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+          <script type="text/javascript">
+            function sweet(ti,te,ty) {
+                 swal({
+                     title: ti, 
+                     text: te, 
+                     type: ty,
+                     showCancelButton: false
+                 });
+            }
+            function sweetURL(ti, te, ty, url) {
+                swal({
+                    title: ti,
+                    text: te,
+                    type: ty,
+                    showCancelButton: false
+                }, function () {
+                    if (url != "") {
+                        window.location.href = url;
+                    } else {
+                        return false;
+                    }
+
+                });
+              }
+
+              var myWindow;
+                function oWindow(url, w, h) {
+                    var width = w;
+                    var height = h;
+                    var left = parseInt((screen.availWidth / 2) - (width / 2));
+                    var top = parseInt((screen.availHeight / 2) - (height / 2));
+                    var windowFeatures = "width=" + width + ",height=" + height + ",status,resizable=no,left=" + left + ",top=" + top + "screenX=" + left + ",screenY=" + top;
+                    myWindow = window.open(url, "subWind", windowFeatures);
+                    myWindow.focus();
+                }
+
+                function oWindowscroll(url, w, h) {
+                    var width = w;
+                    var height = h;
+                    var left = parseInt((screen.availWidth / 2) - (width / 2));
+                    var top = parseInt((screen.availHeight / 2) - (height / 2));
+                    var windowFeatures = "width=" + width + ",height=" + height + ",status,scrollbars,resizable=no,left=" + left + ",top=" + top + "screenX=" + left + ",screenY=" + top;
+                    myWindow = window.open(url, "subWind", windowFeatures);
+                    myWindow.focus();
+                }
+
+                function oWindowScroll(url, w, h) {
+                    var width = w;
+                    var height = h;
+                    var left = parseInt((screen.availWidth / 2) - (width / 2));
+                    var top = parseInt((screen.availHeight / 2) - (height / 2));
+                    var windowFeatures = "width=" + width + ",height=" + height + ",status,scrollbars,resizable=no,left=" + left + ",top=" + top + "screenX=" + left + ",screenY=" + top;
+                    myWindow = window.open(url, "subWind", windowFeatures);
+                    myWindow.focus();
+                }
+          </script>
+    </asp:ContentPlaceHolder>
+</head>
+<body class="nav-md" onload="fLoad()">
+<form id="form1" runat="server" data-toggle="validator">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col menu_fixed">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <%--<a href="index.html" class="site_title"><img id="img_iz" src="/NewCRM/img/crm_i.png" width="100px" height="50px" /><span></span></a>--%>
+                &nbsp;
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile">
+              <div class="profile_pic">
+                <a class="fancybox" href="/CRM/Images/toon.jpg"><img src="/NewCRM/Images/toon.jpg" alt="..." class="img-circle profile_img" /></a>
+              </div>
+              <div class="profile_info">
+                <span>Selamat Datang,</span>
+                <h2>AL</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->       
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                <%
+                    Dim htm As String = ""
+                    Dim url As String = VirtualPathUtility.ToAbsolute("~/")
+                    Dim baseUrl As String = Request.Url.GetLeftPart(UriPartial.Authority) + Request.ApplicationPath + "/"
+                    Dim arrow As String = ""
+                    Dim iarrow As Integer
+                    Dim arrow2 As String = ""
+                    Dim iarrow2 As Integer
+                    Dim linkp As String = ""
+                    Dim linkps As String = ""
+
+                    htm += "<div class='menu_section'>"
+                    htm += "<h3>&nbsp;</h3>"
+                    htm += "</div>"
+
+                    Try
+                        If dtParent.Rows.Count > 0 Then
+                            htm += "<ul class='nav side-menu'>"
+
+                            For i As Integer = 0 To dtParent.Rows.Count() - 1
+                                Try
+                                    getChild(dtParent.Rows(i).Item("id"))
+                                    If dtChild.Rows.Count > 0 Then
+                                        arrow = " <span class='fa fa-chevron-down'></span></a>"
+                                        linkp = ""
+                                        iarrow = 1
+                                    Else
+                                        arrow = "</a></li>"
+                                        linkp = "href='" & baseUrl & dtParent.Rows(i).Item("mnu_link") & "'"
+                                        iarrow = 0
+                                    End If
+                                Catch ex As Exception
+                                    dtChild.Reset()
+                                End Try
+
+                                htm += "<li><a " & linkp & "><i class='" & dtParent.Rows(i).Item("mnu_icon") & "'></i> " & dtParent.Rows(i).Item("mnu_Name") & arrow
+
+
+                                If dtChild.Rows.Count > 0 Then
+                                    htm += "<ul class='nav child_menu'>"
+                                    For z As Integer = 0 To dtChild.Rows.Count - 1
+                                        Try
+                                            getChildSub(dtChild.Rows(z).Item("id"))
+                                            If dtChildSub.Rows.Count > 0 Then
+                                                arrow2 = " <span class='fa fa-chevron-down'></span></a>"
+                                                linkps = ""
+                                                iarrow2 = 1
+                                            Else
+                                                arrow2 = "</a></li>"
+                                                linkps = "href='" & baseUrl & dtChild.Rows(z).Item("mnu_link") & "'"
+                                                iarrow2 = 0
+                                            End If
+                                        Catch ex As Exception
+                                            dtChildSub.Reset()
+                                        End Try
+
+                                        htm += "<li class='treeview'><a " & linkps & ">" & dtChild.Rows(z).Item("mnu_name") & arrow2
+
+                                        If dtChildSub.Rows.Count > 0 Then
+                                            htm += "<ul class='nav child_menu'>"
+                                            For u As Integer = 0 To dtChildSub.Rows.Count - 1
+                                                htm += "<li><a href=" & baseUrl & dtChildSub.Rows(u).Item("mnu_link") & ">" & dtChildSub.Rows(u).Item("mnu_name") & "</a></li>"
+                                            Next
+                                            htm += "</ul>"
+                                        End If
+
+                                        If iarrow2 = 1 Then
+                                            htm += "</li>"
+                                        Else
+                                            htm += ""
+                                        End If
+
+                                    Next
+
+                                    htm += "</ul>"
+                                End If
+
+                                If iarrow = 1 Then
+                                    htm += "</li>"
+                                Else
+                                    htm += ""
+                                End If
+                            Next
+                            htm += "</ul>"
+                        End If
+
+
+                    Catch ex As Exception
+
+                    End Try
+                %>
+
+                <%=htm%>    
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <%--<div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>--%>
+            <!-- /menu footer buttons -->
+
+
+          </div>
+        </div>
+
+        <!-- top navigation -->
+            <div class="top_nav">
+            <div class="nav_menu">
+                <nav class="" role="navigation">
+                <div class="nav toggle">
+                    <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="">
+                    <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <img src="/NewCRM/Images/toon.jpg" alt="" />
+                        <span class=" fa fa-angle-down"></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-usermenu pull-right">
+                        <li><a href="javascript:;">Change Password</a></li>
+                        <%--<li><a href="javascript:;">Settings</a></li>--%>
+                        <li><a href="<%=url %>logout">Logout</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+            </div>
+            <!-- /top navigation -->
+
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>            
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+                <footer>
+                    <div class="pull-right">
+                        Internal Credit Rating by <a href="#">AL</a>
+                    </div>
+                    <div class="clearfix"></div>
+                </footer> 
+            <!-- /footer content -->
+      </div>
+    </div>
+</form>
+  
+    <!-- Bootstrap -->
+    <script src="/NewCRM/Content/Themes1/bootstrap/dist/js/bootstrap.min.js"></script>
+
+     <!-- Datatables -->
+    <script src="/NewCRM/Content/Themes1/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/datatables.net-buttons/js/buttons.flash.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+    <script src="/NewCRM/Content/Themes1/datatables.net-scroller/js/datatables.scroller.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/jszip/dist/jszip.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/pdfmake/build/pdfmake.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- FullCalendar -->
+    <script src="/NewCRM/Content/Themes1/moment/moment.min.js"></script>
+    <script src="/NewCRM/Content/Themes1/fullcalendar/fullcalendar.min.js"></script>
+
+    <!-- bootstrap-progressbar -->
+    <script src="/NewCRM/Content/Themes1/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+
+    <!-- Parsley -->
+    <script src="/NewCRM/Content/Themes1/parsleyjs/dist/parsley.min.js"></script>
+    <!-- Switchery -->
+    <script src="/NewCRM/Content/Themes1/switchery/dist/switchery.min.js"></script>
+    
+    <!-- Custom Theme Scripts -->
+    <script src="/NewCRM/Content/Themes1/build/js/custom.js"></script>
+
+    <script src="/NewCRM/Content/Themes1/build/js/jquery.fancybox.min.js"></script>
+
+    <!-- jQuery custom content scroller -->
+    <script src="/NewCRM/Content/Themes1/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- jQuery Smart Wizard -->
+    <script src="/NewCRM/Content/Themes1/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+
+    <!-- FastClick -->
+    <script src="/NewCRM/Content/Themes1/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="/NewCRM/Content/Themes1/nprogress/nprogress.js"></script>   
+
+
+   <script>
+        $(document).ready(function(){
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+        });   
+</script>
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RestService", "RestService\RestService.vbproj", "{E598DA7C-D11C-45BA-851E-B4091BC93156}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CRMService", "CRMService\CRMService.vdproj", "{EFCDD0C4-79BE-438A-90EE-B1581C04D8A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E598DA7C-D11C-45BA-851E-B4091BC93156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E598DA7C-D11C-45BA-851E-B4091BC93156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E598DA7C-D11C-45BA-851E-B4091BC93156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E598DA7C-D11C-45BA-851E-B4091BC93156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFCDD0C4-79BE-438A-90EE-B1581C04D8A4}.Debug|Any CPU.ActiveCfg = Debug
+		{EFCDD0C4-79BE-438A-90EE-B1581C04D8A4}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

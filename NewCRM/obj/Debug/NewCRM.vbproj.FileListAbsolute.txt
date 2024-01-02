@@ -1,0 +1,368 @@
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\roslyn\System.Reflection.Metadata.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\roslyn\VBCSCompiler.exe
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\roslyn\csc.exe
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\roslyn\System.Collections.Immutable.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\roslyn\vbc.exe
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\roslyn\VBCSCompiler.exe.config
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\NewCRM.dll.config
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\NewCRM.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\NewCRM.pdb
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\WebForms_Basic.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\AjaxControlToolkit.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Antlr3.Runtime.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\AspNet.ScriptManager.bootstrap.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\AspNet.ScriptManager.jQuery.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\EntityFramework.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\EntityFramework.SqlServer.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Core.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Cookies.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Security.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Facebook.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Google.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Security.OAuth.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Twitter.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.ScriptManager.WebForms.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Web.Infrastructure.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Newtonsoft.Json.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Obout.Ajax.UI.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\obout_AJAXPage.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\obout_Calendar2_Net.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\obout_ComboBox.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\obout_Grid_NET.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\obout_Interface.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\obout_ListBox.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\obout_Splitter2_Net.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\obout_SuperForm.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\obout_Window_NET.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Owin.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\System.Web.Optimization.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\System.Web.Providers.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\vEncrypt_TDES.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\WebGrease.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\System.Web.Optimization.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Antlr3.Runtime.pdb
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Newtonsoft.Json.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\EntityFramework.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\EntityFramework.SqlServer.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Core.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\System.Web.Providers.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Security.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Facebook.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Cookies.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Google.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Twitter.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\bin\Microsoft.Owin.Security.OAuth.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\obj\Debug\NewCRM.Resources.resources
+D:\IDX Partners\CRM\NewCRM\NewCRM\obj\Debug\NewCRM.vbproj.GenerateResource.Cache
+D:\IDX Partners\CRM\NewCRM\NewCRM\obj\Debug\NewCRM.dll
+D:\IDX Partners\CRM\NewCRM\NewCRM\obj\Debug\WebForms_Basic.xml
+D:\IDX Partners\CRM\NewCRM\NewCRM\obj\Debug\NewCRM.pdb
+D:\IDX Partners\CRM\NewCRM\NewCRM\obj\Debug\NewCRM.vbprojResolveAssemblyReference.cache
+D:\NewCRM\NewCRM\bin\roslyn\csc.exe
+D:\NewCRM\NewCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\NewCRM\NewCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\NewCRM\NewCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\NewCRM\NewCRM\bin\roslyn\System.Collections.Immutable.dll
+D:\NewCRM\NewCRM\bin\roslyn\System.Reflection.Metadata.dll
+D:\NewCRM\NewCRM\bin\roslyn\vbc.exe
+D:\NewCRM\NewCRM\bin\roslyn\VBCSCompiler.exe
+D:\NewCRM\NewCRM\bin\roslyn\VBCSCompiler.exe.config
+D:\NewCRM\NewCRM\bin\NewCRM.dll.config
+D:\NewCRM\NewCRM\bin\NewCRM.dll
+D:\NewCRM\NewCRM\bin\NewCRM.pdb
+D:\NewCRM\NewCRM\bin\WebForms_Basic.xml
+D:\NewCRM\NewCRM\bin\Antlr3.Runtime.dll
+D:\NewCRM\NewCRM\bin\AspNet.ScriptManager.bootstrap.dll
+D:\NewCRM\NewCRM\bin\AspNet.ScriptManager.jQuery.dll
+D:\NewCRM\NewCRM\bin\EntityFramework.dll
+D:\NewCRM\NewCRM\bin\EntityFramework.SqlServer.dll
+D:\NewCRM\NewCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Core.dll
+D:\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\NewCRM\NewCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\NewCRM\NewCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.dll
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Cookies.dll
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Security.dll
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Facebook.dll
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Google.dll
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Security.OAuth.dll
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Twitter.dll
+D:\NewCRM\NewCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\NewCRM\NewCRM\bin\Microsoft.ScriptManager.WebForms.dll
+D:\NewCRM\NewCRM\bin\Microsoft.Web.Infrastructure.dll
+D:\NewCRM\NewCRM\bin\Newtonsoft.Json.dll
+D:\NewCRM\NewCRM\bin\Owin.dll
+D:\NewCRM\NewCRM\bin\System.Web.Optimization.dll
+D:\NewCRM\NewCRM\bin\System.Web.Providers.dll
+D:\NewCRM\NewCRM\bin\WebGrease.dll
+D:\NewCRM\NewCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\NewCRM\NewCRM\bin\System.Web.Optimization.xml
+D:\NewCRM\NewCRM\bin\Antlr3.Runtime.pdb
+D:\NewCRM\NewCRM\bin\Newtonsoft.Json.xml
+D:\NewCRM\NewCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\NewCRM\NewCRM\bin\EntityFramework.xml
+D:\NewCRM\NewCRM\bin\EntityFramework.SqlServer.xml
+D:\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Core.xml
+D:\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\NewCRM\NewCRM\bin\System.Web.Providers.xml
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.xml
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Security.xml
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Facebook.xml
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Cookies.xml
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Google.xml
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Twitter.xml
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\NewCRM\NewCRM\bin\Microsoft.Owin.Security.OAuth.xml
+D:\NewCRM\NewCRM\obj\Debug\NewCRM.Resources.resources
+D:\NewCRM\NewCRM\obj\Debug\NewCRM.vbproj.GenerateResource.Cache
+D:\NewCRM\NewCRM\obj\Debug\NewCRM.dll
+D:\NewCRM\NewCRM\obj\Debug\WebForms_Basic.xml
+D:\NewCRM\NewCRM\obj\Debug\NewCRM.pdb
+D:\NewCRM\NewCRM\obj\Debug\NewCRM.vbprojResolveAssemblyReference.cache
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\csc.exe
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\System.Collections.Immutable.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\System.Reflection.Metadata.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\vbc.exe
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\VBCSCompiler.exe
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\VBCSCompiler.exe.config
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\NewCRM.dll.config
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\NewCRM.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\NewCRM.pdb
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\WebForms_Basic.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Antlr3.Runtime.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\AspNet.ScriptManager.bootstrap.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\AspNet.ScriptManager.jQuery.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\EntityFramework.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\EntityFramework.SqlServer.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Google.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.ScriptManager.WebForms.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Web.Infrastructure.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Newtonsoft.Json.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Owin.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\System.Web.Optimization.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\System.Web.Providers.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\WebGrease.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\System.Web.Optimization.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Antlr3.Runtime.pdb
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Newtonsoft.Json.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\EntityFramework.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\EntityFramework.SqlServer.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\System.Web.Providers.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Google.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\obj\Debug\NewCRM.vbprojResolveAssemblyReference.cache
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\obj\Debug\NewCRM.Resources.resources
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\obj\Debug\NewCRM.vbproj.GenerateResource.cache
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\obj\Debug\NewCRM.vbproj.CoreCompileInputs.cache
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\obj\Debug\NewCRM.vbproj.CopyComplete
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\obj\Debug\NewCRM.dll
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\obj\Debug\WebForms_Basic.xml
+E:\Bani\bani\Project IDX\NewCRM\NewCRM\obj\Debug\NewCRM.pdb
+G:\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\csc.exe
+G:\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\System.Collections.Immutable.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\System.Reflection.Metadata.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\vbc.exe
+G:\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\VBCSCompiler.exe
+G:\bani\Project IDX\NewCRM\NewCRM\bin\roslyn\VBCSCompiler.exe.config
+G:\bani\Project IDX\NewCRM\NewCRM\bin\NewCRM.dll.config
+G:\bani\Project IDX\NewCRM\NewCRM\bin\NewCRM.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\NewCRM.pdb
+G:\bani\Project IDX\NewCRM\NewCRM\bin\WebForms_Basic.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Antlr3.Runtime.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\AspNet.ScriptManager.bootstrap.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\AspNet.ScriptManager.jQuery.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\EntityFramework.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\EntityFramework.SqlServer.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Core.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Cookies.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Facebook.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Google.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.OAuth.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Twitter.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.ScriptManager.WebForms.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Web.Infrastructure.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Newtonsoft.Json.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Owin.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\System.Web.Optimization.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\System.Web.Providers.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\WebGrease.dll
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\System.Web.Optimization.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Antlr3.Runtime.pdb
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Newtonsoft.Json.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\EntityFramework.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\EntityFramework.SqlServer.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Core.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\System.Web.Providers.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Facebook.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Cookies.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Google.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Twitter.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\bani\Project IDX\NewCRM\NewCRM\bin\Microsoft.Owin.Security.OAuth.xml
+G:\bani\Project IDX\NewCRM\NewCRM\obj\Debug\NewCRM.vbprojAssemblyReference.cache
+G:\bani\Project IDX\NewCRM\NewCRM\obj\Debug\NewCRM.Resources.resources
+G:\bani\Project IDX\NewCRM\NewCRM\obj\Debug\NewCRM.vbproj.GenerateResource.cache
+G:\bani\Project IDX\NewCRM\NewCRM\obj\Debug\NewCRM.vbproj.CoreCompileInputs.cache
+G:\bani\Project IDX\NewCRM\NewCRM\obj\Debug\NewCRM.vbproj.CopyComplete
+G:\bani\Project IDX\NewCRM\NewCRM\obj\Debug\NewCRM.dll
+G:\bani\Project IDX\NewCRM\NewCRM\obj\Debug\WebForms_Basic.xml
+G:\bani\Project IDX\NewCRM\NewCRM\obj\Debug\NewCRM.pdb
+D:\Old Project\NewCRM\NewCRM\bin\roslyn\csc.exe
+D:\Old Project\NewCRM\NewCRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Old Project\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Old Project\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Old Project\NewCRM\NewCRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Old Project\NewCRM\NewCRM\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Old Project\NewCRM\NewCRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Old Project\NewCRM\NewCRM\bin\roslyn\System.Collections.Immutable.dll
+D:\Old Project\NewCRM\NewCRM\bin\roslyn\System.Reflection.Metadata.dll
+D:\Old Project\NewCRM\NewCRM\bin\roslyn\vbc.exe
+D:\Old Project\NewCRM\NewCRM\bin\roslyn\VBCSCompiler.exe
+D:\Old Project\NewCRM\NewCRM\bin\roslyn\VBCSCompiler.exe.config
+D:\Old Project\NewCRM\NewCRM\bin\NewCRM.dll.config
+D:\Old Project\NewCRM\NewCRM\bin\NewCRM.dll
+D:\Old Project\NewCRM\NewCRM\bin\NewCRM.pdb
+D:\Old Project\NewCRM\NewCRM\bin\WebForms_Basic.xml
+D:\Old Project\NewCRM\NewCRM\bin\Antlr3.Runtime.dll
+D:\Old Project\NewCRM\NewCRM\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Old Project\NewCRM\NewCRM\bin\AspNet.ScriptManager.jQuery.dll
+D:\Old Project\NewCRM\NewCRM\bin\EntityFramework.dll
+D:\Old Project\NewCRM\NewCRM\bin\EntityFramework.SqlServer.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Security.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Google.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Web.Infrastructure.dll
+D:\Old Project\NewCRM\NewCRM\bin\Newtonsoft.Json.dll
+D:\Old Project\NewCRM\NewCRM\bin\Owin.dll
+D:\Old Project\NewCRM\NewCRM\bin\System.Web.Optimization.dll
+D:\Old Project\NewCRM\NewCRM\bin\System.Web.Providers.dll
+D:\Old Project\NewCRM\NewCRM\bin\WebGrease.dll
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Old Project\NewCRM\NewCRM\bin\System.Web.Optimization.xml
+D:\Old Project\NewCRM\NewCRM\bin\Antlr3.Runtime.pdb
+D:\Old Project\NewCRM\NewCRM\bin\Newtonsoft.Json.xml
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Old Project\NewCRM\NewCRM\bin\EntityFramework.xml
+D:\Old Project\NewCRM\NewCRM\bin\EntityFramework.SqlServer.xml
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Old Project\NewCRM\NewCRM\bin\System.Web.Providers.xml
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.xml
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Security.xml
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Google.xml
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Old Project\NewCRM\NewCRM\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Old Project\NewCRM\NewCRM\obj\Debug\NewCRM.vbprojAssemblyReference.cache
+D:\Old Project\NewCRM\NewCRM\obj\Debug\NewCRM.Resources.resources
+D:\Old Project\NewCRM\NewCRM\obj\Debug\NewCRM.vbproj.GenerateResource.cache
+D:\Old Project\NewCRM\NewCRM\obj\Debug\NewCRM.vbproj.CoreCompileInputs.cache
+D:\Old Project\NewCRM\NewCRM\obj\Debug\NewCRM.vbproj.CopyComplete
+D:\Old Project\NewCRM\NewCRM\obj\Debug\NewCRM.dll
+D:\Old Project\NewCRM\NewCRM\obj\Debug\WebForms_Basic.xml
+D:\Old Project\NewCRM\NewCRM\obj\Debug\NewCRM.pdb

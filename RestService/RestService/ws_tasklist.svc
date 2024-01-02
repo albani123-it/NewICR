@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="VB" Debug="true" Service="RestService.ws_tasklist" CodeBehind="ws_tasklist.svc.vb" %>
