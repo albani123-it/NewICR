@@ -1474,6 +1474,10 @@
     <Content Include="Images\icon_plus.png" />
     <Content Include="Images\icon_Refresh.png" />
     <Content Include="Images\ico_cross_circle.png" />
+    <Content Include="Images\line-capital-charge.png" />
+    <Content Include="Images\line-credit-risk.png" />
+    <Content Include="Images\line-loss-potensial.png" />
+    <Content Include="Images\line-risk-premium.png" />
     <Content Include="Images\message.gif" />
     <Content Include="Images\message.png" />
     <Content Include="Images\new_row.png" />
@@ -3862,7 +3866,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>53378</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/NEWICR</IISUrl>
+          <IISUrl>http://localhost/NewCRM</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

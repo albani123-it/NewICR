@@ -33859,105 +33859,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:NewCRM.all._liBodyLoadAction">
-<summary>
-liBodyLoadAction control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.all._ScriptManager1">
-<summary>
-ScriptManager1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.all._ReportViewer1">
-<summary>
-ReportViewer1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.all_rating._liBodyLoadAction">
-<summary>
-liBodyLoadAction control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.all_rating._ScriptManager1">
-<summary>
-ScriptManager1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.all_rating._ddlType">
-<summary>
-ddlType control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.all_rating._txtStartDate">
-<summary>
-txtStartDate control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.all_rating._txtEndDate">
-<summary>
-txtEndDate control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.all_rating._btnView">
-<summary>
-btnView control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.all_rating._ReportViewer1">
-<summary>
-ReportViewer1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.all_rating._ReportViewer2">
-<summary>
-ReportViewer2 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:NewCRM.assetSummary._liBodyLoadAction">
 <summary>
 liBodyLoadAction control.
@@ -34012,60 +33913,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:NewCRM.brw_rating_detail._liBodyLoadAction">
-<summary>
-liBodyLoadAction control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.brw_rating_detail._ScriptManager1">
-<summary>
-ScriptManager1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.brw_rating_detail._ReportViewer1">
-<summary>
-ReportViewer1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.capitalCharge._liBodyLoadAction">
-<summary>
-liBodyLoadAction control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.capitalCharge._ScriptManager1">
-<summary>
-ScriptManager1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.capitalCharge._ReportViewer1">
-<summary>
-ReportViewer1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:NewCRM.car._liBodyLoadAction">
 <summary>
 liBodyLoadAction control.
@@ -34093,33 +33940,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:NewCRM.creditRisk._liBodyLoadAction">
-<summary>
-liBodyLoadAction control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.creditRisk._ScriptManager1">
-<summary>
-ScriptManager1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.creditRisk._ReportViewer1">
-<summary>
-ReportViewer1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:NewCRM.exposureSummary._liBodyLoadAction">
 <summary>
 liBodyLoadAction control.
@@ -34139,33 +33959,6 @@ To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:NewCRM.exposureSummary._ReportViewer1">
-<summary>
-ReportViewer1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.fac_rating_detail._liBodyLoadAction">
-<summary>
-liBodyLoadAction control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.fac_rating_detail._ScriptManager1">
-<summary>
-ScriptManager1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.fac_rating_detail._ReportViewer1">
 <summary>
 ReportViewer1 control.
 </summary>
@@ -36073,60 +35866,6 @@ Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
-<member name="F:NewCRM.lossPotential._liBodyLoadAction">
-<summary>
-liBodyLoadAction control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.lossPotential._ScriptManager1">
-<summary>
-ScriptManager1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.lossPotential._ReportViewer1">
-<summary>
-ReportViewer1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.matriks._liBodyLoadAction">
-<summary>
-liBodyLoadAction control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.matriks._ScriptManager1">
-<summary>
-ScriptManager1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.matriks._ReportViewer1">
-<summary>
-ReportViewer1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
 <member name="F:NewCRM.Memorandum_Bisnis_Kredit._Head1">
 <summary>
 Head1 control.
@@ -36344,33 +36083,6 @@ To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 <member name="F:NewCRM.ratingMix._ReportViewer1">
-<summary>
-ReportViewer1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.riskPremium._liBodyLoadAction">
-<summary>
-liBodyLoadAction control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.riskPremium._ScriptManager1">
-<summary>
-ScriptManager1 control.
-</summary>
-<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member>
-<member name="F:NewCRM.riskPremium._ReportViewer1">
 <summary>
 ReportViewer1 control.
 </summary>

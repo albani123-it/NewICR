@@ -13,13 +13,13 @@
     <!-- Switchery -->
     <link href="~/Content/Themes1/switchery/dist/switchery.min.css" rel="stylesheet" />
     <!-- bootstrap-progressbar -->
-    <link href="~/Content/Themes1/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <link href="~/Content/Themes1/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" />
     <!-- data table -->
-    <%--<link href="~/Content/Themes1/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/Themes1/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/Themes1/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/Themes1/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/Themes1/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet" />--%>
+    <link href="~/Content/Themes1/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom Theme Style -->
     <link href="~/Content/Themes1/build/css/custom.css" rel="stylesheet" />
@@ -46,6 +46,7 @@
     <!-- ECharts -->
     <script src="/NewCRM/Content/Themes1/echarts/dist/echarts.min.js"></script>
     <script src="/NewCRM/Content/Themes1/echarts/map/js/world.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
         
     <script src="/NewCRM/Content/Themes1/build/js/raphael.js"></script>
     <script src="/NewCRM/Content/Themes1/build/js/Treant.js"></script>
@@ -57,6 +58,48 @@
    
     <asp:ContentPlaceHolder ID="head" runat="server">
           <script type="text/javascript">
+              $(document).ready(function () {
+                  // Initial state
+                  $('#dataTable').hide();
+                  $('#myChart').hide();
+                  $('#detailRatingBorrower').hide();
+                  $('#detailRatingFacility').hide();
+
+                  document.getElementById("titleMenu").style.padding = "20px";
+
+                  // Toggle button click event
+                  $('#btnViewReport').click(function (e) {
+                      e.preventDefault();
+                      $('#dataTable').show(1000);
+                      $('#myChart').show(1000);
+                      $('#detailRatingBorrower').show(1000);
+                      $('#detailRatingFacility').show(1000);
+                  });
+              });
+
+              $(document).ready(function (event) {
+                  $('#example').DataTable();
+              });
+
+              //const xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+              //const yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+              //var ctx = $('#myChart');
+
+              //new Chart(ctx, {
+              //    type: "line",
+              //    data: {
+              //        labels: xValues,
+              //        datasets: [{
+              //            backgroundColor: "rgba(0,0,255,1.0)",
+              //            borderColor: "rgba(0,0,255,0.1)",
+              //            data: yValues
+              //        }]
+              //    },
+              //    options: {
+              //        legend: {display: false}
+              //    },
+              //});
+
             function sweet(ti,te,ty) {
                  swal({
                      title: ti, 

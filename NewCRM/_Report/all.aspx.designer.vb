@@ -12,31 +12,4 @@ Option Explicit On
 
 
 Partial Public Class all
-    
-    '''<summary>
-    '''liBodyLoadAction control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents liBodyLoadAction As Global.System.Web.UI.WebControls.Literal
-    
-    '''<summary>
-    '''ScriptManager1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ScriptManager1 As Global.System.Web.UI.ScriptManager
-    
-    '''<summary>
-    '''ReportViewer1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ReportViewer1 As Global.Microsoft.Reporting.WebForms.ReportViewer
 End Class

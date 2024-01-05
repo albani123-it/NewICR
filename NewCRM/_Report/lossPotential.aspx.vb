@@ -13,15 +13,6 @@ Public Class lossPotential
         usrLogin = IIf(IsDBNull(Session("UserLoginID")), "IUser", Session("UserLoginID"))
         urlBase = Session("baseUrl")
         cekUserAuthentication()
-        ReportViewer1.ProcessingMode = ProcessingMode.Remote
-        ReportViewer1.ShowCredentialPrompts = True
-        ReportViewer1.ShowExportControls = True
-
-        If Not IsPostBack Then
-            'ReportViewer1.ServerReport.ReportServerCredentials = New ReportServerCredentials()
-            ReportViewer1.ServerReport.ReportServerUrl = New Uri("http://localhost/reportserver")
-            ReportViewer1.ServerReport.ReportPath = "/basel_dki/potensi_kerugian"
-        End If
     End Sub
 
     Sub cekUserAuthentication()
