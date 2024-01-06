@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class tacticalAccountPlanning
-
+    
     '''<summary>
     '''liBodyLoadAction control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents liBodyLoadAction As Global.System.Web.UI.WebControls.Literal
-
+    
     '''<summary>
     '''ScriptManager1 control.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ScriptManager1 As Global.System.Web.UI.ScriptManager
-
+    
     '''<summary>
     '''appno control.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents appno As Global.System.Web.UI.HtmlControls.HtmlInputHidden
-
+    
     '''<summary>
     '''lblAppNo_header control.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblAppNo_header As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''lblBrwName_header control.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblBrwName_header As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''divnotif control.
     '''</summary>
@@ -66,7 +66,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents divnotif As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-
+    
     '''<summary>
     '''lblNotif control.
     '''</summary>
@@ -75,7 +75,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblNotif As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''txtTapKode control.
     '''</summary>
@@ -84,7 +84,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtTapKode As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtTanggal control.
     '''</summary>
@@ -93,7 +93,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtTanggal As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''ddlUnitPengusul control.
     '''</summary>
@@ -102,7 +102,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlUnitPengusul As Global.System.Web.UI.WebControls.DropDownList
-
+    
     '''<summary>
     '''txtFunding control.
     '''</summary>
@@ -111,7 +111,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtFunding As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtLending control.
     '''</summary>
@@ -120,7 +120,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtLending As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtServices control.
     '''</summary>
@@ -129,7 +129,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtServices As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''tempCodeWS control.
     '''</summary>
@@ -138,7 +138,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents tempCodeWS As Global.System.Web.UI.HtmlControls.HtmlInputHidden
-
+    
     '''<summary>
     '''grid1 control.
     '''</summary>
@@ -147,7 +147,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents grid1 As Global.Obout.Grid.Grid
-
+    
     '''<summary>
     '''Column1 control.
     '''</summary>
@@ -156,7 +156,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column1 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column2 control.
     '''</summary>
@@ -165,7 +165,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column2 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column3 control.
     '''</summary>
@@ -174,7 +174,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column3 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column4 control.
     '''</summary>
@@ -183,7 +183,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column4 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column5 control.
     '''</summary>
@@ -192,7 +192,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column5 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column6 control.
     '''</summary>
@@ -201,7 +201,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column6 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column9 control.
     '''</summary>
@@ -210,7 +210,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column9 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column10 control.
     '''</summary>
@@ -219,7 +219,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column10 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column7 control.
     '''</summary>
@@ -228,7 +228,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column7 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column8 control.
     '''</summary>
@@ -237,7 +237,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column8 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''deleteTemplateWS control.
     '''</summary>
@@ -246,7 +246,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents deleteTemplateWS As Global.Obout.Grid.GridTemplate
-
+    
     '''<summary>
     '''txtIdWS control.
     '''</summary>
@@ -255,7 +255,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtIdWS As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''ddlKategoriProduk control.
     '''</summary>
@@ -264,7 +264,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlKategoriProduk As Global.System.Web.UI.WebControls.DropDownList
-
+    
     '''<summary>
     '''ddlPeriode1 control.
     '''</summary>
@@ -273,7 +273,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlPeriode1 As Global.System.Web.UI.WebControls.DropDownList
-
+    
     '''<summary>
     '''ddlPeriode2 control.
     '''</summary>
@@ -282,7 +282,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlPeriode2 As Global.System.Web.UI.WebControls.DropDownList
-
+    
     '''<summary>
     '''txtNamaProduk control.
     '''</summary>
@@ -291,7 +291,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNamaProduk As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtTotalBank1 control.
     '''</summary>
@@ -300,7 +300,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtTotalBank1 As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtTotalBank2 control.
     '''</summary>
@@ -309,7 +309,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtTotalBank2 As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtBdki1 control.
     '''</summary>
@@ -318,7 +318,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtBdki1 As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtBdki2 control.
     '''</summary>
@@ -327,7 +327,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtBdki2 As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtRates1 control.
     '''</summary>
@@ -336,7 +336,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtRates1 As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtRates2 control.
     '''</summary>
@@ -345,7 +345,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtRates2 As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtRev1 control.
     '''</summary>
@@ -354,7 +354,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtRev1 As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtRev2 control.
     '''</summary>
@@ -363,7 +363,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtRev2 As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtPersentaseBdki1 control.
     '''</summary>
@@ -372,7 +372,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPersentaseBdki1 As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtPersentaseBdki2 control.
     '''</summary>
@@ -381,7 +381,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPersentaseBdki2 As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''btnSavedWS control.
     '''</summary>
@@ -390,7 +390,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSavedWS As Global.System.Web.UI.WebControls.Button
-
+    
     '''<summary>
     '''tempCodeAP control.
     '''</summary>
@@ -399,7 +399,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents tempCodeAP As Global.System.Web.UI.HtmlControls.HtmlInputHidden
-
+    
     '''<summary>
     '''grid2 control.
     '''</summary>
@@ -408,7 +408,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents grid2 As Global.Obout.Grid.Grid
-
+    
     '''<summary>
     '''Column11 control.
     '''</summary>
@@ -417,7 +417,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column11 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column12 control.
     '''</summary>
@@ -426,7 +426,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column12 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column13 control.
     '''</summary>
@@ -435,7 +435,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column13 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column14 control.
     '''</summary>
@@ -444,7 +444,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column14 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column15 control.
     '''</summary>
@@ -453,7 +453,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column15 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column16 control.
     '''</summary>
@@ -462,7 +462,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column16 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column17 control.
     '''</summary>
@@ -471,7 +471,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column17 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column19 control.
     '''</summary>
@@ -480,7 +480,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column19 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column20 control.
     '''</summary>
@@ -489,7 +489,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column20 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''deleteTemplateAP control.
     '''</summary>
@@ -498,7 +498,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents deleteTemplateAP As Global.Obout.Grid.GridTemplate
-
+    
     '''<summary>
     '''txtIdAP control.
     '''</summary>
@@ -507,7 +507,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtIdAP As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''ddlNamaProduk control.
     '''</summary>
@@ -516,7 +516,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlNamaProduk As Global.System.Web.UI.WebControls.DropDownList
-
+    
     '''<summary>
     '''txtNamaProduk1 control.
     '''</summary>
@@ -525,7 +525,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNamaProduk1 As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''ddlThnMulai control.
     '''</summary>
@@ -534,7 +534,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlThnMulai As Global.System.Web.UI.WebControls.DropDownList
-
+    
     '''<summary>
     '''ddlThnSelesai control.
     '''</summary>
@@ -543,7 +543,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlThnSelesai As Global.System.Web.UI.WebControls.DropDownList
-
+    
     '''<summary>
     '''txtResponsible control.
     '''</summary>
@@ -552,7 +552,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtResponsible As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtActivity control.
     '''</summary>
@@ -561,7 +561,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtActivity As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''chkProspek control.
     '''</summary>
@@ -570,7 +570,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents chkProspek As Global.System.Web.UI.HtmlControls.HtmlInputCheckBox
-
+    
     '''<summary>
     '''btnSavedAP control.
     '''</summary>
@@ -579,7 +579,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSavedAP As Global.System.Web.UI.WebControls.Button
-
+    
     '''<summary>
     '''txtCatatan control.
     '''</summary>
@@ -588,7 +588,7 @@ Partial Public Class tacticalAccountPlanning
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtCatatan As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''btnSave control.
     '''</summary>

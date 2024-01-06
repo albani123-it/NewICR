@@ -4,7 +4,9 @@
 <%@ Register TagPrefix="obout" Namespace="Obout.Interface" Assembly="obout_Interface" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    
+    <link href="~/Content/Themes1/build/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <script type="text/javascript">
         function CloseMe() {
             window.returnValue = window.dialogArguments;
@@ -167,7 +169,8 @@
             </ul>
             <div class="bodyContent">
                 <div class="cont-header" stlye="width:100%;">
-                    <table width="100%" border="0">
+                    
+                        <table width="100%" border="0">
                         <tr>
                             <td width="20%"><span><b>No. Aplikasi</b></span></td>
                             <td><asp:label ID="lblAppNo_header" runat="server"></asp:label></td>
@@ -180,7 +183,8 @@
                 </div>
                 <div id="divnotif" runat="server" class="notif" style="display:none;">
                     <div class="notif-header" width="100%">
-                        <table width="100%">
+                        
+                        <table class="table table-striped table-bordered" width="100%">
                             <tr>
                                 <td><span><b>Notifikasi</b></span></td>
                                 <td align="right"><a class="notif-close" onclick="document.getElementById('<%=divnotif.clientID %>').style.display='none'" title="Close">X</a></td>
@@ -191,9 +195,10 @@
                         <asp:Label ID="lblNotif" runat="server" style="color:Red;"></asp:Label>
                     </div>
                 </div>
-                <table class="tbl" cellspacing="0" cellpadding="3" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px 5px 0 0;">
+                
+                    <table class="table table-striped table-bordered" cellspacing="0" cellpadding="3" width="100%" style="text-align: left; border: thin solid #bcbcbc; border-radius: 5px 5px 0 0;">
                     <tr>
-                        <td colspan="3" class="detail" style="border-radius: 5px 0 0 0;"><b>&nbsp;</b></td>
+                        <td colspan="3" bgcolor="#2A3F54" style="border-radius: 5px 0 0 0;"><b>&nbsp;</b></td>
                     </tr>
                     <%  If exists = False Then%>
                             <%= fillTemplate()%>
@@ -202,8 +207,8 @@
                     <%End If%>
                     <tr style="height:30px">
 				        <td background="../../styles/grid/footer.gif" colspan="3" style="border-radius: 0 0 5px 5px;">
-                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="inpBtn"></asp:button>
-                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="inpBtn"></asp:button>
+                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="btn btn-primary"></asp:button>
+                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="btn btn-danger"></asp:button>
                         </td>
 			        </tr>
                 </table>

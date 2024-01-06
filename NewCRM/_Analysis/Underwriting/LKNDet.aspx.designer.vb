@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class LKNDet
-
+    
     '''<summary>
     '''Head1 control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Head1 As Global.System.Web.UI.HtmlControls.HtmlHead
-
+    
     '''<summary>
     '''liBodyLoadAction control.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents liBodyLoadAction As Global.System.Web.UI.WebControls.Literal
-
+    
     '''<summary>
     '''form1 control.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
-
+    
     '''<summary>
     '''appno control.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents appno As Global.System.Web.UI.HtmlControls.HtmlInputHidden
-
+    
     '''<summary>
     '''divnotif control.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents divnotif As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-
+    
     '''<summary>
     '''lblNotif control.
     '''</summary>
@@ -66,7 +66,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lblNotif As Global.System.Web.UI.WebControls.Label
-
+    
     '''<summary>
     '''txtIdLkn control.
     '''</summary>
@@ -75,7 +75,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtIdLkn As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''InpNama control.
     '''</summary>
@@ -84,7 +84,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents InpNama As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''InpTanggal control.
     '''</summary>
@@ -93,7 +93,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents InpTanggal As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''InpBentuk control.
     '''</summary>
@@ -102,7 +102,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents InpBentuk As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''InpJabatan control.
     '''</summary>
@@ -111,7 +111,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents InpJabatan As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''InpTujuan control.
     '''</summary>
@@ -120,7 +120,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents InpTujuan As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''InpHasil control.
     '''</summary>
@@ -129,7 +129,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents InpHasil As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''InpTindak control.
     '''</summary>
@@ -138,7 +138,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents InpTindak As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtAlamat control.
     '''</summary>
@@ -147,7 +147,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtAlamat As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtHasilKunjungan control.
     '''</summary>
@@ -156,7 +156,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtHasilKunjungan As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''grid1 control.
     '''</summary>
@@ -165,7 +165,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents grid1 As Global.Obout.Grid.Grid
-
+    
     '''<summary>
     '''Column1 control.
     '''</summary>
@@ -174,7 +174,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column1 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column2 control.
     '''</summary>
@@ -183,7 +183,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column2 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column3 control.
     '''</summary>
@@ -192,7 +192,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column3 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column4 control.
     '''</summary>
@@ -201,7 +201,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column4 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column7 control.
     '''</summary>
@@ -210,7 +210,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column7 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''Column8 control.
     '''</summary>
@@ -219,7 +219,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Column8 As Global.Obout.Grid.Column
-
+    
     '''<summary>
     '''deleteTemplate control.
     '''</summary>
@@ -228,7 +228,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents deleteTemplate As Global.Obout.Grid.GridTemplate
-
+    
     '''<summary>
     '''txtIdDtl control.
     '''</summary>
@@ -237,7 +237,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtIdDtl As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''FileUpload1 control.
     '''</summary>
@@ -246,7 +246,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents FileUpload1 As Global.System.Web.UI.WebControls.FileUpload
-
+    
     '''<summary>
     '''txtFilename control.
     '''</summary>
@@ -255,7 +255,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtFilename As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtInfoFoto control.
     '''</summary>
@@ -264,7 +264,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtInfoFoto As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''btnAdd control.
     '''</summary>
@@ -273,7 +273,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnAdd As Global.System.Web.UI.WebControls.Button
-
+    
     '''<summary>
     '''btnSave control.
     '''</summary>
@@ -282,7 +282,7 @@ Partial Public Class LKNDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSave As Global.System.Web.UI.WebControls.Button
-
+    
     '''<summary>
     '''btnCancel control.
     '''</summary>

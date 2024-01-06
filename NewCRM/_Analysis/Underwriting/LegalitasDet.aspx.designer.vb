@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class LegalitasDet
-
+    
     '''<summary>
     '''liBodyLoadAction control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class LegalitasDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents liBodyLoadAction As Global.System.Web.UI.WebControls.Literal
-
+    
     '''<summary>
     '''form1 control.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class LegalitasDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
-
+    
     '''<summary>
     '''brw_code control.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class LegalitasDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents brw_code As Global.System.Web.UI.HtmlControls.HtmlInputHidden
-
+    
     '''<summary>
     '''ddlJenisIjin control.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class LegalitasDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlJenisIjin As Global.System.Web.UI.WebControls.DropDownList
-
+    
     '''<summary>
     '''txtNoLegalitas control.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class LegalitasDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNoLegalitas As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtTglLegalitas control.
     '''</summary>
@@ -66,7 +66,7 @@ Partial Public Class LegalitasDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtTglLegalitas As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtTglJatuhTempo control.
     '''</summary>
@@ -75,7 +75,7 @@ Partial Public Class LegalitasDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtTglJatuhTempo As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtPerihal control.
     '''</summary>
@@ -84,7 +84,7 @@ Partial Public Class LegalitasDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPerihal As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtNoPengesahan control.
     '''</summary>
@@ -93,7 +93,7 @@ Partial Public Class LegalitasDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNoPengesahan As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtNamaNotaris control.
     '''</summary>
@@ -102,7 +102,7 @@ Partial Public Class LegalitasDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNamaNotaris As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtKeterangan control.
     '''</summary>
@@ -111,7 +111,7 @@ Partial Public Class LegalitasDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtKeterangan As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''btnSave control.
     '''</summary>
@@ -120,7 +120,7 @@ Partial Public Class LegalitasDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSave As Global.System.Web.UI.WebControls.Button
-
+    
     '''<summary>
     '''btnCancel control.
     '''</summary>

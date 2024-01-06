@@ -202,7 +202,7 @@
             <div>
                 <div class="bodyContent">
                     <div class="cont-header" stlye="width:100%;">
-                        <table width="100%" border="0">
+                        <table width="100%" border="0" class="table table-striped table-bordered">
                             <tr>
                                 <td width="20%"><span><b>No. Aplikasi</b></span></td>
                                 <td><asp:label ID="lblAppNo_header" runat="server"></asp:label></td>
@@ -214,32 +214,32 @@
                         </table>
                     </div>
                     <div id="divHapus" runat="server">
-                        <table id="tblNeracaForm" class="tbl" cellspacing="0" cellpadding="3" width="100%"
+                        <table id="tblNeracaForm" class="table table-striped table-bordered" cellspacing="0" cellpadding="3" width="100%"
                             style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px;margin-bottom:10px;  ">
                             <tr>
                                 <td style="width: 20%">
                                     <b>Hapus Periode</b>&nbsp;
                                 </td>
                                 <td style="width: 80%">
-                                    <asp:DropDownList ID="ddlPeriode" runat="server" CssClass="inpDdl">
+                                    <asp:DropDownList ID="ddlPeriode" runat="server" CssClass="inpDdl form-control" Width="80px">
                                     </asp:DropDownList>
                                 </td>
                             </tr>
                             <tr style="height: 30px" colspan="2">
                                 <td background="../../Styles/grid/footer.gif" colspan="4" style="border-radius: 0 0 5px 5px;">
-                                    <asp:Button ID="btnHapus" runat="server" Text = "Hapus" />
+                                    <asp:Button ID="btnHapus" runat="server" Text = "Hapus" CssClass="btn btn-danger" />
                                 </td>
                             </tr>
                         </table>
                     </div>
                     <% =htmlForm %>
-                    <table id="tblNote" class="tbl" cellspacing="0" cellpadding="3" width="100%">
+                    <table id="tblNote" class="table table-striped table-bordered" cellspacing="0" cellpadding="3" width="100%">
                         <tr style="height: 30px">
                             <td background="../../styles/grid/footer.gif" style="border-radius: 0 0 5px 5px;">
-                                <asp:Button ID="btnUpdate" runat="server" Text="Update" CssClass="inpBtn" OnClientClick="return fDet();">
+                                <asp:Button ID="btnUpdate" runat="server" Text="Update" CssClass="btn btn-primary" OnClientClick="return fDet();">
                                 </asp:Button>
                                 <%--<asp:Button ID="btnNext" runat="server" Text="Lanjut" CssClass="inpBtn"></asp:Button>--%>
-                                <input type="button" value="Lanjut" onclick="fDetail('<%= menuNext %>');" class="inpBtn" />
+                                <input type="button" value="Lanjut" onclick="fDetail('<%= menuNext %>');" class="btn btn-danger" />
                             </td>
                         </tr>
                     </table>

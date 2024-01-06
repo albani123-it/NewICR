@@ -197,7 +197,7 @@
             </ul>
             <div class="bodyContent">
                 <div class="cont-header" stlye="width:100%;">
-                    <table width="100%" border="0">
+                    <table width="100%" border="0" class="table table-striped table-bordered">
                         <tr>
                             <td width="20%"><span><b>No. Aplikasi</b></span></td>
                             <td><asp:label ID="lblAppNo_header" runat="server"></asp:label></td>
@@ -210,7 +210,7 @@
                 </div>
                 <div id="divnotif" runat="server" class="notif" style="display:none;">
                     <div class="notif-header" width="100%">
-                        <table width="100%">
+                        <table width="100%" class="table table-striped table-bordered">
                             <tr>
                                 <td><span><b>Notifikasi</b></span></td>
                                 <td align="right"><a class="notif-close" onclick="document.getElementById('<%=divnotif.clientID %>').style.display='none'" title="Close">X</a></td>
@@ -221,9 +221,9 @@
                         <asp:Label ID="lblNotif" runat="server" style="color:Red;"></asp:Label>
                     </div>
                 </div>
-                <table class="tbl" cellspacing="0" cellpadding="2" width="100%" style="font-weight:bold;text-align:left;border: thin solid #bcbcbc;border-radius: 5px;">
+                <table class="table table-striped table-bordered" cellspacing="0" cellpadding="2" width="100%" style="font-weight:bold;text-align:left;border: thin solid #bcbcbc;border-radius: 5px;">
                     <tr>
-                        <td align="left" colspan="2" background="../../Images/bg-head.gif" bgcolor="#ddedf6" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
+                        <td align="left" colspan="2" bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td width="30%"><b>Tgl. Rating Terakhir</b></td>
@@ -245,7 +245,7 @@
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Tgl. Rating</b></td>
-                        <td><asp:TextBox ID="txtRatingDate" runat="server" CssClass="inpTxtDisabled" ReadOnly="true" style="float:none;"></asp:TextBox><span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span><br />
+                        <td><asp:TextBox ID="txtRatingDate" runat="server" CssClass="inpTxtDisabled form-control" Width="250px" ReadOnly="true" style="float:none;"></asp:TextBox><span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span><br />
                             <span style="color:Red;margin-top:2px;float:left;">(dd-mm-yyyy)</span>
                         </td>
                     </tr>
@@ -257,9 +257,9 @@
                     </tr>
                     <tr style="height:30px">
 				        <td colspan="4" align="left" background="../../styles/grid/footer.gif" style="border-radius: 0 0 5px 5px;">
-                            <asp:Button ID="btnRating" runat="server" CssClass="inpBtn" Text="Rating" />
-                            <asp:Button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="inpBtn"></asp:button>
-                            <asp:Button id="btnNext" runat="server" Text="Lanjut" CssClass="inpBtn"></asp:button>
+                            <asp:Button ID="btnRating" runat="server" CssClass="btn btn-primary" Text="Rating" />
+                            <asp:Button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="btn btn-primary"></asp:button>
+                            <asp:Button id="btnNext" runat="server" Text="Lanjut" CssClass="btn btn-primary"></asp:button>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">* <span style="font-size:13px;">Harus Diisi</span></span>
                         </td>
                     </tr>

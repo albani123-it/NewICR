@@ -182,7 +182,7 @@
             </ul>
             <div class="bodyContent">
                 <div class="cont-header" stlye="width:100%;">
-                    <table width="100%" border="0">
+                    <table width="100%" border="0" class="table table-striped table-bordered">
                         <tr>
                             <td width="20%"><span><b>No. Aplikasi</b></span></td>
                             <td><asp:label ID="lblAppNo_header" runat="server"></asp:label></td>
@@ -195,7 +195,7 @@
                 </div>
                 <div id="divnotif" runat="server" class="notif" style="display:none;">
                     <div class="notif-header" width="100%">
-                        <table width="100%">
+                        <table width="100%" class="table table-striped table-bordered">
                             <tr>
                                 <td><span><b>Notifikasi</b></span></td>
                                 <td align="right"><a class="notif-close" onclick="document.getElementById('<%=divnotif.clientID %>').style.display='none'" title="Close">X</a></td>
@@ -206,9 +206,9 @@
                         <asp:Label ID="lblNotif" runat="server" style="color:Red;"></asp:Label>
                     </div>
                 </div>
-                <table class="tbl" cellspacing="0" cellpadding="3" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px;">
+                <table class="table table-striped table-bordered" cellspacing="0" cellpadding="3" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px;">
                     <tr>
-                        <td colspan="3" background="../../Images/bg-head.gif" bgcolor="#ddedf6" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
+                        <td colspan="3" bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
                     </tr>
                     <%  If exists = False Then%>
                             <%=fillAspek()%>
@@ -217,8 +217,8 @@
                     <%End If%>
                     <tr style="height:30px">
 				        <td background="../../styles/grid/footer.gif" colspan="3" style="border-radius: 0 0 5px 5px;">
-                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="inpBtn"></asp:button>
-                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="inpBtn"></asp:button>
+                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="btn btn-primary"></asp:button>
+                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="btn btn-danger"></asp:button>
                         </td>
 			        </tr>
                 </table>

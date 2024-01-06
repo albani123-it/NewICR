@@ -169,7 +169,7 @@
             </ul>
             <div class="bodyContent">
                 <div class="cont-header" stlye="width:100%;">
-                    <table width="100%" border="0">
+                    <table width="100%" border="0" class="table table-striped table-bordered">
                         <tr>
                             <td width="20%"><span><b>No. Aplikasi</b></span></td>
                             <td><asp:label ID="lblAppNo_header" runat="server"></asp:label></td>
@@ -182,7 +182,8 @@
                 </div>
                 <div id="divnotif" runat="server" class="notif" style="display:none;">
                     <div class="notif-header" width="100%">
-                        <table width="100%">
+                        
+                        <table width="100%" bgcolor="#2A3F54" class="table table-striped table-bordered">
                             <tr>
                                 <td><span><b>Notifikasi</b></span></td>
                                 <td align="right"><a class="notif-close" onclick="document.getElementById('<%=divnotif.clientID %>').style.display='none'" title="Close">X</a></td>
@@ -193,9 +194,9 @@
                         <asp:Label ID="lblNotif" runat="server" style="color:Red;"></asp:Label>
                     </div>
                 </div>
-                <table class="tbl" cellspacing="0" cellpadding="2" width="100%" style="font-weight:bold;text-align:right;border: thin solid #bcbcbc;border-radius: 5px;">
+                <table class="table table-striped table-bordered" cellspacing="0" cellpadding="2" width="100%" style="font-weight:bold;text-align:right;border: thin solid #bcbcbc;border-radius: 5px;">
                     <tr>
-                        <td background="../../Images/bg-head.gif" bgcolor="#ddedf6" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
+                        <td bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td style="padding:0;">
@@ -285,7 +286,7 @@
                     </tr>
                     <tr style="height:30px">
 				        <td align="left" background="../../styles/grid/footer.gif" style="border-radius: 0 0 5px 5px;">
-                            <input type="button" value="Lanjut" onclick="fDetail('<%= menuNext %>');" class="inpBtn" />
+                            <input type="button" value="Lanjut" onclick="fDetail('<%= menuNext %>');" class="inpBtn btn btn-danger" />
                         </td>
                     </tr>
                 <//table>

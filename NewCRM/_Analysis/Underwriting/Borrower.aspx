@@ -4,6 +4,9 @@
 <%@ Register TagPrefix="obout" Namespace="Obout.Interface" Assembly="obout_Interface" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <link href="~/Content/Themes1/build/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <script type="text/javascript">
         aBc("General");
         aMenu("Analysis");
@@ -573,10 +576,10 @@
                     </div>
                 </div>
                 <div>
-                    <table class="tbl" cellspacing="0" cellpadding="3" width="100%" id="tblUploadFile" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px 5px 0 0; ">
+                    <table class="table table-striped table-bordered" cellspacing="0" cellpadding="3" width="100%" id="tblUploadFile" style="text-align: left; border: thin solid #bcbcbc; border-radius: 5px 5px 0 0;">
                         <tr>
-                        <td colspan="2" background="../../Images/bg-head.gif" bgcolor="#ddedf6" class="tb-header">UPLOAD FILE FIN</td>
-                    </tr>
+                            <td colspan="2" bgcolor="#2A3F54" class="tb-header">UPLOAD FILE FIN</td>
+                        </tr>
                         <tr bgcolor="#f6f7f7">
                             <td width="30%">
                                 <b>Upload File Report FIN</b>
@@ -587,7 +590,7 @@
                                 <span>Hanya File PDF yang boleh di upload.</span><br />
                             </td>
                         </tr>
-                        <tr bgcolor="#ebecec">
+                        <tr >
                             <td>
                                 <b>&nbsp;</b>
                             </td>
@@ -600,7 +603,7 @@
                                 <b>&nbsp;</b>
                             </td>
                             <td>
-                               <asp:Button ID="btnUpload" runat="server" Text="Upload" CssClass="inpBtn"></asp:Button>
+                               <asp:Button ID="btnUpload" runat="server" Text="Upload" CssClass="btn btn-default"></asp:Button>
                             </td>
                         </tr>
                         <%--<tr style="height:30px">
@@ -614,23 +617,23 @@
                     </table>
                     
                 </div>
-                <table class="tbl" cellspacing="0" cellpadding="2" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px;">
+                    <table class="table table-striped table-bordered" cellspacing="0" cellpadding="2" width="100%" style="text-align: left; border: thin solid #bcbcbc; border-radius: 5px;">
                     <tr>
-                        <td colspan="4" background="../../Images/bg-head.gif" bgcolor="#ddedf6" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
+                        <td colspan="4" bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td width="20%"><b>No. CIF</b></td>
                         <td width="30%">
-                            <asp:TextBox ID="txtCIF" runat="server" CssClass="inpTxt" style="float:none;"></asp:TextBox>&nbsp;
-                            <asp:Button ID="btnLook" runat="server" CssClass="inpBtn" Text="Lookup" Visible="false" />
+                            <asp:TextBox ID="txtCIF" runat="server" Width="250px" CssClass="form-control" style="float:none;"></asp:TextBox>&nbsp;
+                            <asp:Button ID="btnLook" runat="server" CssClass="btn btn-default" Text="Lookup" Visible="false" />
                         </td>
                         <td width="20%"><b>No. Rekening</b></td>
-                        <td width="30%"><asp:TextBox ID="txtAcctno" runat="server" CssClass="inpTxt"></asp:TextBox></td>
+                        <td width="30%"><asp:TextBox ID="txtAcctno" runat="server" Width="250px" CssClass="form-control"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>Jenis Debitur</b></td>
                         <td>
-                            <asp:DropDownList ID="ddlJenisDebitur" runat="server" CssClass="inpDdl" readonly="true">
+                            <asp:DropDownList ID="ddlJenisDebitur" runat="server" CssClass="form-control" Width="250px" style="display:inline" readonly="true">
                                 <asp:ListItem Value="Pilih">Pilih</asp:ListItem>
                                 <asp:ListItem Value="Badan Usaha">Badan Usaha</asp:ListItem>
                             </asp:DropDownList>
@@ -642,125 +645,124 @@
                     <tr bgcolor="#f6f7f7">
                         <td><b>Nama Pemohon</b></td>
                         <td>
-                            <asp:TextBox ID="txtNamaPemohon" runat="server" CssClass="inpTxt" style="width:200px;"></asp:TextBox>
+                            <asp:TextBox ID="txtNamaPemohon" runat="server" CssClass="form-control" style="width:250px;display:inline"></asp:TextBox>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span>
                         </td>
                         <td><b>Deskripsi</b></td>
-                        <td><asp:TextBox ID="txtDeskripsi" runat="server" CssClass="inpTxt" Width="250px" Height="40px" TextMode="MultiLine"></asp:TextBox></td>
+                        <td><asp:TextBox ID="txtDeskripsi" runat="server" CssClass="form-control" Width="250px" Height="30px" TextMode="MultiLine"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>NPWP Pemohon</b></td>
-                        <td><asp:TextBox ID="txtNPWP" runat="server" CssClass="inpTxt" style="width:200px;"></asp:TextBox></td>
+                        <td><asp:TextBox ID="txtNPWP" runat="server" CssClass="form-control" style="width:250px;"></asp:TextBox></td>
                         <td><b>Sektor Ekonomi LBU</b></td>
                         <td>
-                            <asp:DropDownList ID="ddlSektorEkonomi" runat="server" CssClass="inpDdl" style="width:200px;"></asp:DropDownList>
+                            <asp:DropDownList ID="ddlSektorEkonomi" runat="server" CssClass="form-control" style="width:250px;display:inline"></asp:DropDownList>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">*</span>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Berdiri Sejak</b></td>
                         <td>
-                            <asp:TextBox ID="txtTglLahir" name="txtTglLahir" runat="server" CssClass="inpTxt" ReadOnly="true" EnableViewState= "true" style="float:none;"></asp:TextBox><span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span><br />
+                            <asp:TextBox ID="txtTglLahir" name="txtTglLahir" runat="server" CssClass="form-control" ReadOnly="true" EnableViewState= "true" style="float:none;width:250px;display:inline"></asp:TextBox><span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span><br />
                             <span style="color:Red;margin-top:2px;float:left;">(dd-mm-yyyy)</span>
                         </td>
                         <%--<td><b>Sub Sektor</b></td>
                         <td><asp:DropDownList ID="ddlSubSektor" runat="server" CssClass="inpDdl"></asp:DropDownList></td>--%>
                         <td><b>Daerah/Area Pemasaran</b></td>
-                        <td><asp:TextBox ID="txtDaerahPemasaran" runat="server" CssClass="inpTxt" Width="250px" Height="40px" TextMode="MultiLine"></asp:TextBox></td>
+                        <td><asp:TextBox ID="txtDaerahPemasaran" runat="server" CssClass="form-control" Width="250px" Height="40px" TextMode="MultiLine"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>No. Akte Pendirian</b></td>
                         <td>
-                            <asp:TextBox ID="txtNoKTPAkte" runat="server" CssClass="inpTxt" style="width:200px;"></asp:TextBox>
+                            <asp:TextBox ID="txtNoKTPAkte" runat="server" CssClass="form-control" style="width:250px;display:inline"></asp:TextBox>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span>
                         </td>
                         <td><b>Sasaran Pembeli</b></td>
-                        <td><asp:TextBox ID="txtSasaranPembeli" runat="server" CssClass="inpTxt" Width="250px" Height="40px" TextMode="MultiLine"></asp:TextBox></td>
+                        <td><asp:TextBox ID="txtSasaranPembeli" runat="server" CssClass="form-control" Width="250px" Height="40px" TextMode="MultiLine"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Tanggal Pembuatan Akte Pendirian</b></td>
                         <td>
-                            <asp:TextBox ID="txtTglPembuatanKTPAkte" runat="server" CssClass="inpTxt" ReadOnly="true" style="float:none;"></asp:TextBox><span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span><br />
+                            <asp:TextBox ID="txtTglPembuatanKTPAkte" runat="server" CssClass="form-control" ReadOnly="true" style="float:none;width:250px;display:inline"></asp:TextBox><span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span><br />
                             <span style="color:Red;margin-top:2px;float:left;">(dd-mm-yyyy)</span>
                         </td>
                         <td><b>Jumlah Karyawan</b></td>
-                        <td><asp:TextBox ID="txtJumlahKaryawan" runat="server" CssClass="inpTxt" style="text-align:right" value="0" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);"></asp:TextBox></td>
+                        <td><asp:TextBox ID="txtJumlahKaryawan" runat="server" CssClass="form-control" style="text-align:right;display:inline;width:250px" value="0" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>Alamat Kantor</b></td>
                         <td>
-                            <asp:TextBox ID="txtAlamatRumah" runat="server" CssClass="inpTxt" Width="250px" Height="40px" TextMode="MultiLine" onkeyup="checkOffice();"></asp:TextBox>
+                            <asp:TextBox ID="txtAlamatRumah" runat="server" CssClass="form-control" Style="display:inline" Width="250px" Height="40px" TextMode="MultiLine" onkeyup="checkOffice();"></asp:TextBox>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span>
                         </td>
                         <td><b>Hubungan dengan Bank Sejak</b></td>
                         <td>
-                            Tahun&nbsp;<asp:DropDownList ID="ddlTahunHubunganDenganBTN" runat="server" CssClass="inpDdl"></asp:DropDownList>
-                            Bulan&nbsp;<asp:DropDownList ID="ddlBulanHubunganDenganBTN" runat="server" CssClass="inpDdl"></asp:DropDownList>
+                            Tahun&nbsp;<asp:DropDownList ID="ddlTahunHubunganDenganBTN" runat="server" Width="100px" style="display:inline" CssClass="form-control"></asp:DropDownList>
+                            Bulan&nbsp;<asp:DropDownList ID="ddlBulanHubunganDenganBTN" runat="server" CssClass="form-control" style="width:90px;display:inline"></asp:DropDownList>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Kode Pos</b></td>
-                        <td><asp:TextBox ID="txtKodePosRumah" runat="server" CssClass="inpTxt" onkeyup="checkOffice();"></asp:TextBox></td>
+                        <td><asp:TextBox ID="txtKodePosRumah" runat="server" CssClass="form-control" Width="250px" onkeyup="checkOffice();"></asp:TextBox></td>
                         <td><b>Menjadi Debitur Sejak</b></td>
                         <td>
-                            <asp:TextBox ID="txtMenjadiDebiturSejak" runat="server" ReadOnly="true" CssClass="inpTxt" style="float:none;"></asp:TextBox><br />
+                            <asp:TextBox ID="txtMenjadiDebiturSejak" runat="server" ReadOnly="true" CssClass="form-control" Width="250px" style="float:none;"></asp:TextBox><br />
                             <span style="color:Red;margin-top:2px;float:left;">(dd-mm-yyyy)</span>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>Kelurahan</b></td>
-                        <td><asp:TextBox ID="txtKelurahanRumah" runat="server" CssClass="inpTxt" style="width:200px;" onkeyup="checkOffice();"></asp:TextBox></td>
+                        <td><asp:TextBox ID="txtKelurahanRumah" runat="server" CssClass="form-control" style="width:250px;" onkeyup="checkOffice();"></asp:TextBox></td>
                         <td><b>No. Permohonan Debitur</b></td>
                         <td>
-                            <asp:TextBox ID="txtNoPermohonanDebitur" runat="server" CssClass="inpTxt"></asp:TextBox>
+                            <asp:TextBox ID="txtNoPermohonanDebitur" runat="server" CssClass="form-control" Style="display:inline;width:250px"></asp:TextBox>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Kecamatan</b></td>
-                        <td><asp:TextBox ID="txtKecamatanRumah" runat="server" CssClass="inpTxt" style="width:200px;" onkeyup="checkOffice();"></asp:TextBox></td>
+                        <td><asp:TextBox ID="txtKecamatanRumah" runat="server" CssClass="form-control" style="width:250px;" onkeyup="checkOffice();"></asp:TextBox></td>
                         <td><b>Tanggal Permohonan Debitur</b></td>
                         <td>
-                            <asp:TextBox ID="txtTglPermohonanDebitur" runat="server" ReadOnly="true" CssClass="inpTxt" style="float:none;" onkeyup="checkOffice();"></asp:TextBox>
+                            <asp:TextBox ID="txtTglPermohonanDebitur" runat="server" ReadOnly="true" CssClass="form-control" style="float:none;display:inline;width:250px" onkeyup="checkOffice();"></asp:TextBox>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span><br />
                             <span style="color:Red;margin-top:2px;float:left;">(dd-mm-yyyy)</span>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>Kotamadya/Kabupaten</b></td>
-                        <td><asp:TextBox ID="txtKotamadyaKabupatenKantor" runat="server"  CssClass="inpTxt" style="width:200px;" onkeyup="checkOffice();"></asp:TextBox></td>
+                        <td><asp:TextBox ID="txtKotamadyaKabupatenKantor" runat="server"  CssClass="form-control" style="width:250px;" onkeyup="checkOffice();"></asp:TextBox></td>
                         <td><b>Tanggal Penerimaan Berkas</b></td>
                         <td>
-                            <asp:TextBox ID="txtTglPenerimaanBerkas" runat="server" ReadOnly="true" CssClass="inpTxt" style="float:none;"></asp:TextBox>
+                            <asp:TextBox ID="txtTglPenerimaanBerkas" runat="server" ReadOnly="true" CssClass="form-control" style="float:none;width:250px;display:inline"></asp:TextBox>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span><br />
                             <span style="color:Red;margin-top:2px;float:left;">(dd-mm-yyyy)</span>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Propinsi</b></td>
-                        <td><asp:TextBox ID="txtPropinsiRumah" runat="server" CssClass="inpTxt" style="width:200px;" onkeyup="checkOffice();"></asp:TextBox></td>
+                        <td><asp:TextBox ID="txtPropinsiRumah" runat="server" CssClass="form-control" style="width:250px;" onkeyup="checkOffice();"></asp:TextBox></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>No. Telepon Kantor</b></td>
                         <td>
-                            <asp:TextBox ID="txtKodeAreaTlpRumah" runat="server" CssClass="inpTxt" Width="30px" MaxLength="3" style="margin-right:3px;float:none;margin-bottom:3px;" onkeyup="checkOffice();" onkeypress="return isNumberKey(event)"></asp:TextBox>
-                            <asp:TextBox ID="txtTlpRumah" runat="server" CssClass="inpTxt" style="float:none;margin-right:3px;margin-bottom:3px;" onkeyup="checkOffice();"></asp:TextBox>
+                            <asp:TextBox ID="txtKodeAreaTlpRumah" runat="server" CssClass="form-control" Width="60px" MaxLength="3" style="margin-right:3px;float:none;margin-bottom:3px;display:inline" onkeyup="checkOffice();" onkeypress="return isNumberKey(event)"></asp:TextBox>
+                            <asp:TextBox ID="txtTlpRumah" runat="server" CssClass="form-control" Style="float: none;width:150px;margin-right: 3px; margin-bottom: 3px;display:inline" onkeyup="checkOffice();"></asp:TextBox>
                             <span style="margin-right:3px;font-weight:bold;margin-bottom:3px;">Ext.</span>
-                            <asp:TextBox ID="txtExtTlpRumah" runat="server" CssClass="inpTxt" Width="50px" style="float:none;margin-bottom:3px;" onkeyup="checkOffice();"></asp:TextBox>
+                            <asp:TextBox ID="txtExtTlpRumah" runat="server" CssClass="form-control" Width="60px" Style="float: none; margin-bottom: 3px;display:inline" onkeyup="checkOffice();"></asp:TextBox>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">*</span>
-                            
-                            <asp:TextBox ID="txtKodeAreaTlpRumah2" runat="server" CssClass="inpTxt" Width="30px" MaxLength="3" style="float:none;margin-right:3px;margin-bottom:3px;" onkeyup="checkOffice();" onkeypress="return isNumberKey(event)"></asp:TextBox>
-                            <asp:TextBox ID="txtTlpRumah2" runat="server" CssClass="inpTxt" style="float:none;margin-right:3px;margin-bottom:3px;" onkeyup="checkOffice();"></asp:TextBox>
+                            <asp:TextBox ID="txtKodeAreaTlpRumah2" runat="server" CssClass="form-control" Width="60px" MaxLength="3" style="float:none;margin-right:3px;margin-bottom:3px;display:inline" onkeyup="checkOffice();" onkeypress="return isNumberKey(event)"></asp:TextBox>
+                            <asp:TextBox ID="txtTlpRumah2" runat="server" CssClass="form-control" style="float:none;margin-right:3px;margin-bottom:3px;display:inline;width:150px" onkeyup="checkOffice()"></asp:TextBox>
                             <span style="margin-right:3px;font-weight:bold;margin-bottom:3px;">Ext.</span>
-                            <asp:TextBox ID="txtExtTlpRumah2" runat="server" CssClass="inpTxt" Width="50px" style="float:none;margin-bottom:3px;"></asp:TextBox>
+                            <asp:TextBox ID="txtExtTlpRumah2" runat="server" CssClass="form-control" Width="60px" style="float:none;margin-bottom:3px;display:inline"></asp:TextBox>
                             
-                            <asp:TextBox ID="txtKodeAreaTlpRumah3" runat="server" CssClass="inpTxt" Width="30px" MaxLength="3" style="float:none;margin-right:3px;margin-bottom:3px;" onkeyup="checkOffice();" onkeypress="return isNumberKey(event)"></asp:TextBox>
-                            <asp:TextBox ID="txtTlpRumah3" runat="server" CssClass="inpTxt" style="float:none;margin-right:3px;margin-bottom:3px;" onkeyup="checkOffice();"></asp:TextBox>
+                            <asp:TextBox ID="txtKodeAreaTlpRumah3" runat="server" CssClass="form-control" Width="60px" MaxLength="3" style="float:none;display:inline; margin-right:3px;margin-bottom:3px;" onkeyup="checkOffice();" onkeypress="return isNumberKey(event)"></asp:TextBox>
+                            <asp:TextBox ID="txtTlpRumah3" runat="server" CssClass="form-control" Style="float: none;width:150px;display:inline; margin-right: 3px; margin-bottom: 3px;" onkeyup="checkOffice();"></asp:TextBox>
                             <span style="margin-right:3px;font-weight:bold;margin-bottom:3px;">Ext.</span>
-                            <asp:TextBox ID="txtExtTlpRumah3" runat="server" CssClass="inpTxt" Width="50px" style="float:none;margin-bottom:3px;" onkeyup="checkOffice();"></asp:TextBox>
+                            <asp:TextBox ID="txtExtTlpRumah3" runat="server" CssClass="form-control" Width="60px" style="float:none;margin-bottom:3px;display:inline" onkeyup="checkOffice();"></asp:TextBox>
                         </td>
                         <td></td>
                         <td></td>
@@ -768,60 +770,60 @@
                     <tr bgcolor="#f6f7f7">
                         <td><b>No. Fax Kantor</b></td>
                         <td colspan="3">
-                            <asp:TextBox ID="txtKodeAreaFaxRumah" runat="server" CssClass="inpTxt" Width="30px" MaxLength="3" style="float:none;margin-right:3px;margin-bottom:3px;" onkeypress="return isNumberKey(event)"></asp:TextBox>
-                            <asp:TextBox ID="txtFaxRumah" runat="server" CssClass="inpTxt" style="margin-right:3px;float:none;margin-bottom:3px;"></asp:TextBox>
+                            <asp:TextBox ID="txtKodeAreaFaxRumah" runat="server" CssClass="form-control" Width="60px" MaxLength="3" style="float:none;margin-right:3px;margin-bottom:3px;display:inline" onkeypress="return isNumberKey(event)"></asp:TextBox>
+                            <asp:TextBox ID="txtFaxRumah" runat="server" CssClass="form-control" Width="120px" style="margin-right:3px;float:none;margin-bottom:3px;display:inline"></asp:TextBox>
                             <span style="margin-right:3px;font-weight:bold;margin-bottom:3px;">Ext.</span>
-                            <asp:TextBox ID="txtExtFaxRumah" runat="server" CssClass="inpTxt" Width="50px" style="float:none;margin-bottom:3px;margin-bottom:3px;"></asp:TextBox>
+                            <asp:TextBox ID="txtExtFaxRumah" runat="server" CssClass="form-control" Width="60px" style="float:none;margin-bottom:3px;margin-bottom:3px;display:inline"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>Nama Proyek/Usaha</b></td>
-                        <td colspan="3"><asp:TextBox ID="txtNamaProyekUsaha" runat="server" CssClass="inpTxt" style="width:250px;"></asp:TextBox></td>
+                        <td colspan="3"><asp:TextBox ID="txtNamaProyekUsaha" runat="server" CssClass="form-control" Style="width: 300px;"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Alamat Proyek/Usaha</b></td>
                         <td colspan="3">
-                            <asp:TextBox ID="txtAlamatProyekUsaha" runat="server" CssClass="inpTxt" Width="250px" Height="40px" TextMode="MultiLine"></asp:TextBox>
+                         <asp:TextBox ID="txtAlamatProyekUsaha" runat="server" CssClass="form-control" Width="350px" Height="30px" TextMode="MultiLine" Style="display:inline"></asp:TextBox>
                             &nbsp;<input type="checkbox" id="chkAlamatRumah" runat="server" onclick="return checkSama('rumah');" /><b>Sama seperti Alamat Kantor</b>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>Kode Pos</b></td>
-                        <td colspan="3"><asp:TextBox ID="txtKodePosProyekUsaha" CssClass="inpTxt" runat="server"></asp:TextBox></td>
+                        <td colspan="3"><asp:TextBox ID="txtKodePosProyekUsaha" CssClass="form-control" Width="250px" runat="server"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Kelurahan</b></td>
-                        <td colspan="3"><asp:TextBox ID="txtKelurahanProyekUsaha" runat="server" CssClass="inpTxt" style="width:200px;"></asp:TextBox></td>
+                        <td colspan="3"><asp:TextBox ID="txtKelurahanProyekUsaha" runat="server" CssClass="form-control" style="width:250px;display:inline"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>Kecamatan</b></td>
-                        <td colspan="3"><asp:TextBox ID="txtKecamatanProyekUsaha" runat="server" CssClass="inpTxt" style="width:200px;"></asp:TextBox></td>
+                        <td colspan="3"><asp:TextBox ID="txtKecamatanProyekUsaha" runat="server" CssClass="form-control" Style="width: 250px;"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Kotamadya/Kabupaten Usaha</b></td>
-                        <td colspan="3"><asp:TextBox ID="txtKotamadyaKabupatenUsaha" runat="server" CssClass="inpTxt" style="width:200px;"></asp:TextBox></td>
+                        <td colspan="3"><asp:TextBox ID="txtKotamadyaKabupatenUsaha" runat="server" CssClass="form-control" Style="width: 250px;"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>Propinsi</b></td>
-                        <td colspan="3"><asp:TextBox ID="txtPropinsiUsaha" runat="server" CssClass="inpTxt" style="width:200px;"></asp:TextBox></td>
+                        <td colspan="3"><asp:TextBox ID="txtPropinsiUsaha" runat="server" CssClass="form-control" Style="width: 250px;"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>No. Telepon Usaha</b></td>
-                        <td>
-                            <asp:TextBox ID="txtKodeAreaTlpUsaha" runat="server" CssClass="inpTxt" Width="30px" MaxLength="3" style="margin-right:3px;float:none;margin-bottom:3px;" onkeypress="return isNumberKey(event)"></asp:TextBox>
-                            <asp:TextBox ID="txtTlpUsaha" runat="server" CssClass="inpTxt" style="float:none;margin-right:3px;margin-bottom:3px;"></asp:TextBox>
+                        <td >
+                            <asp:TextBox ID="txtKodeAreaTlpUsaha" runat="server" CssClass="form-control" Width="60px" MaxLength="3" style="margin-right:3px;float:none;margin-bottom:3px;display:inline" onkeypress="return isNumberKey(event)"></asp:TextBox>
+                            <asp:TextBox ID="txtTlpUsaha" runat="server" CssClass="form-control" style="float:none;margin-right:3px;margin-bottom:3px;width:150px;display:inline"></asp:TextBox>
                             <span style="margin-right:3px;font-weight:bold;margin-bottom:3px;">Ext.</span>
-                            <asp:TextBox ID="txtExtTlpUsaha" runat="server" CssClass="inpTxt" Width="50px" style="float:none;margin-bottom:3px;"></asp:TextBox>
+                            <asp:TextBox ID="txtExtTlpUsaha" runat="server" CssClass="form-control" Width="60px" style="float:none;margin-bottom:3px;display:inline"></asp:TextBox>
                             
-                            <asp:TextBox ID="txtKodeAreaTlpUsaha2" runat="server" CssClass="inpTxt" Width="30px" MaxLength="3" style="float:none;margin-right:3px;margin-bottom:3px;" onkeypress="return isNumberKey(event)"></asp:TextBox>
-                            <asp:TextBox ID="txtTlpUsaha2" runat="server" CssClass="inpTxt" style="float:none;margin-right:3px;margin-bottom:3px;"></asp:TextBox>
+                            <asp:TextBox ID="txtKodeAreaTlpUsaha2" runat="server" CssClass="form-control" Width="60px" MaxLength="3" style="float:none;margin-right:3px;margin-bottom:3px;display:inline" onkeypress="return isNumberKey(event)"></asp:TextBox>
+                            <asp:TextBox ID="txtTlpUsaha2" runat="server" CssClass="form-control" style="float:none;margin-right:3px;margin-bottom:3px;width:150px;display:inline"></asp:TextBox>
                             <span style="margin-right:3px;font-weight:bold;margin-bottom:3px;">Ext.</span>
-                            <asp:TextBox ID="txtExtTlpUsaha2" runat="server" CssClass="inpTxt" Width="50px" style="float:none;margin-bottom:3px;"></asp:TextBox>
+                            <asp:TextBox ID="txtExtTlpUsaha2" runat="server" CssClass="form-control" Width="60px" style="float:none;margin-bottom:3px;display:inline"></asp:TextBox>
                             
-                            <asp:TextBox ID="txtKodeAreaTlpUsaha3" runat="server" CssClass="inpTxt" Width="30px" MaxLength="3" style="float:none;margin-right:3px;margin-bottom:3px;" onkeypress="return isNumberKey(event)"></asp:TextBox>
-                            <asp:TextBox ID="txtTlpUsaha3" runat="server" CssClass="inpTxt" style="float:none;margin-right:3px;margin-bottom:3px;"></asp:TextBox>
+                            <asp:TextBox ID="txtKodeAreaTlpUsaha3" runat="server" CssClass="form-control" Width="60px" MaxLength="3" style="float:none;display:inline; margin-right:3px;margin-bottom:3px;" onkeypress="return isNumberKey(event)"></asp:TextBox>
+                            <asp:TextBox ID="txtTlpUsaha3" runat="server" CssClass="form-control" style="width:150px; float:none;display:inline; margin-right:3px;margin-bottom:3px;"></asp:TextBox>
                             <span style="margin-right:3px;font-weight:bold;margin-bottom:3px;">Ext.</span>
-                            <asp:TextBox ID="txtExtTlpUsaha3" runat="server" CssClass="inpTxt" Width="50px" style="float:none;margin-bottom:3px;"></asp:TextBox>
+                            <asp:TextBox ID="txtExtTlpUsaha3" runat="server" CssClass="form-control" Width="60px" style="float:none;margin-bottom:3px;display:inline"></asp:TextBox>
                         </td>
                         <td></td>
                         <td></td>
@@ -829,71 +831,71 @@
                     <tr bgcolor="#ebecec">
                         <td><b>No. Fax Usaha</b></td>
                         <td colspan="3">
-                            <asp:TextBox ID="txtKodeAreaFaxUsaha" runat="server" CssClass="inpTxt" Width="30px" MaxLength="3" style="float:none;margin-right:3px;margin-bottom:3px;" onkeypress="return isNumberKey(event)"></asp:TextBox>
-                            <asp:TextBox ID="txtFaxUsaha" runat="server" CssClass="inpTxt" style="margin-right:3px;float:none;margin-bottom:3px;"></asp:TextBox>
+                            <asp:TextBox ID="txtKodeAreaFaxUsaha" runat="server" CssClass="form-control" Width="60px" MaxLength="3" style="float:none;margin-right:3px;margin-bottom:3px;display:inline" onkeypress="return isNumberKey(event)"></asp:TextBox>
+                            <asp:TextBox ID="txtFaxUsaha" runat="server" CssClass="form-control" style="margin-right:3px;float:none;margin-bottom:3px;width:150px;display:inline"></asp:TextBox>
                             <span style="margin-right:3px;font-weight:bold;margin-bottom:3px;">Ext.</span>
-                            <asp:TextBox ID="txtExtFaxUsaha" runat="server" CssClass="inpTxt" Width="50px" style="float:none;margin-bottom:3px;margin-bottom:3px;"></asp:TextBox>
+                            <asp:TextBox ID="txtExtFaxUsaha" runat="server" CssClass="form-control" Width="60px" style="float:none;margin-bottom:3px;margin-bottom:3px;display:inline"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Bidang Usaha</b></td>
-                        <td colspan="3"><asp:DropDownList ID="ddlBidangUsaha" runat="server" CssClass="inpDdl"></asp:DropDownList></td>
+                        <td colspan="3"><asp:DropDownList ID="ddlBidangUsaha" runat="server" CssClass="form-control" Width="250px"></asp:DropDownList></td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>Grup Usaha</b></td>
-                        <td colspan="3"><asp:TextBox ID="txtGrupUsaha" runat="server" CssClass="inpTxt" TextMode="MultiLine" Width="250px" Height="40px"></asp:TextBox></td>
+                        <td colspan="3"><asp:TextBox ID="txtGrupUsaha" runat="server" CssClass="form-control" TextMode="MultiLine" Width="250px" Height="40px"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Lama Usaha</b></td>
                         <td colspan="3">
-                            <asp:TextBox ID="txtLamaUsaha" runat="server" CssClass="inpTxt" style="width:30px;float:none;" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);" value="0"></asp:TextBox>&nbsp;Tahun
+                            <asp:TextBox ID="txtLamaUsaha" runat="server" CssClass="form-control" style="width:60px;float:none;display:inline" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);" value="0"></asp:TextBox>&nbsp;Tahun
                        </td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>Alamat Surat Menyurat</b></td>
                         <td colspan="3">
-                            <asp:TextBox ID="txtAlamatSurat" runat="server" CssClass="inpTxt" Width="250px" Height="40px" TextMode="MultiLine"></asp:TextBox>
+                            <asp:TextBox ID="txtAlamatSurat" runat="server" CssClass="form-control" Width="250px" Height="40px" TextMode="MultiLine"></asp:TextBox>
                             &nbsp;<input type="checkbox" id="chkAlamatKantorKTP" runat="server" onclick="return checkSama('ktp');" /><b>Sama seperti Alamat Kantor</b><br />
                             &nbsp;<input type="checkbox" id="chkAlamatUsaha" runat="server" onclick="return checkSama('usaha');" style="display:none;" /><%--<b>Sama seperti Alamat Usaha</b>--%>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Kode Pos Surat Menyurat</b></td>
-                        <td colspan="3"><asp:TextBox ID="txtKodePosSurat" runat="server" CssClass="inpTxt"></asp:TextBox></td>
+                        <td colspan="3"><asp:TextBox ID="txtKodePosSurat" runat="server" CssClass="form-control" Width="250px" ></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>Kelurahan Surat Menyurat</b></td>
-                        <td colspan="3"><asp:TextBox ID="txtKelurahanSurat" runat="server" CssClass="inpTxt" style="width:200px;"></asp:TextBox></td>
+                        <td colspan="3"><asp:TextBox ID="txtKelurahanSurat" runat="server" CssClass="form-control" Width="250px"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Kecamatan Surat Menyurat</b></td>
-                        <td colspan="3"><asp:TextBox ID="txtKecamatanSurat" runat="server" CssClass="inpTxt" style="width:200px;"></asp:TextBox></td>
+                        <td colspan="3"><asp:TextBox ID="txtKecamatanSurat" runat="server" CssClass="form-control" Width="250px"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>Kotamadya/Kabupaten Surat Menyurat</b></td>
-                        <td colspan="3"><asp:TextBox ID="txtKotamadyaKabupatenSurat" runat="server" CssClass="inpTxt" style="width:200px;"></asp:TextBox></td>
+                        <td colspan="3"><asp:TextBox ID="txtKotamadyaKabupatenSurat" runat="server" CssClass="form-control" Width="250px"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Propinsi Surat Menyurat</b></td>
-                        <td colspan="3"><asp:TextBox ID="txtPropinsiSurat" runat="server" CssClass="inpTxt" style="width:200px;"></asp:TextBox></td>
+                        <td colspan="3"><asp:TextBox ID="txtPropinsiSurat" runat="server" CssClass="form-control" Width="250px"></asp:TextBox></td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>No. Telepon Surat Menyurat</b></td>
                         <td colspan="3">
-                            <asp:TextBox ID="txtKodeAreaTlpSurat" runat="server" CssClass="inpTxt" Width="30px" MaxLength="3" style="float:none;margin-right:3px;margin-bottom:3px;" onkeypress="return isNumberKey(event);"></asp:TextBox>
-                            <asp:TextBox ID="txtTlpSurat" runat="server" CssClass="inpTxt" style="margin-right:3px;float:none;margin-bottom:3px;" onkeypress="return isNumberKey(event);"></asp:TextBox>
+                            <asp:TextBox ID="txtKodeAreaTlpSurat" runat="server" CssClass="form-control" Width="60px" MaxLength="3" style="float:none;margin-right:3px;margin-bottom:3px;display:inline" onkeypress="return isNumberKey(event);"></asp:TextBox>
+                            <asp:TextBox ID="txtTlpSurat" runat="server" CssClass="form-control" style="margin-right:3px;float:none;margin-bottom:3px;display:inline;width:150px" onkeypress="return isNumberKey(event);"></asp:TextBox>
                             <span style="margin-right:3px;font-weight:bold;margin-bottom:3px;">Ext.</span>
-                            <asp:TextBox ID="txtExtTlpSurat" runat="server" CssClass="inpTxt" Width="50px" style="float:none;margin-bottom:3px;margin-bottom:3px;" onkeypress="return isNumberKey(event);"></asp:TextBox>
+                            <asp:TextBox ID="txtExtTlpSurat" runat="server" CssClass="form-control" Width="60px" style="float:none;margin-bottom:3px;margin-bottom:3px;display:inline" onkeypress="return isNumberKey(event);"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Email Surat Menyurat</b></td>
-                        <td colspan="3"><asp:TextBox ID="txtEmailSurat" runat="server" CssClass="inpTxt" style="width:200px;"></asp:TextBox></td>
+                        <td colspan="3"><asp:TextBox ID="txtEmailSurat" runat="server" CssClass="form-control" Width="250px"></asp:TextBox></td>
                     </tr>
                     <tr style="height:30px">
 				        <td background="../../styles/grid/footer.gif" colspan="4" style="border-radius: 0 0 5px 5px;">
-                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="inpBtn"></asp:button>
-                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="inpBtn"></asp:button>
+                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="btn btn-primary"></asp:button>
+                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="btn btn-danger"></asp:button>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">* <span style="font-size:13px;">Harus Diisi</span></span>
                         </td>
 			        </tr>

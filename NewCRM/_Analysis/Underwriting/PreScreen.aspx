@@ -4,7 +4,9 @@
 <%@ Register TagPrefix="obout" Namespace="Obout.Interface" Assembly="obout_Interface" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    
+    <link href="~/Content/Themes1/build/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <script type="text/javascript">
         function CloseMe() {
             window.returnValue = window.dialogArguments;
@@ -222,9 +224,10 @@
                         <asp:Label ID="lblNotif" runat="server" style="color:Red;"></asp:Label>
                     </div>
                 </div>
-                <table class="tbl" cellspacing="0" cellpadding="3" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px 5px 0 0;">
+                
+                    <table class="table table-striped table-bordered" cellspacing="0" cellpadding="3" width="100%" style="text-align: left; border: thin solid #bcbcbc; border-radius: 5px 5px 0 0;">
                     <tr>
-                        <td colspan="3" class="detail" style="border-radius: 5px 0 0 0;"><b>&nbsp;</b></td>
+                        <td colspan="3" bgcolor="#2A3F54" style="border-radius: 5px 0 0 0;"><b>&nbsp;</b></td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                      <%  If exists = False Then%>
@@ -242,13 +245,14 @@
                             <%= fillPreScreenExists()%>
                     <%End If%>
                 </table>
-                <table class="tbl" cellspacing="0" cellpadding="3" width="100%" style="text-align:left;">
+                
+                <table class="table table-striped table-bordered" cellspacing="0" cellpadding="3" width="100%" style="text-align: left;">
                     <tr>
                         <td colspan="2" class="detail"><b>&nbsp;</b></td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td width="30%"><b>Total Skor</b></td>
-                        <td><asp:TextBox ID="txtTotalSkor" runat="server" CssClass="inpTxtDisabled" style="float:none;" readonly="true" ></asp:TextBox>
+                        <td><asp:TextBox ID="txtTotalSkor" runat="server" Width="150px" CssClass="form-control" style="float:none;display:inline" readonly="true" ></asp:TextBox>
                         <span>%</span>
                         </td>
                     </tr>
@@ -263,12 +267,12 @@
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Alasan Tetap Diproses</b></td>
-                        <td><asp:TextBox ID="txtAlasan" runat="server" TextMode="MultiLine" Rows="4" Width="500px" CssClass="inpTxt"></asp:TextBox></td>
+                        <td><asp:TextBox ID="txtAlasan" runat="server" TextMode="MultiLine" Rows="4" Width="500px" CssClass="form-control"></asp:TextBox></td>
                     </tr>
                     <tr style="height:30px">
 				        <td background="../../styles/grid/footer.gif" colspan="3" style="border-radius: 0 0 5px 5px;">
-                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="inpBtn" OnClick="btnSave_Click" OnClientClick="return checkSubmit();"></asp:button>
-                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="inpBtn"></asp:button>
+                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="btn btn-primary" OnClick="btnSave_Click" OnClientClick="return checkSubmit();"></asp:button>
+                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="btn btn-danger"></asp:button>
                         </td>
 			        </tr>
                 </table>

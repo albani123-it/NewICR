@@ -4,6 +4,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
     </asp:ScriptManager>
+    <link href="~/Content/Themes1/build/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <style type="text/css">
         .detail
         {
@@ -231,8 +234,11 @@
                         <asp:Label ID="lblNotif" runat="server" Style="color: Red;"></asp:Label>
                     </div>
                 </div>
-                <table id="tblFillData" class="tbl" cellspacing="0" cellpadding="3">
+                 <table id="tblFillData" class="table table-striped table-bordered" cellspacing="0" cellpadding="3">
                     <tr>
+                        <td colspan="4" bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
+                    </tr>
+                     <tr>
                         <td colspan="4" class="detail">
                             <span style="font-size: 14px; font-weight: bolder">Struktur Group Perusahaan</span>
                         </td>
@@ -242,7 +248,7 @@
                             <b>Group ID</b>
                         </td>
                         <td>
-                            <asp:TextBox ID="txtgroupID" runat="server" CssClass="inpTxt"></asp:TextBox>
+                            <asp:TextBox ID="txtgroupID" runat="server" CssClass="form-control" Width="250px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -250,7 +256,7 @@
                             <b>Kode Group</b>
                         </td>
                         <td>
-                            <asp:TextBox ID="txtGroupCode" runat="server" CssClass="inpTxt"></asp:TextBox>
+                            <asp:TextBox ID="txtGroupCode" runat="server" CssClass="form-control" Width="250px"></asp:TextBox>
                             <%--<span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>--%>
                         </td>
                     </tr>
@@ -259,7 +265,7 @@
                             <b>Nama Group</b>
                         </td>
                         <td>
-                            <asp:TextBox ID="txtGroupName" runat="server" CssClass="inpTxt"></asp:TextBox>
+                            <asp:TextBox ID="txtGroupName" runat="server" CssClass="form-control" Width="250px"></asp:TextBox>
                             <%--<span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>--%>
                         </td>
                     </tr>
@@ -268,8 +274,8 @@
                             <b>Keterangan</b>
                         </td>
                         <td>
-                            <asp:TextBox ID="txtGroupDesc" runat="server" CssClass="inpTxt" TextMode="MultiLine"
-                                Rows="3" Width="300px"></asp:TextBox>
+                            <asp:TextBox ID="txtGroupDesc" runat="server" CssClass="form-control" TextMode="MultiLine"
+                                Rows="3" Width="500px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -282,8 +288,8 @@
                                     <asp:ImageField DataImageUrlField="Value" ControlStyle-Height="400" ControlStyle-Width="400" />
                                 </Columns>
                             </asp:GridView>
-                            <asp:FileUpload ID="FileUpload1" runat="server" />&nbsp;
-                            <asp:Button ID="btnUpload" Text="Upload" runat="server" CssClass="inpBtn" />
+                            <asp:FileUpload ID="FileUpload1" runat="server" />&nbsp; <br />
+                            <asp:Button ID="btnUpload" Text="Upload" runat="server" CssClass="btn btn-default" />
                             <br />
                             <span>Ukuran File maksimum 200 KB.</span><br />
                             <input type="hidden" id="textFile" runat="server" />
@@ -319,17 +325,17 @@
                                         &nbsp;
                                     </td>
                                     <td>
-                                        <asp:TextBox ID="txtSubGroupId1" runat="server" CssClass="inpTxt" Style="display: none">0</asp:TextBox>
+                                        <asp:TextBox ID="txtSubGroupId1" runat="server" CssClass="form-control" Style="display: none">0</asp:TextBox>
                                     </td>
                                     <td>
-                                        <asp:TextBox ID="txtSubGroupCode1" runat="server" CssClass="inpTxt"></asp:TextBox>
+                                        <asp:TextBox ID="txtSubGroupCode1" runat="server" CssClass="form-control"></asp:TextBox>
                                     </td>
                                     <td>
-                                        <asp:TextBox ID="txtSubGroupName1" runat="server" CssClass="inpTxt"></asp:TextBox>
+                                        <asp:TextBox ID="txtSubGroupName1" runat="server" CssClass="form-control"></asp:TextBox>
                                     </td>
                                     <td>
-                                        <asp:TextBox ID="txtSubgroupDesc1" runat="server" CssClass="inpTxt" TextMode="MultiLine"
-                                            Rows="3" Width="300px"></asp:TextBox>
+                                        <asp:TextBox ID="txtSubgroupDesc1" runat="server" CssClass="form-control" TextMode="MultiLine"
+                                        Rows="3" Width="300px"></asp:TextBox>
                                     </td>
                                 </tr>
                                 <asp:Repeater ID="Repeater1" runat="server" ClientIDMode="Predictable">
@@ -341,31 +347,31 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <asp:TextBox ID="txtSubGroupId" runat="server" CssClass="inpTxt" Style="display: none">0</asp:TextBox>
+                                                <asp:TextBox ID="txtSubGroupId" runat="server" CssClass="form-control" Style="display: none">0</asp:TextBox>
                                             </td>
                                             <td>
-                                                <asp:TextBox ID="txtSubGroupCode" runat="server" CssClass="inpTxt"></asp:TextBox>
+                                                <asp:TextBox ID="txtSubGroupCode" runat="server" CssClass="form-control"></asp:TextBox>
                                             </td>
                                             <td>
-                                                <asp:TextBox ID="txtSubGroupName" runat="server" CssClass="inpTxt"></asp:TextBox>
+                                                <asp:TextBox ID="txtSubGroupName" runat="server" CssClass="form-control"></asp:TextBox>
                                             </td>
                                             <td>
-                                                <asp:TextBox ID="txtSubgroupDesc" runat="server" CssClass="inpTxt" TextMode="MultiLine"
-                                                    Rows="3" Width="300px"></asp:TextBox>
+                                                <asp:TextBox ID="txtSubgroupDesc" runat="server" CssClass="form-control" TextMode="MultiLine"
+                                            Rows="3" Width="300px"></asp:TextBox>
                                             </td>
                                         </tr>
                                     </ItemTemplate>
                                 </asp:Repeater>
                                 <tr>
                                     <td colspan="5" style="padding-left: 0;">
-                                        <asp:Button ID="btnAdd" runat="server" Text="Add New" OnClick="btnAdd_Click" CssClass="inpBtn"
+                                        <asp:Button ID="btnAdd" runat="server" Text="Add New" OnClick="btnAdd_Click" CssClass="btn btn-info"
                                             Style="float: left;" />
                                     </td>
                                 </tr>
                                 <tr colspan="5" style="height: 30px">
                                     <td background="../../styles/btn_bank/footer.gif" colspan="5" style="border-radius: 0 0 5px 5px;">
-                                        <asp:Button ID="btnSave" runat="server" Text="Simpan" CssClass="inpBtn"></asp:Button>&nbsp;
-                                        <input type="button" value="Lanjut" onclick="fDetail('<%= menuNext %>');" class="inpBtn" />
+                                        <asp:Button ID="btnSave" runat="server" Text="Simpan" CssClass="btn btn-primary"></asp:Button>&nbsp;
+                                        <input type="button" value="Lanjut" onclick="fDetail('<%= menuNext %>');" class="btn btn-danger" />
                                         &nbsp; <span style="color: Red; font-size: 11pt;
                                                 font-weight: bold;">* <span style="font-size: 13px;">Harus Diisi</span></span>
                                     </td>

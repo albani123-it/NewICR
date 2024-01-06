@@ -188,7 +188,7 @@
             <div>
                 <div class="bodyContent">
                     <div class="cont-header" stlye="width:100%;">
-                        <table width="100%" border="0">
+                        <table width="100%" border="0" class="table table-striped table-bordered">
                             <tr>
                                 <td width="20%"><span><b>No. Aplikasi</b></span></td>
                                 <td><asp:label ID="lblAppNo_header" runat="server"></asp:label></td>
@@ -200,13 +200,13 @@
                         </table>
                     </div>
                     <% =htmlForm %>
-                    <table id="tblNote" class="tbl" cellspacing="0" cellpadding="3" width="100%">
+                    <table id="tblNote" class="table table-striped table-bordered" cellspacing="0" cellpadding="3" width="100%">
                         <tr style="height: 30px">
                             <td background="../../styles/grid/footer.gif" style="border-radius: 0 0 5px 5px;">
                               <%--  <asp:Button ID="btnUpdate" runat="server" Text="Update" CssClass="inpBtn" OnClientClick="return fDet();">
                                 </asp:Button>--%>
                                 <%--<asp:Button ID="btnNext" runat="server" Text="Lanjut" CssClass="inpBtn"></asp:Button>--%>
-                                <input type="button" value="Lanjut" onclick="fDetail('<%= menuNext %>');" class="inpBtn" />
+                                <input type="button" value="Lanjut" onclick="fDetail('<%= menuNext %>');" class="btn btn-danger" />
                             </td>
                         </tr>
                     </table>

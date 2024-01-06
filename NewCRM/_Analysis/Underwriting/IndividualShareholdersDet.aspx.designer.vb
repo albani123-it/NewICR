@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class IndividualShareholdersDet
-
+    
     '''<summary>
     '''liBodyLoadAction control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents liBodyLoadAction As Global.System.Web.UI.WebControls.Literal
-
+    
     '''<summary>
     '''form1 control.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
-
+    
     '''<summary>
     '''brw_code control.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents brw_code As Global.System.Web.UI.HtmlControls.HtmlInputHidden
-
+    
     '''<summary>
     '''sisa control.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents sisa As Global.System.Web.UI.HtmlControls.HtmlInputHidden
-
+    
     '''<summary>
     '''txtNama control.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNama As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtAlamatRumah control.
     '''</summary>
@@ -66,7 +66,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtAlamatRumah As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtGelarD control.
     '''</summary>
@@ -75,7 +75,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtGelarD As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtKodePos control.
     '''</summary>
@@ -84,7 +84,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtKodePos As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtGelarB control.
     '''</summary>
@@ -93,7 +93,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtGelarB As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtKelurahan control.
     '''</summary>
@@ -102,7 +102,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtKelurahan As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtJabatan control.
     '''</summary>
@@ -111,7 +111,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtJabatan As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtKecamatan control.
     '''</summary>
@@ -120,7 +120,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtKecamatan As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtKepemilikanSaham control.
     '''</summary>
@@ -129,7 +129,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtKepemilikanSaham As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtKabupaten control.
     '''</summary>
@@ -138,7 +138,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtKabupaten As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtJumlahLembarSaham control.
     '''</summary>
@@ -147,7 +147,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtJumlahLembarSaham As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtPropinsi control.
     '''</summary>
@@ -156,7 +156,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPropinsi As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtTempatLahir control.
     '''</summary>
@@ -165,7 +165,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtTempatLahir As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtKodeAreaTlp control.
     '''</summary>
@@ -174,7 +174,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtKodeAreaTlp As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtTlp control.
     '''</summary>
@@ -183,7 +183,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtTlp As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtExtTlp control.
     '''</summary>
@@ -192,7 +192,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtExtTlp As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtTglLahir control.
     '''</summary>
@@ -201,7 +201,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtTglLahir As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtNoHP control.
     '''</summary>
@@ -210,7 +210,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNoHP As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtNoKTP control.
     '''</summary>
@@ -219,7 +219,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNoKTP As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtNamaIbu control.
     '''</summary>
@@ -228,7 +228,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNamaIbu As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtTglKTP control.
     '''</summary>
@@ -237,7 +237,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtTglKTP As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtExpKTP control.
     '''</summary>
@@ -246,7 +246,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtExpKTP As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtNPWP control.
     '''</summary>
@@ -255,7 +255,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNPWP As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''ddlJenisKelamin control.
     '''</summary>
@@ -264,7 +264,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlJenisKelamin As Global.System.Web.UI.WebControls.DropDownList
-
+    
     '''<summary>
     '''btnSave control.
     '''</summary>
@@ -273,7 +273,7 @@ Partial Public Class IndividualShareholdersDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSave As Global.System.Web.UI.WebControls.Button
-
+    
     '''<summary>
     '''btnCancel control.
     '''</summary>

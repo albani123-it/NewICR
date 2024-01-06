@@ -5,10 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Skyworx - Internal Credit Rating</title>
-    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="../../Scripts/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="../../Scripts/jquery-ui.js"></script>
-    <link type="text/css" href="../../Scripts/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <style type="text/css">
         td
         {
@@ -112,43 +111,43 @@
                     <asp:Label ID="lblNotif" runat="server" Style="color: Red;"></asp:Label>
                 </div>
             </div>
-            <table class="tbl" cellspacing="0" cellpadding="2" width="98%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px;margin-bottom:10px;">
+             <table class="table table-striped table-bordered" cellspacing="0" cellpadding="2" width="98%" style="text-align: left; border: thin solid #bcbcbc; border-radius: 5px; margin-bottom: 10px;">
                 <tr>
-                    <td colspan="4" background="../../Images/bg-head.gif" bgcolor="#ddedf6" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
+                    <td colspan="4" bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
                 </tr>
                 <tr bgcolor="#f6f7f7">
                     <td width="20%">
                         <b>Nama</b>
                     </td>
                     <td width="30%">
-                        <asp:TextBox ID="txtNama" runat="server" CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="txtNama" runat="server" CssClass="form-control" Width="250px" Style="display:inline"></asp:TextBox>
                         <span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
                     </td>
                     <td width="20%">
                         <b>Tanggal Lahir</b>
                     </td>
                     <td width="30%">
-                        <asp:TextBox ID="txtTgllahir" ReadOnly="true" data-name="date" runat="server" CssClass="inpTxt"></asp:TextBox><span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
+                        <asp:TextBox ID="txtTgllahir" ReadOnly="true" data-name="date" runat="server" CssClass="form-control" Width="250px" Style="display: inline"></asp:TextBox>
+                        <span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
                     </td>
                 </tr>
                 <tr bgcolor="#ebecec">
                     <td>
                         <b>Jenis Kelamin</b>
                     </td>
-                    <td>
-                        <asp:DropDownList ID="ddlGender" runat="server" CssClass="inpDdl">
-                        </asp:DropDownList><span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
+                    <td colspan="3">
+                        <asp:DropDownList ID="ddlGender" runat="server" CssClass="form-control" Width="250px" Style="display: inline">
+                        </asp:DropDownList><span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp; *</span>
                     </td>
-                    <td></td>
-                    <td></td>
+                    
                 </tr>
                 <tr bgcolor="#f6f7f7">
                     <td>
                         <b>Alamat</b>
                     </td>
                     <td colspan="3">
-                        <asp:TextBox ID="txtAlamat" runat="server" Rows="3" TextMode="multiline" Width="200px"
-                            CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="txtAlamat" runat="server" Rows="3" TextMode="multiline" Width="250px"
+                        CssClass="form-control" Style="display: inline"></asp:TextBox>
                             <span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -157,7 +156,7 @@
                         <b>Nama Perusahaan</b>
                     </td>
                     <td colspan="3">
-                        <asp:TextBox ID="txtNamaPerusahaan" runat="server" Width="200px" CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="txtNamaPerusahaan" runat="server" Width="250px" CssClass="form-control" Style="display:inline"></asp:TextBox>
                         <span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -166,7 +165,7 @@
                         <b>Nama Jabatan</b>
                     </td>
                     <td colspan="3">
-                        <asp:TextBox ID="txtNamaJabatan" runat="server" Width="200px" CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="txtNamaJabatan" runat="server" Width="250px" CssClass="form-control" Style="display:inline"></asp:TextBox>
                         <span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -175,7 +174,7 @@
                         <b>Hubungan Antar Pengurus</b>
                     </td>
                     <td colspan="3">
-                        <asp:TextBox ID="txtHUbunganAntarPengurus" runat="server" Width="200px" CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="txtHUbunganAntarPengurus" runat="server" Width="250px" CssClass="form-control" Style="display:inline"></asp:TextBox>
                         <span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -183,12 +182,10 @@
                     <td>
                         <b>Masa Kerja Dari</b>
                     </td>
-                    <td>
-                        <asp:TextBox ID="txtMasaKerjaDari"  ReadOnly="true" data-name="date" runat="server" CssClass="inpTxt"></asp:TextBox>
-                        &nbsp; &nbsp;&nbsp;<b>Sampai</b>
-                    </td>
-                    <td colspan="3">
-                        <asp:TextBox ID="txtSampaiTgl"  ReadOnly="true" data-name="date" runat="server" CssClass="inpTxt"></asp:TextBox>
+                    <td colspan="4">
+                        <asp:TextBox ID="txtMasaKerjaDari"  ReadOnly="true" data-name="date" runat="server" CssClass="form-control"  Width="250px" Style="display:inline"></asp:TextBox>
+                        &nbsp; &nbsp;&nbsp;<b>Sampai</b>  &nbsp; &nbsp;&nbsp;
+                        <asp:TextBox ID="txtSampaiTgl" ReadOnly="true" data-name="date" runat="server" CssClass="form-control" Width="250px" Style="display: inline"></asp:TextBox>
                     </td>
                 </tr>
                  <tr bgcolor="#ebecec">
@@ -196,14 +193,14 @@
                         <b>Riwayat Pekerjaan</b>
                     </td>
                     <td colspan="3">
-                        <asp:TextBox ID="txtRiwayat" runat="server" Rows="3" TextMode="multiline" Width="200px"
-                            CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="txtRiwayat" runat="server" Rows="3" TextMode="multiline" Width="250px"
+                            CssClass="form-control"></asp:TextBox>
                     </td>
                 </tr>
                 <tr style="height: 30px">
                     <td background="../../styles/grid/footer.gif" colspan="4" style="border-radius: 0 0 5px 5px;">
-                        <asp:Button ID="btnSave" runat="server" Text="Simpan" CssClass="inpBtn"></asp:Button>&nbsp;
-                        <asp:Button ID="btnCancel" runat="server" Text="Batal" CssClass="inpBtn" OnClientClick="CloseMe()"
+                        <asp:Button ID="btnSave" runat="server" Text="Simpan" CssClass="btn btn-primary"></asp:Button>&nbsp;
+                        <asp:Button ID="btnCancel" runat="server" Text="Batal" CssClass="btn btn-danger" OnClientClick="CloseMe()"
                             CausesValidation="false"></asp:Button>&nbsp; <span style="color: Red; font-size: 11pt;
                                 font-weight: bold;">* <span style="font-size: 13px;">Harus Diisi</span></span>
                     </td>

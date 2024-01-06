@@ -168,7 +168,7 @@
                 </div>
                 <table class="tbl" cellspacing="0" cellpadding="2" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px;">
                     <tr>
-                        <td background="../../Images/bg-head.gif" bgcolor="#ddedf6" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
+                        <td bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td style="padding:0;">
@@ -265,7 +265,7 @@
                     </tr>
                     <tr style="height:30px">
 				        <td background="../../styles/grid/footer.gif" style="border-radius: 0 0 5px 5px;">
-                            <input type="button" value="Lanjut" onclick="fDetail('<%= menuNext %>');" class="inpBtn" />
+                            <input type="button" value="Lanjut" onclick="fDetail('<%= menuNext %>');" class="btn btn-danger" />
                         </td>
                     </tr>
                 </table>

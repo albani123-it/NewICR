@@ -252,9 +252,10 @@ function (ed, evt) {
                     </div>
                 </div>
                 <div>
-                    <table class="tbl" cellspacing="0" cellpadding="3" width="100%" id="tblUploadFile" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px 5px 0 0; ">
+                     <table class="table table-striped table-bordere" cellspacing="0" cellpadding="3" width="100%" id="tblUploadFile" style="text-align: left; border: thin solid #bcbcbc; border-radius: 5px 5px 0 0;">
                         <tr>
-                        <td colspan="2" background="../../Images/bg-head.gif" bgcolor="#ddedf6" class="tb-header">UPLOAD FILE MBK</td>
+                        
+                             <td colspan="2" bgcolor="#2A3F54" >UPLOAD FILE MBK</td>
                     </tr>
                         <tr bgcolor="#f6f7f7">
                             <td width="30%">
@@ -279,14 +280,14 @@ function (ed, evt) {
                                 <b>&nbsp;</b>
                             </td>
                             <td>
-                               <asp:Button ID="btnUpload" runat="server" Text="Upload" CssClass="inpBtn"></asp:Button>
+                               <asp:Button ID="btnUpload" runat="server" Text="Upload" CssClass="btn btn-default"></asp:Button>
                             </td>
                         </tr>
                         <tr style="height:30px">
 				        <td background="../../styles/grid/footer.gif" colspan="4" style="border-radius: 0 0 5px 5px;">
-                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="inpBtn"></asp:button>
-                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="inpBtn" style="display:none;"></asp:button>
-                            <input type="button" id="btnLanjut"  style="display:none;" value="Lanjut"  onclick="fDetail('<%= menuNext %>');" class="inpBtn" />
+                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="btn btn-primary"></asp:button>
+                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="btn btn-danger" style="display:none;"></asp:button>
+                            <input type="button" id="btnLanjut"  style="display:none;" value="Lanjut"  onclick="fDetail('<%= menuNext %>');" class="btn btn-danger" />
                             <span style="color:Red;font-size:11pt;font-weight:bold;">* <span style="font-size:13px;">Harus Diisi</span></span>
                         </td>
 			        </tr>

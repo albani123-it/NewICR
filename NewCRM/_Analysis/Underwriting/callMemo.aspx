@@ -155,7 +155,7 @@
             </ul>
             <div class="bodyContent">
                 <div class="cont-header" stlye="width:100%;">
-                    <table width="100%" border="0">
+                    <table width="100%" border="0" class="table table-striped table-bordered">
                         <tr>
                             <td width="20%"><span><b>No. Aplikasi</b></span></td>
                             <td><asp:label ID="lblAppNo_header" runat="server"></asp:label></td>
@@ -166,9 +166,9 @@
                         </tr>
                     </table>
                 </div>
-                <table class="tbl" cellspacing="0" cellpadding="2" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px;">
+                <table class="table table-striped table-bordered" cellspacing="0" cellpadding="2" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px;">
                     <tr>
-                        <td background="../../Images/bg-head.gif" bgcolor="#ddedf6" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
+                        <td bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td style="padding:0;">

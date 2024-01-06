@@ -228,7 +228,7 @@ function (ed, evt) {
             </ul>
             <div class="bodyContent">
                 <div class="cont-header" stlye="width:100%;">
-                    <table width="100%" border="0">
+                    <table width="100%" border="0" class="table table-striped table-bordered">
                         <tr>
                             <td width="20%">
                                 <span><b>No. Aplikasi</b></span>
@@ -249,7 +249,7 @@ function (ed, evt) {
                 </div>
                 <div id="divnotif" runat="server" class="notif" style="display: none;">
                     <div class="notif-header" width="100%">
-                        <table width="100%">
+                        <table width="100%" class="table table-striped table-bordered">
                             <tr>
                                 <td>
                                     <span><b>Notifikasi</b></span>
@@ -266,16 +266,16 @@ function (ed, evt) {
                     </div>
                 </div>
                 <div>
-                    <table class="tbl" cellspacing="0" cellpadding="3" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px 5px 0 0; ">
+                    <table class="table table-striped table-bordered" cellspacing="0" cellpadding="3" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px 5px 0 0; ">
                         <tr>
-                            <td colspan="2" background="../../Images/bg-head.gif" bgcolor="#ddedf6" class="tb-header">DATA PEMOHON</td>
+                            <td colspan="2" bgcolor="#2A3F54">DATA PEMOHON</td>
                         </tr>
                         <tr bgcolor="#f6f7f7">
                             <td width="30%">
                                 <b>Upload File Report MAK</b>
                             </td>
                             <td width="70%">
-                                <asp:FileUpload ID="FileUpload1" runat="server" />
+                                <asp:FileUpload ID="FileUpload1" runat="server" CssClass="form-control" Width="250px" />
                                 <br />
                                 <span>Hanya File PDF yang boleh di upload.</span><br />
                             </td>
@@ -293,14 +293,14 @@ function (ed, evt) {
                                 <b>&nbsp;</b>
                             </td>
                             <td>
-                               <asp:Button ID="btnUpload" runat="server" Text="Upload" CssClass="inpBtn"></asp:Button>
+                               <asp:Button ID="btnUpload" runat="server" Text="Upload" CssClass="btn btn-primary"></asp:Button>
                             </td>
                         </tr>
                         <tr style="height: 30px">
                         <td background="../../styles/grid/footer.gif" colspan="4" style="border-radius: 0 0 5px 5px;">
-                            <asp:Button ID="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="inpBtn">
+                            <asp:Button ID="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="btn btn-primary">
                             </asp:Button>
-                            <asp:Button ID="btnNext" runat="server" Text="Lanjut" CssClass="inpBtn"></asp:Button>
+                            <asp:Button ID="btnNext" runat="server" Text="Lanjut" CssClass="btn btn-primary"></asp:Button>
                             <span style="color: Red; font-size: 11pt; font-weight: bold;">* <span style="font-size: 13px;">
                                 Harus Diisi</span></span>
                         </td>

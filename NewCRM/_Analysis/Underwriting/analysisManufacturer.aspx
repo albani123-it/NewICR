@@ -192,7 +192,7 @@
             </ul>
             <div class="bodyContent">
                 <div class="cont-header" stlye="width:100%;">
-                    <table width="100%" border="0">
+                    <table width="100%" border="0" class="table table-striped table-bordered">
                         <tr>
                             <td width="20%"><span><b>No. Aplikasi</b></span></td>
                             <td><asp:label ID="lblAppNo_header" runat="server"></asp:label></td>
@@ -205,7 +205,7 @@
                 </div>
                 <div id="divnotif" runat="server" class="notif" style="display:none;">
                     <div class="notif-header" width="100%">
-                        <table width="100%">
+                        <table width="100%" class="table table-striped table-bordered">
                             <tr>
                                 <td><span><b>Notifikasi</b></span></td>
                                 <td align="right"><a class="notif-close" onclick="document.getElementById('<%=divnotif.clientID %>').style.display='none'" title="Close">X</a></td>
@@ -216,16 +216,16 @@
                         <asp:Label ID="lblNotif" runat="server" style="color:Red;"></asp:Label>
                     </div>
                 </div>
-                <table class="tbl" cellspacing="0" cellpadding="2" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px;">
+                <table class="table table-striped table-bordered" cellspacing="0" cellpadding="2" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px;">
                     <tr>
-                        <td colspan="3" background="../../Images/bg-head.gif" style="border-radius: 5px 5px 0 0;font-weight:bold;color:#fff;">PROYEKSI KEBUTUHAN MODAL KERJA</td>
+                        <td colspan="3" bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;font-weight:bold;color:#fff;">PROYEKSI KEBUTUHAN MODAL KERJA</td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td width="30%"><b>CoGS</b></td>
                         <td width="20%"></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtCOGS" runat="server" CssClass="inpTxt" style="float:none;text-align: right;" value="0" onkeyup="countProyeksiKebutuhanKMK();"></asp:TextBox>
+                            <asp:TextBox ID="txtCOGS" runat="server" CssClass="inpTxt form-control" Width="250px" style="float:none;text-align: right;display:inline" value="0" onkeyup="countProyeksiKebutuhanKMK();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
@@ -233,7 +233,7 @@
                         <td></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtSGA" runat="server" CssClass="inpTxt" style="float:none;text-align: right;" value="0" onkeyup="countProyeksiKebutuhanKMK();"></asp:TextBox>
+                            <asp:TextBox ID="txtSGA" runat="server" CssClass="inpTxt form-control" Width="250px" style="float:none;text-align: right;display:inline" value="0" onkeyup="countProyeksiKebutuhanKMK();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
@@ -241,7 +241,7 @@
                         <td></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtSales" runat="server" CssClass="inpTxt" style="float:none;text-align: right;" value="0" onkeyup="countProyeksiKebutuhanKMK();"></asp:TextBox>
+                            <asp:TextBox ID="txtSales" runat="server" CssClass="inpTxt form-control" Width="250px" style="float:none;text-align: right;display:inline" value="0" onkeyup="countProyeksiKebutuhanKMK();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
@@ -249,7 +249,7 @@
                         <td></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtARTO" runat="server" CssClass="inpTxt"  style="float:none;text-align: right;" value="0" onkeyup="countTC();"></asp:TextBox>
+                            <asp:TextBox ID="txtARTO" runat="server" CssClass="inpTxt form-control" Width="250px" style="float:none;text-align: right;display:inline" value="0" onkeyup="countTC();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
@@ -257,7 +257,7 @@
                         <td></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtITO" runat="server" CssClass="inpTxt"  style="float:none;text-align: right;" value="0" onkeyup="countTC();"></asp:TextBox>
+                            <asp:TextBox ID="txtITO" runat="server" CssClass="inpTxt form-control" Width="250px" style="float:none;text-align: right;display:inline" value="0" onkeyup="countTC();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
@@ -265,7 +265,7 @@
                         <td></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtAPTO" runat="server" CssClass="inpTxt" style="float:none;text-align: right;" value="0" onkeyup="countTC();"></asp:TextBox>
+                            <asp:TextBox ID="txtAPTO" runat="server" CssClass="inpTxt form-control" Width="250px" style="float:none;text-align: right;display:inline" value="0" onkeyup="countTC();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
@@ -273,7 +273,7 @@
                         <td></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtTC" runat="server" CssClass="inpTxtDisabled" ReadOnly="true"  style="float:none;text-align: right;" value="0"></asp:TextBox>
+                            <asp:TextBox ID="txtTC" runat="server" CssClass="inpTxtDisabled form-control" Width="250px" ReadOnly="true"  style="float:none;text-align: right;display:inline" value="0"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
@@ -281,19 +281,19 @@
                         <td></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtProyeksiKebutuhanKMK" runat="server" CssClass="inpTxtDisabled" ReadOnly="true" style="float:none;text-align: right;" value="0"></asp:TextBox>
+                            <asp:TextBox ID="txtProyeksiKebutuhanKMK" runat="server" CssClass="inpTxtDisabled form-control" Width="250px" ReadOnly="true" style="float:none;text-align: right;display:inline" value="0"></asp:TextBox>
                         </td>
                     </tr>
 
                     <tr>
-                        <td colspan="3" background="../../Images/bg-head.gif" style="color:#fff;font-weight:bold;">PERHITUNGAN MAKSIMAL PEMBIAYAAN KMK (PROGRESS PAYMENT)</td>
+                        <td colspan="3" bgcolor="#2A3F54" style="color:#fff;font-weight:bold;">PERHITUNGAN MAKSIMAL PEMBIAYAAN KMK (PROGRESS PAYMENT)</td>
                     </tr>
 
                     <tr bgcolor="#f6f7f7">
                         <td><b>Porsi Pembiayaan</b></td>
                         <td></td>
                         <td>
-                            <asp:TextBox ID="txtPorsiPembiayaan" runat="server" CssClass="inpTxt" style="float:none;margin-left:23px;text-align: right;" value="0" onkeyup="countMaxKMK();"></asp:TextBox>
+                            <asp:TextBox ID="txtPorsiPembiayaan" runat="server" CssClass="inpTxt form-control" Width="250px" style="float:none;margin-left:23px;text-align: right;display:inline" value="0" onkeyup="countMaxKMK();"></asp:TextBox>
                             &nbsp; %
                         </td>
                     </tr>
@@ -302,7 +302,7 @@
                         <td></td>
                         <td>
                             Rp.&nbsp
-                            <asp:TextBox ID="txtMaxKebutuhanKMK" runat="server" CssClass="inpTxtDisabled" ReadOnly="true" style="float:none;text-align: right;" value="0"></asp:TextBox>
+                            <asp:TextBox ID="txtMaxKebutuhanKMK" runat="server" CssClass="inpTxtDisabled form-control" Width="250px" ReadOnly="true" style="float:none;text-align: right;display:inline" value="0"></asp:TextBox>
                         </td>
                     </tr>
 
@@ -372,51 +372,51 @@
                     <tr bgcolor="#f6f7f7">
                         <td colspan="2">
                             <b>KMK Bank Lain</b>&nbsp;
-                            <asp:TextBox ID="txtKMKBankLainField1" runat="server" CssClass="inpTxt" style="width:300px;float:none;" onkeyup="fillBankLain();"></asp:TextBox>
+                            <asp:TextBox ID="txtKMKBankLainField1" runat="server" CssClass="inpTxt form-control" Width="250px" style="width:300px;float:none;display:inline" onkeyup="fillBankLain();"></asp:TextBox>
                         </td>
                         <td>
                             Rp.&nbsp
-                            <asp:TextBox ID="txtKMKBankLainValue1" runat="server" CssClass="inpTxt" style="float:none;text-align: right;" value="0"  onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countKebutuhanFasilitasKMK();countKebutuhanFasilitasKMKPRK();fillBankLain();"></asp:TextBox>
+                            <asp:TextBox ID="txtKMKBankLainValue1" runat="server" CssClass="inpTxt form-control" Width="250px" style="float:none;text-align: right;display:inline" value="0"  onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countKebutuhanFasilitasKMK();countKebutuhanFasilitasKMKPRK();fillBankLain();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td colspan="2">
                             <b>KMK Bank Lain</b>&nbsp;
-                            <asp:TextBox ID="txtKMKBankLainField2" runat="server" CssClass="inpTxt" style="width:300px;float:none;" onkeyup="fillBankLain();"></asp:TextBox>
+                            <asp:TextBox ID="txtKMKBankLainField2" runat="server" CssClass="inpTxt form-control" Width="250px" style="width:300px;float:none;display:inline" onkeyup="fillBankLain();"></asp:TextBox>
                         </td>
                         <td>
                             Rp.&nbsp
-                            <asp:TextBox ID="txtKMKBankLainValue2" runat="server" CssClass="inpTxt" style="float:none;text-align: right;" value="0"  onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countKebutuhanFasilitasKMK();countKebutuhanFasilitasKMKPRK();fillBankLain();"></asp:TextBox>
+                            <asp:TextBox ID="txtKMKBankLainValue2" runat="server" CssClass="inpTxt form-control" Width="250px" style="float:none;text-align: right;display:inline" value="0"  onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countKebutuhanFasilitasKMK();countKebutuhanFasilitasKMKPRK();fillBankLain();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td colspan="2">
                             <b>KMK Bank Lain</b>&nbsp;
-                            <asp:TextBox ID="txtKMKBankLainField3" runat="server" CssClass="inpTxt" style="width:300px;float:none;" onkeyup="fillBankLain();"></asp:TextBox>
+                            <asp:TextBox ID="txtKMKBankLainField3" runat="server" CssClass="inpTxt form-control" Width="250px" style="width:300px;float:none;display:inline" onkeyup="fillBankLain();"></asp:TextBox>
                         </td>
                         <td>
                             Rp.&nbsp
-                            <asp:TextBox ID="txtKMKBankLainValue3" runat="server" CssClass="inpTxt" style="float:none;text-align: right;" value="0"  onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countKebutuhanFasilitasKMK();countKebutuhanFasilitasKMKPRK();fillBankLain();"></asp:TextBox>
+                            <asp:TextBox ID="txtKMKBankLainValue3" runat="server" CssClass="inpTxt form-control" Width="250px" style="float:none;text-align: right;display:inline" value="0"  onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countKebutuhanFasilitasKMK();countKebutuhanFasilitasKMKPRK();fillBankLain();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td colspan="2">
                             <b>KMK Bank Lain</b>&nbsp;
-                            <asp:TextBox ID="txtKMKBankLainField4" runat="server" CssClass="inpTxt" style="width:300px;float:none;" onkeyup="fillBankLain();"></asp:TextBox>
+                            <asp:TextBox ID="txtKMKBankLainField4" runat="server" CssClass="inpTxt form-control" Width="250px" style="width:300px;float:none;display:inline" onkeyup="fillBankLain();"></asp:TextBox>
                         </td>
                         <td>
                             Rp.&nbsp
-                            <asp:TextBox ID="txtKMKBankLainValue4" runat="server" CssClass="inpTxt" style="float:none;text-align: right;" value="0"  onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countKebutuhanFasilitasKMK();countKebutuhanFasilitasKMKPRK();fillBankLain();"></asp:TextBox>
+                            <asp:TextBox ID="txtKMKBankLainValue4" runat="server" CssClass="inpTxt form-control" Width="250px" style="float:none;text-align: right;display:inline" value="0"  onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countKebutuhanFasilitasKMK();countKebutuhanFasilitasKMKPRK();fillBankLain();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td colspan="2">
                             <b>KMK Bank Lain</b>&nbsp;
-                            <asp:TextBox ID="txtKMKBankLainField5" runat="server" CssClass="inpTxt" style="width:300px;float:none;" onkeyup="fillBankLain();"></asp:TextBox>
+                            <asp:TextBox ID="txtKMKBankLainField5" runat="server" CssClass="inpTxt form-control" Width="250px" style="width:300px;float:none;display:inline" onkeyup="fillBankLain();"></asp:TextBox>
                         </td>
                         <td>
                             Rp.&nbsp
-                            <asp:TextBox ID="txtKMKBankLainValue5" runat="server" CssClass="inpTxt"  style="float:none;text-align: right;" value="0"  onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countKebutuhanFasilitasKMK();countKebutuhanFasilitasKMKPRK();fillBankLain();"></asp:TextBox>
+                            <asp:TextBox ID="txtKMKBankLainValue5" runat="server" CssClass="inpTxt form-control" Width="250px" style="float:none;text-align: right;display:inline" value="0"  onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countKebutuhanFasilitasKMK();countKebutuhanFasilitasKMKPRK();fillBankLain();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
@@ -424,7 +424,7 @@
                         <td></td>
                         <td>
                             Rp.&nbsp
-                            <asp:TextBox ID="txtKebutuhanFasilitasKMK" runat="server" CssClass="inpTxtDisabled" ReadOnly="true" style="float:none;text-align: right;" value="0"></asp:TextBox>
+                            <asp:TextBox ID="txtKebutuhanFasilitasKMK" runat="server" CssClass="inpTxtDisabled form-control" Width="250px" ReadOnly="true" style="float:none;text-align: right;display:inline" value="0"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
@@ -432,13 +432,13 @@
                         <td></td>
                         <td>
                             Rp.&nbsp
-                            <asp:TextBox ID="txtPembiayaanBankKMK" runat="server" CssClass="inpTxt"  style="float:none;text-align: right;" value="0"  onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);checkPembiayaan();"></asp:TextBox>
+                            <asp:TextBox ID="txtPembiayaanBankKMK" runat="server" CssClass="inpTxt form-control" Width="250px" style="float:none;text-align: right;display:inline" value="0"  onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);checkPembiayaan();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr style="height:30px">
 				        <td background="../../styles/grid/footer.gif" colspan="4" style="border-radius: 0 0 5px 5px;">
-                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="inpBtn"></asp:button>
-                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="inpBtn"></asp:button>
+                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="btn btn-primary"></asp:button>
+                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="btn btn-primary"></asp:button>
                             <%--<span style="color:Red;font-size:11pt;font-weight:bold;">* <span style="font-size:13px;">Harus Diisi</span></span>--%>
                         </td>
 			        </tr>

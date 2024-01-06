@@ -4,10 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Skyworx - Internal Credit Rating</title>
-    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="../../Scripts/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="../../Scripts/jquery-ui.js"></script>
-    <link type="text/css" href="../../Scripts/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <style type="text/css">
         td
         {
@@ -74,10 +73,11 @@
     <input type="hidden" id="appno" runat="server" />
     <div>
         <center>
-            <table class="tbl" cellspacing="0" cellpadding="2" width="98%" style="text-align: left;
-                border: thin solid #bcbcbc; border-radius: 5px; margin-bottom: 10px;">
+            
+            <table class="table table-striped table-bordered" cellspacing="0" cellpadding="2" width="98%" style="text-align: left; border: thin solid #bcbcbc; border-radius: 5px; margin-bottom: 10px;">
                 <tr>
-                    <td colspan="2" background="../../Images/bg-head.gif" bgcolor="#ddedf6" style="border-radius: 5px 5px 0 0;">
+                    
+                        <td colspan="2" bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;">
                         &nbsp;
                     </td>
                 </tr>
@@ -86,8 +86,8 @@
                         <b>Tanggal</b>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtTgl" runat="server" CssClass="inpTxtDisabled" ReadOnly="true"
-                            Style="float: none;"></asp:TextBox><br />
+                        <asp:TextBox ID="txtTgl"  Width="250px" runat="server" CssClass="form-control" ReadOnly="true"
+                        Style="float: none; display: inline"></asp:TextBox><br />
                         <span style="color: Red; margin-top: 2px; float: left;">(dd-mm-yyyy)</span>
                     </td>
                 </tr>
@@ -96,7 +96,8 @@
                         <b>No. Telepon</b>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtNoTelp" runat="server" CssClass="inpTxt" onkeypress="return isNumberKeyForTlp(event)"></asp:TextBox>
+                        
+                        <asp:TextBox ID="txtNoTelp" Width="250px" runat="server" CssClass="form-control" onkeypress="return isNumberKeyForTlp(event)" Style="display: inline"></asp:TextBox>
                         <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -105,8 +106,8 @@
                         <b>Nama Perusahaan</b>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtNama" runat="server" CssClass="inpTxt" Width="250px" Height="30px"
-                            TextMode="MultiLine"></asp:TextBox>
+                            <asp:TextBox ID="txtNama" runat="server" CssClass="form-control" Width="250px" Height="20px"
+                            TextMode="MultiLine" Style="display: inline"></asp:TextBox>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -120,7 +121,7 @@
                         <b>No. Telepon</b>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtNoTelpLain" runat="server" CssClass="inpTxt" onkeypress="return isNumberKeyForTlp(event)"></asp:TextBox>
+                        <asp:TextBox ID="txtNoTelpLain" style="display:inline" Width="250px"  runat="server" CssClass="form-control" onkeypress="return isNumberKeyForTlp(event)"></asp:TextBox>
                         <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -129,8 +130,8 @@
                         <b>Bentuk Call</b>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtBentukCall" runat="server" CssClass="inpTxt" Width="250px" Height="40px"
-                            TextMode="MultiLine"></asp:TextBox>
+                         <asp:TextBox ID="txtBentukCall" runat="server" CssClass="form-control" Width="250px" Height="20px"
+                            TextMode="MultiLine" Style="display: inline"></asp:TextBox>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -139,8 +140,8 @@
                         <b>Penjabat Yang Di Call</b>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtPenjabatYangDiCall" runat="server" CssClass="inpTxt" Width="450px"
-                            Height="40px" TextMode="MultiLine"></asp:TextBox>
+                         <asp:TextBox ID="txtPenjabatYangDiCall" runat="server" Style="display: inline" CssClass="form-control" Width="450px"
+                                Height="20px" TextMode="MultiLine"></asp:TextBox>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -149,8 +150,8 @@
                         <b>Penjabat Yang Melakukan Call</b>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtPenjabatYangMelakukanCall" runat="server" CssClass="inpTxt" Width="450px"
-                            Height="40px" TextMode="MultiLine"></asp:TextBox>
+                            <asp:TextBox ID="txtPenjabatYangMelakukanCall" runat="server" CssClass="form-control" Width="450px"
+                            Height="20px" TextMode="MultiLine" Style="display: inline"></asp:TextBox>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -159,8 +160,8 @@
                         <b>Tujuan Call</b>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtTujuanCall" runat="server" CssClass="inpTxt" Width="450px" Height="40px"
-                            TextMode="MultiLine"></asp:TextBox>
+                           <asp:TextBox ID="txtTujuanCall" runat="server" CssClass="form-control" Width="450px" Height="40px"
+                                TextMode="MultiLine" Style="display: inline"></asp:TextBox>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -169,8 +170,8 @@
                         <b>Hasil</b>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtHasil" runat="server" CssClass="inpTxt" Width="450px" Height="50px"
-                            TextMode="MultiLine"></asp:TextBox>
+                        <asp:TextBox ID="txtHasil" runat="server" CssClass="form-control" Width="450px" Height="50px"
+                                    TextMode="MultiLine" Style="display: inline"></asp:TextBox>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -179,15 +180,15 @@
                         <b>Tindak Lanjut Yang Harus Dilakukan</b>
                     </td>
                     <td>
-                        <asp:TextBox ID="txtTindakLanjut" runat="server" CssClass="inpTxt" Width="450px"
-                            Height="50px" TextMode="MultiLine"></asp:TextBox>
+                        <asp:TextBox ID="txtTindakLanjut" runat="server" CssClass="form-control" Width="450px"
+                                        Height="50px" Style="display: inline" TextMode="MultiLine"></asp:TextBox>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">&nbsp;*</span>
                     </td>
                 </tr>
                 <tr style="height: 30px">
                     <td background="../../styles/grid/footer.gif" colspan="4" style="border-radius: 0 0 5px 5px;">
-                        <asp:Button ID="btnSave" runat="server" Text="Simpan" CssClass="inpBtn"></asp:Button>&nbsp;
-                        <asp:Button ID="btnCancel" runat="server" Text="Batal" CssClass="inpBtn" OnClientClick="CloseMe();">
+                        <asp:Button ID="btnSave" runat="server" Text="Simpan" CssClass="btn btn-primary" ></asp:Button>&nbsp;
+                        <asp:Button ID="btnCancel" runat="server" Text="Batal" CssClass="btn btn-danger" OnClientClick="CloseMe();">
                         </asp:Button>&nbsp; <span style="color: Red; font-size: 11pt; font-weight: bold;">*
                             <span style="font-size: 13px;">Harus Diisi</span></span>
                     </td>

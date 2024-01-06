@@ -61,7 +61,7 @@
     Sub controlHome()
         btnNext.Visible = False
         TxtKurs.ReadOnly = True
-        TxtKurs.CssClass = "inpTxtDisabled"
+        TxtKurs.CssClass = "form-control"
         'TxtNilaiValas.ReadOnly = True
         'TxtNilaiValas.CssClass = "inpTxtDisabled"
         'CheckValas()

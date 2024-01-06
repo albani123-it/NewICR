@@ -5,10 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="../../Scripts/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="../../Scripts/jquery-ui.js"></script>
-    <link type="text/css" href="../../Scripts/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <style type="text/css">
         .detail
         {
@@ -116,9 +115,9 @@
                     <asp:Label ID="lblNotif" runat="server" Style="color: Red;"></asp:Label>
                 </div>
             </div>
-            <table id="tblStrukturPengurus" class="tbl" cellspacing="0" cellpadding="3">
+             <table id="tblStrukturPengurus" class="table table-striped table-bordered" cellspacing="0" cellpadding="3">
                 <tr>
-                    <td colspan="4" class="detail" style="border-radius: 5px 5px 0 0;">
+                        <td colspan="4" bgcolor="#2A3F54" class="detail" style="border-radius: 5px 5px 0 0;">
                         <span style="font-size: 14px; font-weight: bolder">Struktur Pengurus Perusahaan Detail</span>
                     </td>
                 </tr>
@@ -127,14 +126,14 @@
                         <b>Nama</b>
                     </td>
                     <td width="30%">
-                        <asp:TextBox ID="txtNama" runat="server" CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="txtNama" runat="server" CssClass="form-control" Width="250px" Style="display:inline"></asp:TextBox>
                         <span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
                     </td>
                     <td width="20%">
                         <b>Tanggal Lahir</b>
                     </td>
                     <td width="30%">
-                        <asp:TextBox ID="txtTgllahir" ReadOnly="true" data-name="date" runat="server" CssClass="inpTxt"></asp:TextBox><span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
+                        <asp:TextBox ID="txtTgllahir" ReadOnly="true" data-name="date" runat="server" CssClass="form-control" Width="250px"></asp:TextBox><span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
                     </td>
                 </tr>
                 <tr>
@@ -142,7 +141,8 @@
                         <b>Jenis Kelamin</b>
                     </td>
                     <td>
-                        <asp:DropDownList ID="ddlGender" runat="server" CssClass="inpDdl">
+                        
+                        <asp:DropDownList ID="ddlGender" runat="server" CssClass="form-control" Width="250px" Style="display: inline">
                         </asp:DropDownList><span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
                     </td>
                     <td>
@@ -157,8 +157,8 @@
                         <b>Alamat</b>
                     </td>
                     <td colspan="3">
-                        <asp:TextBox ID="txtAlamat" runat="server" Rows="3" TextMode="multiline" Width="200px"
-                            CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="txtAlamat" runat="server" Rows="3" TextMode="multiline" Width="250px"
+                            CssClass="form-control" Style="display:inline"></asp:TextBox>
                             <span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -167,7 +167,7 @@
                         <b>Nama Perusahaan</b>
                     </td>
                     <td colspan="3">
-                        <asp:TextBox ID="txtNamaPerusahaan" runat="server" Width="200px" CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="txtNamaPerusahaan" runat="server" Width="250px" CssClass="form-control"></asp:TextBox>
                         <span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -176,7 +176,7 @@
                         <b>Nama Jabatan</b>
                     </td>
                     <td colspan="3">
-                        <asp:TextBox ID="txtNamaJabatan" runat="server" Width="200px" CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="txtNamaJabatan" runat="server" Width="250px" CssClass="form-control" Style="display:inline"></asp:TextBox>
                         <span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -185,7 +185,7 @@
                         <b>Hubungan Antar Pengurus</b>
                     </td>
                     <td colspan="3">
-                        <asp:TextBox ID="txtHUbunganAntarPengurus" runat="server" Width="200px" CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="txtHUbunganAntarPengurus" runat="server" Width="250px" CssClass="form-control" Style="display:inline"></asp:TextBox>
                         <span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
                     </td>
                 </tr>
@@ -193,12 +193,11 @@
                     <td>
                         <b>Masa Kerja Dari</b>
                     </td>
-                    <td>
-                        <asp:TextBox ID="txtMasaKerjaDari"  ReadOnly="true" data-name="date" runat="server" CssClass="inpTxt"></asp:TextBox>
-                        &nbsp; &nbsp;&nbsp;<b>Sampai</b>
-                    </td>
-                    <td colspan="3">
-                        <asp:TextBox ID="txtSampaiTgl"  ReadOnly="true" data-name="date" runat="server" CssClass="inpTxt"></asp:TextBox>
+                    <td colspan="4">
+                        <asp:TextBox ID="txtMasaKerjaDari"  ReadOnly="true" data-name="date" runat="server" CssClass="form-control" Width="250px" Style="display:inline"></asp:TextBox>
+                        &nbsp; &nbsp;&nbsp;<b>Sampai</b>  &nbsp; &nbsp;&nbsp;
+                    
+                        <asp:TextBox ID="txtSampaiTgl"  ReadOnly="true" data-name="date" runat="server" CssClass="form-control" Width="250px" Style="display:inline"></asp:TextBox>
                     </td>
                 </tr>
                  <tr>
@@ -206,8 +205,8 @@
                         <b>Riwayat Pekerjaan</b>
                     </td>
                     <td colspan="3">
-                        <asp:TextBox ID="txtRiwayat" runat="server" Rows="3" TextMode="multiline" Width="200px"
-                            CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="txtRiwayat" runat="server" Rows="3" TextMode="multiline" Width="500px"
+                            CssClass="form-control"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -221,15 +220,16 @@
                             </Columns>
                         </asp:GridView>
                         <asp:FileUpload ID="FileUpload1" runat="server" />&nbsp;
-                        <asp:Button ID="btnAdd" Text="Upload" runat="server" CssClass="inpBtn" />
+                        <br />
+                        <asp:Button ID="btnAdd" Text="Upload" runat="server" CssClass="btn btn-default" />
                         <br />
                         <span>Ukuran File maksimum 200 KB.</span><br /><input type="hidden" id="textFile" runat="server" />
                     </td>
                 </tr>
                 <tr style="height: 30px">
                     <td background="../../styles/grid/footer.gif" colspan="4" style="border-radius: 0 0 5px 5px;">
-                        <asp:Button ID="btnSave" runat="server" Text="Simpan" CssClass="inpBtn"></asp:Button>&nbsp;
-                        <asp:Button ID="btnCancel" runat="server" Text="Batal" CssClass="inpBtn" OnClientClick="CloseMe()"
+                        <asp:Button ID="btnSave" runat="server" Text="Simpan" CssClass="btn btn-primary"></asp:Button>&nbsp;
+                        <asp:Button ID="btnCancel" runat="server" Text="Batal" CssClass="btn btn-danger" OnClientClick="CloseMe()"
                             CausesValidation="false"></asp:Button>&nbsp; <span style="color: Red; font-size: 11pt;
                                 font-weight: bold;">* <span style="font-size: 13px;">Harus Diisi</span></span>
                     </td>

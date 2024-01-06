@@ -6,11 +6,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title></title>
-    <link type="text/css" href="../../Scripts/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
-    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="../../Scripts/jquery-1.9.1.js"></script>
-    <script type="text/javascript" src="../../Scripts/jquery-ui.js"></script>
-    <%--<script type="text/javascript" src="../../Scripts/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>--%>
+    <link href="~/Content/Themes1/build/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <style type="text/css">
         td
         {
@@ -213,15 +211,15 @@ function (ed, evt) {
                     <asp:Label ID="lblNotif" runat="server" Style="color: Red;"></asp:Label>
                 </div>
             </div>
-            <table id="tblLKNDtl" class="tbl" cellspacing="0" cellpadding="3">
+                <table id="tblLKNDtl" class="table table-striped table-bordere" cellspacing="0" cellpadding="3">
                 <tr>
-                    <td colspan="4" class="detail" style="border-radius: 5px 5px 0 0;">
-                        <span style="font-size: 14px; font-weight: bolder">Laporan Kunjungan Setempat Detail</span>
+                    <td colspan="4" bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;">
+                        <span style="font-size: 14px; font-weight: bolder;color:floralwhite">Laporan Kunjungan Setempat Detail</span>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="4" style="display: none">
-                        <asp:TextBox ID="txtIdLkn" runat="server" CssClass="inpTxt">-</asp:TextBox>
+                        <asp:TextBox ID="txtIdLkn" runat="server" CssClass="form-control" >-</asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -229,14 +227,14 @@ function (ed, evt) {
                         <b>Nama Yang Di Kontak</b>
                     </td>
                     <td width="30%">
-                        <asp:TextBox ID="InpNama" runat="server" CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="InpNama" runat="server" CssClass="form-control"></asp:TextBox>
                         <span style="color: Red; font-size: 11pt; font-weight: bold;">&nbsp;*</span>
                     </td>
                     <td width="20%">
                         <b>Tanggal Kontak</b>
                     </td>
                     <td width="30%">
-                        <asp:TextBox ID="InpTanggal" runat="server" CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="InpTanggal" runat="server" CssClass="form-control"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -244,13 +242,13 @@ function (ed, evt) {
                         <b>Bentuk Pelaksanaan Kontak</b>
                     </td>
                     <td>
-                        <asp:TextBox ID="InpBentuk" runat="server" CssClass="inpTxt"></asp:TextBox>
+                         <asp:TextBox ID="InpBentuk" runat="server" CssClass="form-control"></asp:TextBox>
                     </td>
                     <td>
                         <b>Jabatan Yang Di Kontak</b>
                     </td>
                     <td>
-                        <asp:TextBox ID="InpJabatan" runat="server" CssClass="inpTxt"></asp:TextBox>
+                       <asp:TextBox ID="InpJabatan" runat="server" CssClass="form-control"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -258,7 +256,7 @@ function (ed, evt) {
                         <b>Tujuan Kontak</b>
                     </td>
                     <td colspan="3">
-                        <asp:TextBox ID="InpTujuan" runat="server"  Width="400px" Rows="3" TextMode="multiline" CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="InpTujuan" runat="server" Width="400px" Rows="3" TextMode="multiline" CssClass="form-control"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -266,7 +264,7 @@ function (ed, evt) {
                         <b>Hasil Kontak</b>
                     </td>
                     <td colspan="3">
-                        <asp:TextBox ID="InpHasil" runat="server" Rows="3" TextMode="multiline" Width="400px" CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="InpHasil" runat="server" Rows="3" TextMode="multiline" Width="400px" CssClass="form-control"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -274,7 +272,7 @@ function (ed, evt) {
                         <b>Tindak Lanjut</b>
                     </td>
                     <td colspan="3">
-                        <asp:TextBox ID="InpTindak" runat="server" Rows="3" TextMode="multiline" Width="400px" CssClass="inpTxt"></asp:TextBox>
+                        <asp:TextBox ID="InpTindak" runat="server" Rows="3" TextMode="multiline" Width="400px" CssClass="form-control"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -283,7 +281,7 @@ function (ed, evt) {
                     </td>
                     <td colspan="3">
                         <asp:TextBox ID="txtAlamat" runat="server" Rows="3" TextMode="multiline" Width="400px"
-                            CssClass="inpTxt"></asp:TextBox>
+                            CssClass="form-control"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -292,7 +290,7 @@ function (ed, evt) {
                     </td>
                     <td colspan="3">
                         <asp:TextBox ID="txtHasilKunjungan" runat="server" Rows="3" TextMode="multiline"
-                            Width="400px" CssClass="inpTxt"></asp:TextBox>
+                            Width="400px" CssClass="form-control"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -351,7 +349,7 @@ function (ed, evt) {
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="button" id="btnAddNew" value="Tambah Baru" class="inpBtn" />
+                                    <input type="button" id="btnAddNew" value="Tambah Baru" class="btn btn-info" />
                                 </td>
                             </tr>
                             <tr>
@@ -359,7 +357,7 @@ function (ed, evt) {
                                     <table width="100%" id="tblFotoLKNInput">
                                         <tr>
                                             <td colspan="3" style="display: none">
-                                                <asp:TextBox ID="txtIdDtl" runat="server" CssClass="inpTxt">0</asp:TextBox>
+                                                <asp:TextBox ID="txtIdDtl" runat="server" CssClass="form-control" Width="200px">0</asp:TextBox>
                                             </td>
                                         </tr>
                                         <tr>
@@ -381,7 +379,7 @@ function (ed, evt) {
                                                 <b>Nama File</b>
                                             </td>
                                             <td>
-                                                <asp:TextBox ID="txtFilename" Width="200px" ReadOnly="true" runat="server" CssClass="inpTxt"></asp:TextBox>
+                                                <asp:TextBox ID="txtFilename" Width="200px" ReadOnly="true" runat="server" CssClass="form-control" ></asp:TextBox>
                                             </td>
                                             <td>
                                                 &nbsp;
@@ -392,7 +390,7 @@ function (ed, evt) {
                                                 <b>Keterangan Foto</b>
                                             </td>
                                             <td>
-                                                <asp:TextBox ID="txtInfoFoto" runat="server" Width="200px" CssClass="inpTxt"></asp:TextBox>
+                                                <asp:TextBox ID="txtInfoFoto" runat="server" Width="200px" CssClass="form-control"></asp:TextBox>
                                             </td>
                                             <td>
                                                 &nbsp;
@@ -403,7 +401,7 @@ function (ed, evt) {
                                                 <b>&nbsp;</b>
                                             </td>
                                             <td>
-                                                <asp:Button ID="btnAdd" Text="Simpan & Upload" runat="server" CssClass="inpBtn" />
+                                                <asp:Button ID="btnAdd" Text="Simpan & Upload" runat="server" CssClass="btn btn-default" />
                                             </td>
                                             <td>
                                                 &nbsp;
@@ -419,8 +417,8 @@ function (ed, evt) {
                 </tr>
                 <tr style="height: 30px">
                     <td background="../../styles/btn_bank/footer.gif" colspan="4" style="border-radius: 0 0 5px 5px;">
-                        <asp:Button ID="btnSave" runat="server" Text="Simpan" CssClass="inpBtn" di></asp:Button>&nbsp;
-                        <asp:Button ID="btnCancel" runat="server" Text="Closed" CssClass="inpBtn" OnClientClick="CloseMe()"
+                        <asp:Button ID="btnSave" runat="server" Text="Simpan" CssClass="btn btn-primary" ></asp:Button>&nbsp;
+                        <asp:Button ID="btnCancel" runat="server" Text="Closed" CssClass="btn btn-danger" OnClientClick="CloseMe()"
                             CausesValidation="false"></asp:Button>&nbsp; <span style="color: Red; font-size: 11pt;
                                 font-weight: bold;">* <span style="font-size: 13px;">Harus Diisi</span></span>
                     </td>

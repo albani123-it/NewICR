@@ -5,7 +5,9 @@
 <%@ Register TagPrefix="obout" Namespace="Obout.Interface" Assembly="obout_Interface" %>
 <%@ Register TagPrefix="obout" Namespace="Obout.SuperForm" Assembly="obout_SuperForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <link type="text/css" href="../../Scripts/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <script type="text/javascript" src="../../Scripts/jquery-ui.js"></script>
     <style type="text/css">
         .cont-header
@@ -584,10 +586,14 @@
                         <asp:Label ID="lblNotif" runat="server" Style="color: Red;"></asp:Label>
                     </div>
                 </div>
-                <table id="tblFillData" class="tbl" cellspacing="0" cellpadding="3">
+                
+                    <table id="tblFillData" class="table table-striped table-bordered" width="100%">
+                    <tr >
+                        <td colspan="4" bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
+                    </tr>
                     <tr>
                         <td colspan="4" style="display: none">
-                            <asp:TextBox ID="txtTapKode" runat="server" CssClass="inpTxt">-</asp:TextBox>
+                            <asp:TextBox ID="txtTapKode" runat="server" CssClass="form-control">-</asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -600,7 +606,7 @@
                             <b>Tanggal</b>
                         </td>
                         <td>
-                            <asp:TextBox ID="txtTanggal" data-name="date" runat="server" CssClass="inpTxt"></asp:TextBox>
+                            <asp:TextBox ID="txtTanggal" Width="250px" data-name="date" runat="server" CssClass="form-control"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -609,7 +615,7 @@
                         </td>
                         <td>
                             <%--<asp:TextBox ID="txtUnitPengusul" runat="server" CssClass="inpTxt" Width="300px"></asp:TextBox>--%>
-                            <asp:DropDownList ID="ddlUnitPengusul" name="ddlUnitPengusul" CssClass="inpDdl" runat="server">
+                             <asp:DropDownList ID="ddlUnitPengusul" Width="250px" name="ddlUnitPengusul" CssClass="form-control" runat="server">
                             </asp:DropDownList>
                         </td>
                     </tr>
@@ -618,7 +624,7 @@
                             <b>Funding</b>
                         </td>
                         <td>
-                            <asp:TextBox ID="txtFunding" runat="server" CssClass="inpTxt" TextMode="MultiLine"
+                            <asp:TextBox ID="txtFunding" runat="server" CssClass="form-control" TextMode="MultiLine"
                                 Rows="3" Width="300px"></asp:TextBox>
                         </td>
                     </tr>
@@ -627,8 +633,8 @@
                             <b>Lending</b>
                         </td>
                         <td>
-                            <asp:TextBox ID="txtLending" runat="server" CssClass="inpTxt" TextMode="MultiLine"
-                                Rows="3" Width="300px"></asp:TextBox>
+                            <asp:TextBox ID="txtLending" runat="server" CssClass="form-control" TextMode="MultiLine"
+                            Rows="3" Width="300px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
@@ -636,8 +642,8 @@
                             <b>Services</b>
                         </td>
                         <td>
-                            <asp:TextBox ID="txtServices" runat="server" CssClass="inpTxt" TextMode="MultiLine"
-                                Rows="3" Width="300px"></asp:TextBox>
+                            <asp:TextBox ID="txtServices" runat="server" CssClass="form-control" TextMode="MultiLine"
+                            Rows="3" Width="300px"></asp:TextBox>
                         </td>
                     </tr>
                 </table>
@@ -723,12 +729,12 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="button" id="btnAddNewWS" value="Tambah WS Baru" class="inpBtn" />
+                                <input type="button" id="btnAddNewWS" value="Tambah WS Baru" class="btn btn-info" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <table class="tblDetails" id="tblWalledShare">
+                                <table class="table table-striped table-bordered" id="tblWalledShare" >
                                     <tr>
                                         <td colspan="6" style="display: none">
                                             <asp:TextBox ID="txtIdWS" runat="server" CssClass="inpTxt">0</asp:TextBox>
@@ -739,21 +745,21 @@
                                             Ketegori Kebutuhan Produk
                                         </td>
                                         <td width="20%">
-                                            <asp:DropDownList ID="ddlKategoriProduk" runat="server" CssClass="inpDdl">
+                                            <asp:DropDownList ID="ddlKategoriProduk" runat="server" CssClass="form-control">
                                             </asp:DropDownList>
                                         </td>
                                         <td width="12%">
                                             Periode I
                                         </td>
                                         <td width="20%">
-                                            <asp:DropDownList ID="ddlPeriode1" runat="server" CssClass="inpDdl">
+                                            <asp:DropDownList Width="150px" ID="ddlPeriode1" runat="server" CssClass="form-control">
                                             </asp:DropDownList>
                                         </td>
                                         <td width="12%">
                                             Periode II
                                         </td>
                                         <td width="20%">
-                                            <asp:DropDownList ID="ddlPeriode2" runat="server" CssClass="inpDdl">
+                                            <asp:DropDownList Width="150px" ID="ddlPeriode2" runat="server" CssClass="form-control">
                                             </asp:DropDownList>
                                         </td>
                                     </tr>
@@ -762,13 +768,13 @@
                                             Nama Produk
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtNamaProduk" runat="server" CssClass="inpTxt" Width="180px"></asp:TextBox>
+                                            <asp:TextBox ID="txtNamaProduk" runat="server" CssClass="form-control" Width="180px"></asp:TextBox>
                                         </td>
                                         <td>
                                             Total Bank I
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtTotalBank1" runat="server" Style="text-align: right" CssClass="inpTxt"
+                                                <asp:TextBox Width="220px" ID="txtTotalBank1" runat="server" Style="text-align: right; display:inline" CssClass="form-control"
                                                 onkeyup="hitung1();this.value=formatCurrency(this.value)">0</asp:TextBox>
                                                  <span style="color:Red;font-size:8pt;">&nbsp;(Rp)</span>
                                         </td>
@@ -776,9 +782,10 @@
                                             Total Bank II
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtTotalBank2" runat="server" Style="text-align: right" CssClass="inpTxt"
-                                                onkeyup="hitung2();this.value=formatCurrency(this.value)">0</asp:TextBox>
-                                                 <span style="color:Red;font-size:8pt;">&nbsp;(Rp)</span>
+                                            
+                                            <asp:TextBox ID="txtTotalBank2" Width="220px" runat="server" Style="text-align: right;display:inline" CssClass="form-control"
+                                            onkeyup="hitung2();this.value=formatCurrency(this.value)">0</asp:TextBox>
+                                            <span style="color:Red;font-size:8pt;">&nbsp;(Rp)</span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -792,17 +799,17 @@
                                             BANK I
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtBdki1" runat="server" Style="text-align: right" CssClass="inpTxt"
-                                                onkeyup="hitung1();this.value=formatCurrency(this.value)">0</asp:TextBox>
-                                                 <span style="color:Red;font-size:8pt;">&nbsp;(Rp)</span>
+                                            <asp:TextBox ID="txtBdki1" Width="220px" runat="server" Style="text-align: right; display: inline" CssClass="form-control"
+                                            onkeyup="hitung1();this.value=formatCurrency(this.value)">0</asp:TextBox>
+                                            <span style="color:Red;font-size:8pt;">&nbsp;(Rp)</span>
                                         </td>
                                         <td>
                                             BANK II
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtBdki2" runat="server" Style="text-align: right" CssClass="inpTxt"
-                                                onkeyup="hitung2();this.value=formatCurrency(this.value)">0</asp:TextBox>
-                                                 <span style="color:Red;font-size:8pt;">&nbsp;(Rp)</span>
+                                            <asp:TextBox ID="txtBdki2" runat="server" Width="220px" Style="text-align: right;display:inline" CssClass="form-control"
+                                            onkeyup="hitung2();this.value=formatCurrency(this.value)">0</asp:TextBox>
+                                                <span style="color:Red;font-size:8pt;">&nbsp;(Rp)</span>
                                         </td>
                                     </tr>
                                     <tr>
@@ -816,14 +823,14 @@
                                             Rate I
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtRates1" runat="server" Style="text-align: right" CssClass="inpTxt">0</asp:TextBox>
+                                            <asp:TextBox ID="txtRates1" Width="220px" runat="server" Style="text-align: right;display:inline" CssClass="form-control">0</asp:TextBox>
                                              <span style="color:Red;font-size:8pt;">&nbsp;(%)</span>
                                         </td>
                                         <td>
                                             Rate II
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtRates2" runat="server" Style="text-align: right" CssClass="inpTxt">0</asp:TextBox>
+                                            <asp:TextBox ID="txtRates2" Width="220px" runat="server" Style="text-align: right;display:inline" CssClass="form-control">0</asp:TextBox>
                                              <span style="color:Red;font-size:8pt;">&nbsp;(%)</span>
                                         </td>
                                     </tr>
@@ -838,7 +845,7 @@
                                             Revenue I
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtRev1" runat="server" Style="text-align: right" CssClass="inpTxt"
+                                            <asp:TextBox ID="txtRev1" runat="server" Style="text-align: right;display:inline" Width="220px" CssClass="form-control"
                                                 onkeyup="this.value=formatCurrency(this.value)">0</asp:TextBox>
                                                  <span style="color:Red;font-size:8pt;">&nbsp;(Rp)</span>
                                         </td>
@@ -846,7 +853,7 @@
                                             Revenue II
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtRev2" runat="server" Style="text-align: right" CssClass="inpTxt"
+                                             <asp:TextBox ID="txtRev2" runat="server" Style="text-align: right; display: inline" Width="220px" CssClass="form-control"
                                                 onkeyup="this.value=formatCurrency(this.value)">0</asp:TextBox>
                                                  <span style="color:Red;font-size:8pt;">&nbsp;(Rp)</span>
                                         </td>
@@ -862,16 +869,16 @@
                                             Presentase BANK I
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtPersentaseBdki1" runat="server" Style="text-align: right" CssClass="inpTxt"
-                                                ReadOnly="true" onkeyup="hitung1();this.value=formatCurrency(this.value)">0</asp:TextBox>
+                                            <asp:TextBox ID="txtPersentaseBdki1" runat="server" Style="text-align: right; display: inline" Width="220px" CssClass="form-control"
+                                                    ReadOnly="true" onkeyup="hitung1();this.value=formatCurrency(this.value)">0</asp:TextBox>
                                                  <span style="color:Red;font-size:8pt;">&nbsp;(%)</span>
                                         </td>
                                         <td>
                                             Presentase BANK II
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtPersentaseBdki2" runat="server" Style="text-align: right" CssClass="inpTxt"
-                                                ReadOnly="true" onkeyup="hitung2();this.value=formatCurrency(this.value)">0</asp:TextBox>
+                                               <asp:TextBox ID="txtPersentaseBdki2" runat="server" Style="text-align: right; display: inline" Width="220px" CssClass="form-control"
+                                                        ReadOnly="true" onkeyup="hitung2();this.value=formatCurrency(this.value)">0</asp:TextBox>
                                                  <span style="color:Red;font-size:8pt;">&nbsp;(%)</span>
                                         </td>
                                     </tr>
@@ -883,9 +890,9 @@
                                     <tr>
                                         <td colspan="6">
                                             <asp:Button ID="btnSavedWS" OnClick="btnSavedWS_Click" runat="server" Text="Simpan"
-                                                CssClass="inpBtn" />
+                                                CssClass="btn btn-primary" />
                                             &nbsp;
-                                            <input type="button" id="btnCanceledWS" value="Batal" class="inpBtn" />
+                                            <input type="button" id="btnCanceledWS" value="Batal" class="btn btn-default" />
                                         </td>
                                     </tr>
                                 </table>
@@ -969,15 +976,16 @@
                         </tr>
                         <tr>
                             <td>
-                                <input type="button" id="btnAddNewAP" value="Tambah AP Baru" class="inpBtn" />
+                                <input type="button" id="btnAddNewAP" value="Tambah AP Baru" class="btn btn-info" />
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <table class="tblDetails" id="tblActionPlan">
+                                
+                                <table class="table table-striped table-bordered" id="tblActionPlan">
                                     <tr>
                                         <td style="display: none">
-                                            <asp:TextBox ID="txtIdAP" runat="server" CssClass="inpTxt">0</asp:TextBox>
+                                            <asp:TextBox ID="txtIdAP" runat="server" CssClass="form-control">0</asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -1002,23 +1010,23 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <asp:DropDownList ID="ddlNamaProduk" runat="server" CssClass="inpDdl" Visible=false>
+                                            <asp:DropDownList ID="ddlNamaProduk" runat="server" CssClass="form-control" Visible=false>
                                             </asp:DropDownList>
-                                            <asp:TextBox ID="txtNamaProduk1" runat="server" CssClass="inpTxt" Width="180px"></asp:TextBox>
+                                            <asp:TextBox ID="txtNamaProduk1" runat="server" CssClass="form-control" Width="180px"></asp:TextBox>
                                         </td>
                                         <td>
-                                            <asp:DropDownList ID="ddlThnMulai" runat="server" CssClass="inpDdl">
-                                            </asp:DropDownList>
-                                        </td>
-                                        <td>
-                                            <asp:DropDownList ID="ddlThnSelesai" runat="server" CssClass="inpDdl">
+                                            <asp:DropDownList ID="ddlThnMulai" runat="server" CssClass="form-control">
                                             </asp:DropDownList>
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtResponsible" runat="server" CssClass="inpTxt"></asp:TextBox>
+                                            <asp:DropDownList ID="ddlThnSelesai" runat="server" CssClass="form-control">
+                                            </asp:DropDownList>
                                         </td>
                                         <td>
-                                            <asp:TextBox ID="txtActivity" runat="server" CssClass="inpTxt"></asp:TextBox>
+                                            <asp:TextBox ID="txtResponsible" runat="server" CssClass="form-control"></asp:TextBox>
+                                        </td>
+                                        <td>
+                                            <asp:TextBox ID="txtActivity" runat="server" CssClass="form-control"></asp:TextBox>
                                         </td>
                                         <td>
                                             <input type="checkbox" runat="server" id="chkProspek" />
@@ -1032,9 +1040,9 @@
                                     <tr>
                                         <td colspan="6">
                                             <asp:Button ID="btnSavedAP" OnClick="btnSavedAP_Click" runat="server" Text="Simpan"
-                                                CssClass="inpBtn" />
+                                                CssClass="btn btn-primary" />
                                             &nbsp;
-                                            <input type="button" id="btnCanceledAP" value="Batal" class="inpBtn" />
+                                            <input type="button" id="btnCanceledAP" value="Batal" class="btn btn-default" />
                                         </td>
                                     </tr>
                                 </table>
@@ -1048,15 +1056,14 @@
                             <b>Catatan</b>
                         </td>
                         <td>
-                            <asp:TextBox ID="txtCatatan" runat="server" CssClass="inpTxt" TextMode="MultiLine"
+                            <asp:TextBox ID="txtCatatan" runat="server" CssClass="form-control" TextMode="MultiLine"
                                 Rows="3" Width="300px"></asp:TextBox>
                         </td>
                     </tr>
                     <tr style="height: 30px">
                         <td background="../../styles/grid/footer.gif" colspan="4" style="border-radius: 0 0 5px 5px;">
-                            <asp:Button ID="btnSave" runat="server" Text="Simpan" CssClass="inpBtn"></asp:Button>
-                            <%--<asp:Button ID="btnNext" runat="server" Text="Lanjut" CssClass="inpBtn"  onclick="fDetail('<%= menuNext %>');" ></asp:Button>--%>
-                            <input type="button" value="Lanjut" onclick="fDetail('<%= menuNext %>');" class="inpBtn" />
+                            <asp:Button ID="btnSave" runat="server" Text="Simpan" CssClass="btn btn-primary"></asp:Button>
+                            <input type="button" value="Lanjut" onclick="fDetail('<%= menuNext %>');" class="btn btn-danger" />
                             <span style="color: Red; font-size: 11pt; font-weight: bold;">* <span style="font-size: 13px;">
                                 Harus Diisi</span></span>
                         </td>

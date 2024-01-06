@@ -4,7 +4,9 @@
 <%@ Register TagPrefix="obout" Namespace="Obout.Interface" Assembly="obout_Interface" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    
+    <link href="~/Content/Themes1/build/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <script type="text/javascript">
         aMenu("Analysis");
         
@@ -110,12 +112,12 @@
         <div id='cssmenu'>
             <ul style="float:left;margin-right:10px;">
                <%  Dim html As String = ""
-                    If dataTable.Rows.Count > 0 Then
-                        For i As Integer = 0 To dataTable.Rows.Count - 1
-                            If Session("appno") IsNot Nothing Then
-                                If dtWorkflow.Rows.Count > 0 Then
-                                    For j As Integer = 0 To dtWorkflow.Rows.Count - 1
-                                        If dataTable.Rows(i).Item("lsm_field") = dtWorkflow.Rows(j).Item("lwr_field") Then
+                   If dataTable.Rows.Count > 0 Then
+                       For i As Integer = 0 To dataTable.Rows.Count - 1
+                           If Session("appno") IsNot Nothing Then
+                               If dtWorkflow.Rows.Count > 0 Then
+                                   For j As Integer = 0 To dtWorkflow.Rows.Count - 1
+                                       If dataTable.Rows(i).Item("lsm_field") = dtWorkflow.Rows(j).Item("lwr_field") Then
                                            If dtWorkflow.Rows(j).Item("lwr_role") <> "HD" Then
                                                If dataTable.Rows(i).Item("lsm_parent") = 0 Then
                                                    If dataTable.Rows(i).Item("lsm_name") = pagename Then
@@ -123,7 +125,7 @@
                                                    Else
                                                        html &= "<li><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "')><span>&#9632;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
                                                    End If
-                                                    
+
                                                Else
                                                    If dataTable.Rows(i).Item("lsm_name") = pagename Then
                                                        html &= "<li id='c" & dataTable.Rows(i).Item("lsm_position") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "') class='aactive'><span class='spanChild'>&bull;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
@@ -142,51 +144,51 @@
                                            End If
                                        End If
                                    Next
-                                    If dataTable.Rows(i).Item("lsm_field") = "parent" Then
+                                   If dataTable.Rows(i).Item("lsm_field") = "parent" Then
                                        html &= checkChildHD(dataTable.Rows(i).Item("lsm_position"), i)
-                                        
+
                                        html &= getMenuChild(dataTable.Rows(i).Item("lsm_position"))
-                                    End If
-                                Else
-                                    If dataTable.Rows(i).Item("lsm_parent") = 0 Then
-                                        If dataTable.Rows(i).Item("lsm_name") = pagename Then
+                                   End If
+                               Else
+                                   If dataTable.Rows(i).Item("lsm_parent") = 0 Then
+                                       If dataTable.Rows(i).Item("lsm_name") = pagename Then
                                            html &= "<li id='m" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "') class='aactive'><span>&#9632;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
-                                        Else
-                                            html &= "<li id='m" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "')><span>&#9632;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
-                                        End If
-                                        
-                                        If dataTable.Rows(i).Item("lsm_field") = "parent" Then
-                                            html &= getMenuChild(dataTable.Rows(i).Item("lsm_id"))
-                                        End If
-                                    Else
-                                        If dataTable.Rows(i).Item("lsm_name") = pagename Then
-                                            html &= "<li id='c" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "') class='aactive'><span class='spanChild'>&bull;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
-                                        Else
-                                            html &= "<li id='c" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "')><span class='spanChild'>&bull;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
-                                        End If
-                                    End If
-                                End If
-                            Else
-                                If dataTable.Rows(i).Item("lsm_parent") = 0 Then
-                                    If dataTable.Rows(i).Item("lsm_name") = pagename Then
-                                        html &= "<li id='m" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "') class='aactive'><span>&#9632;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
-                                    Else
-                                        html &= "<li id='m" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "')><span>&#9632;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
-                                    End If
-                                        
-                                    If dataTable.Rows(i).Item("lsm_field") = "parent" Then
-                                        html &= getMenuChild(dataTable.Rows(i).Item("lsm_id"))
-                                    End If
-                                Else
-                                    If dataTable.Rows(i).Item("lsm_name") = pagename Then
-                                        html &= "<li id='c" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "') class='aactive'><span class='spanChild'>&bull;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
-                                    Else
-                                        html &= "<li id='c" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "')><span class='spanChild'>&bull;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
-                                    End If
-                                End If
-                            End If
-                        Next
-                    End If
+                                       Else
+                                           html &= "<li id='m" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "')><span>&#9632;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
+                                       End If
+
+                                       If dataTable.Rows(i).Item("lsm_field") = "parent" Then
+                                           html &= getMenuChild(dataTable.Rows(i).Item("lsm_id"))
+                                       End If
+                                   Else
+                                       If dataTable.Rows(i).Item("lsm_name") = pagename Then
+                                           html &= "<li id='c" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "') class='aactive'><span class='spanChild'>&bull;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
+                                       Else
+                                           html &= "<li id='c" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "')><span class='spanChild'>&bull;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
+                                       End If
+                                   End If
+                               End If
+                           Else
+                               If dataTable.Rows(i).Item("lsm_parent") = 0 Then
+                                   If dataTable.Rows(i).Item("lsm_name") = pagename Then
+                                       html &= "<li id='m" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "') class='aactive'><span>&#9632;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
+                                   Else
+                                       html &= "<li id='m" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "')><span>&#9632;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
+                                   End If
+
+                                   If dataTable.Rows(i).Item("lsm_field") = "parent" Then
+                                       html &= getMenuChild(dataTable.Rows(i).Item("lsm_id"))
+                                   End If
+                               Else
+                                   If dataTable.Rows(i).Item("lsm_name") = pagename Then
+                                       html &= "<li id='c" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "') class='aactive'><span class='spanChild'>&bull;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
+                                   Else
+                                       html &= "<li id='c" & dataTable.Rows(i).Item("lsm_id") & "'><a href=javascript:fDetail('" & dataTable.Rows(i).Item("lsm_link") & "')><span class='spanChild'>&bull;&nbsp;&nbsp;" & dataTable.Rows(i).Item("lsm_name") & "</span></a></li>"
+                                   End If
+                               End If
+                           End If
+                       Next
+                   End If
                 %>
                 <%=html %>
             </ul>
@@ -195,11 +197,11 @@
                     <table width="100%" border="0">
                         <tr>
                             <td width="20%"><span><b>No. Aplikasi</b></span></td>
-                            <td><asp:label ID="lblAppNo_header" runat="server"></asp:label></td>
+                            <td><asp:label ID="lblAppNo_header"  runat="server"></asp:label></td>
                         </tr>
                         <tr>
                             <td><span><b>Nama Pemohon</b></span></td>
-                            <td><asp:label ID="lblBrwName_header" runat="server"></asp:label></td>
+                            <td><asp:Label ID="lblBrwName_header"  runat="server"></asp:Label></td>
                         </tr>
                     </table>
                 </div>
@@ -219,66 +221,73 @@
                 <div style="overflow:auto;width:100%;">
                 <table class="tbl" cellspacing="0" cellpadding="3" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px;">
                     <tr>
-                        <td colspan="4" background="../../Images/bg-head.gif" bgcolor="#ddedf6" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
+                        <td colspan="4" bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Kantor Pusat/Kanwil</b></td>
                         <td>
-                            <asp:TextBox ID="txtKantorPusatKanwil" runat="server" CssClass="inpTxt" Enabled="false" style="width:200px;"></asp:TextBox>
-                            <input type="hidden" id="hdKanwil" runat="server" />
+                            
+                            <asp:TextBox ID="txtKantorPusatKanwil" runat="server" CssClass="form-control" Enabled="false" Style="width: 200px;"></asp:TextBox>
+                            <input type="hidden" id="hdKanwil" class="form-control" runat="server" />
                         </td>
                         <td><b>Segment</b></td>
                         <td>
-                            <asp:DropDownList ID="ddlSegment" runat="server" CssClass="inpDdl"></asp:DropDownList>
+                            
+                            <asp:DropDownList ID="ddlSegment" Width="250px" runat="server" CssClass="form-control"></asp:DropDownList>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">*</span>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>Spoke/Capem</b></td>
                         <td>
-                            <asp:TextBox ID="txtSpokeCapem" runat="server" CssClass="inpTxt" Enabled="false" style="width:200px;"></asp:TextBox>
-                            <input type="hidden" id="hdCapem" runat="server" />
+                            
+                            <asp:TextBox ID="txtSpokeCapem" runat="server" CssClass="form-control" Enabled="false" Style="width: 200px;"></asp:TextBox>
+                            <input type="hidden" id="hdCapem" class="form-control" runat="server" />
                         </td>
                         <td><b>Unit Pengelola</b></td>
                         <td>
-                            <asp:DropDownList ID="ddlUnitPengelola" runat="server" CssClass="inpDdl"></asp:DropDownList>
+                            <asp:DropDownList ID="ddlUnitPengelola" Width="250px" runat="server" CssClass="form-control"></asp:DropDownList>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">*</span>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>RM/Analist</b></td>
-                        <td><asp:TextBox ID="txtRMAnalist" runat="server" CssClass="inpTxtDisabled" ReadOnly="true"></asp:TextBox></td>
+                        <td><asp:TextBox ID="txtRMAnalist" Width="250px" runat="server" CssClass="form-control" ReadOnly="true"></asp:TextBox></td>
                         <td><b>Jenis Pengajuan</b></td>
                         <td>
-                            <asp:DropDownList ID="ddlJenisPengajuan" ReadOnly="true" runat="server" CssClass="inpDdl inpDdlDisabled "></asp:DropDownList>
+                            
+                            <asp:DropDownList ID="ddlJenisPengajuan" Width="300px" ReadOnly="true" runat="server" CssClass="form-control"></asp:DropDownList>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">*</span>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>No. Aplikasi</b></td>
-                        <td><asp:TextBox ID="txtNoAplikasi" runat="server" CssClass="inpTxt" Enabled="false" style="width:200px;"></asp:TextBox></td>
+                        <td><asp:TextBox ID="txtNoAplikasi" runat="server" CssClass="form-control" Enabled="false" Style="width: 200px;"></asp:TextBox></td>
                         <td><b>Limit Kredit</b></td>
                         <td>
-                            <asp:TextBox ID="txtLimit" runat="server" style="text-align:right" CssClass="inpTxt" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);" ></asp:TextBox>
+                            
+                            <asp:TextBox ID="txtLimit" Width="250px" runat="server" Style="text-align: right" CssClass="form-control" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);"></asp:TextBox>
                             &nbsp;<span style="color:Red;font-size:11pt;font-weight:bold;">*</span>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Tgl Aplikasi</b></td>
                         <td>
-                            <asp:TextBox ID="txtTglAplikasi" runat="server" CssClass="inpTxt" Enabled="false" style="float:none;"></asp:TextBox><br />
+                            
+                            <asp:TextBox ID="txtTglAplikasi" runat="server" Width="250px" CssClass="form-control" Enabled="false" Style="float: none;"></asp:TextBox><br />
                             <span style="color:Red;margin-top:2px;float:left;">(dd-mm-yyyy)</span>
                         </td>
                         <td><b>Kantor Cabang Pembukuan</b></td>
                         <td>
-                            <asp:DropDownList ID="ddlKantorCabang" runat="server" CssClass="inpDdl" Width="250px"></asp:DropDownList> 
+                            
+                            <asp:DropDownList ID="ddlKantorCabang" runat="server" CssClass="form-control" Width="250px"></asp:DropDownList> 
                             &nbsp;<span style="color:Red;font-size:11pt;font-weight:bold;">*</span> 
                         </td>
                     </tr>
                     <tr style="height:30px">
-				        <td background="../../styles/grid/footer.gif" colspan="4" style="border-radius: 0 0 5px 5px;">
-                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="inpBtn"></asp:button>
-                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="inpBtn"></asp:button>
+				        <td  colspan="4" style="border-radius: 0 0 5px 5px;">
+                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="btn btn-primary"></asp:button>
+                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="btn btn-info"></asp:button>
                             <span style="color:Red;font-size:11pt;font-weight:bold;">* <span style="font-size:13px;">Harus Diisi</span></span>
                         </td>
 			        </tr>

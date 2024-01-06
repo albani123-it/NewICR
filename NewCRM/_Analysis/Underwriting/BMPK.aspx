@@ -2,7 +2,9 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    
+    <link href="~/Content/Themes1/build/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <script type="text/javascript">
         aMenu("Analysis");
         aBc("Kertas Kerja");
@@ -246,7 +248,7 @@
                 </div>
                 <div id="divnotif" runat="server" class="notif" style="display:none;">
                     <div class="notif-header" width="100%">
-                        <table width="100%">
+                        <table class="table table-striped table-bordered" width="100%">
                             <tr>
                                 <td><span><b>Notifikasi</b></span></td>
                                 <td align="right"><a class="notif-close" onclick="document.getElementById('<%=divnotif.clientID %>').style.display='none'" title="Close">X</a></td>
@@ -257,19 +259,19 @@
                         <asp:Label ID="lblNotif" runat="server" style="color:Red;"></asp:Label>
                     </div>
                 </div>
-                <table class="tbl" cellspacing="0" cellpadding="2" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px;">
+                <table class="table table-striped table-bordered" cellspacing="0" cellpadding="2" width="100%" style="text-align:left;border: thin solid #bcbcbc;border-radius: 5px;">
                     <tr>
-                        <td colspan="2" background="../../Images/bg-head.gif" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
+                        <td colspan="2" bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;">&nbsp;</td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td width="50%">
                             <b>Modal Bank per</b>&nbsp; 
-                            <asp:DropDownList ID="ddlBulan" runat="server" CssClass="inpDdl" onchange="checkModal()"></asp:DropDownList>&nbsp; 
-                            <asp:DropDownList ID="ddlTahun" runat="server" CssClass="inpDdl" onchange="checkModal()"></asp:DropDownList>
+                            <asp:DropDownList ID="ddlBulan" runat="server" CssClass="form-control" Width="80px" Style="display:inline" onchange="checkModal()"></asp:DropDownList>&nbsp; 
+                            <asp:DropDownList ID="ddlTahun" runat="server" CssClass="form-control" Width="80px" Style="display:inline" onchange="checkModal()"></asp:DropDownList>
                         </td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtModal" runat="server" CssClass="inpTxtDisabled" style="float:none;text-align:right;" readonly="true"></asp:TextBox>
+                            <asp:TextBox ID="txtModal" runat="server" CssClass="form-control" Width="250px" style="float:none;text-align:right;display:inline" readonly="true"></asp:TextBox>
                         </td>
                     </tr>
 
@@ -295,28 +297,28 @@
                         <td><b>BMPK Kepada Debitur Terkait - pasal 4 - (10%)</b></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtDebiturTerkait" runat="server" CssClass="inpTxtDisabled" style="float:none;text-align:right;" value="0" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="txtDebiturTerkait" runat="server" Width="250px" CssClass="inpTxtDisabled form-control" style="float:none;text-align:right;display:inline" value="0" ReadOnly="true"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>BMPK Kepada Debitur Pihak Ketiga - pasal 11 - (20%)</b></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtDebiturPihakKetiga" runat="server" CssClass="inpTxtDisabled" style="float:none;text-align:right;" value="0" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="txtDebiturPihakKetiga" runat="server" Width="250px" CssClass="inpTxtDisabled form-control" style="float:none;text-align:right;display:inline" value="0" ReadOnly="true"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>BMPK Kepada Debitur Pihak Ketiga Grup/Kelompok Usaha - pasal 11 - (25%)</b></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtDebiturPihakKetigaGrup" runat="server" CssClass="inpTxtDisabled" style="float:none;text-align:right;" value="0" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="txtDebiturPihakKetigaGrup" runat="server" Width="250px" CssClass="inpTxtDisabled form-control" style="float:none;text-align:right;display:inline" value="0" ReadOnly="true"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>BMPK Kepada Debitur BUMN - pasal 40 - (30%)</b></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtDebiturBUMN" runat="server" CssClass="inpTxtDisabled" style="float:none;text-align:right;" value="0" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="txtDebiturBUMN" runat="server" Width="250px" CssClass="inpTxtDisabled form-control" style="float:none;text-align:right;display:inline" value="0" ReadOnly="true"></asp:TextBox>
                         </td>
 
                     </tr>
@@ -324,57 +326,57 @@
                         <td><b>BMPK House Limit</b></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtInhousePihakKetiga" runat="server" CssClass="inpTxtDisabled" style="float:none;text-align:right;" value="0" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="txtInhousePihakKetiga" runat="server" Width="250px" CssClass="inpTxtDisabled form-control" style="float:none;text-align:right;display:inline" value="0" ReadOnly="true"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td>
                             <b>Limit Kredit</b>&nbsp;
-                            <asp:TextBox ID="txtDebitur1" runat="server" CssClass="inpTxt" style="float:none;"></asp:TextBox>
+                            <asp:TextBox ID="txtDebitur1" CssClass="form-control" runat="server" Width="250px" style="float:none;display:inline;"></asp:TextBox>
                         </td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtDebiturLimit1" runat="server" CssClass="inpTxt" style="float:none;text-align:right;" value="0" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countTotal();"></asp:TextBox>
+                            <asp:TextBox ID="txtDebiturLimit1" runat="server" Width="250px" CssClass="inpTxt form-control" style="float:none;text-align:right;display:inline" value="0" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countTotal();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td>
                             <b>Limit Kredit</b>&nbsp;
-                            <asp:TextBox ID="txtDebitur2" runat="server" CssClass="inpTxt" style="float:none;"></asp:TextBox>
+                            <asp:TextBox ID="txtDebitur2" runat="server" Width="250px" CssClass="form-control" style="float:none;display:inline;"></asp:TextBox>
                         </td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtDebiturLimit2" runat="server" CssClass="inpTxt" style="float:none;text-align:right;" value="0" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countTotal();"></asp:TextBox>
+                            <asp:TextBox ID="txtDebiturLimit2" runat="server" Width="250px" CssClass="inpTxt form-control" style="float:none;text-align:right;display:inline" value="0" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countTotal();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td>
                             <b>Limit Kredit</b>&nbsp;
-                            <asp:TextBox ID="txtDebitur3" runat="server" CssClass="inpTxt" style="float:none;"></asp:TextBox>
+                            <asp:TextBox ID="txtDebitur3" runat="server" Width="250px" CssClass="form-control" style="float:none;display:inline;"></asp:TextBox>
                         </td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtDebiturLimit3" runat="server" CssClass="inpTxt" style="float:none;text-align:right;" value="0" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countTotal();"></asp:TextBox>
+                            <asp:TextBox ID="txtDebiturLimit3" runat="server" Width="250px" CssClass="inpTxt form-control" style="float:none;text-align:right;display:inline" value="0" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countTotal();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td>
                             <b>Limit Kredit</b>&nbsp;
-                            <asp:TextBox ID="txtDebitur4" runat="server" CssClass="inpTxt" style="float:none;"></asp:TextBox>
+                            <asp:TextBox ID="txtDebitur4" runat="server" Width="250px" CssClass="form-control" style="float:none;display:inline;"></asp:TextBox>
                         </td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtDebiturLimit4" runat="server" CssClass="inpTxt" style="float:none;text-align:right;" value="0" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countTotal();"></asp:TextBox>
+                            <asp:TextBox ID="txtDebiturLimit4" runat="server" Width="250px" CssClass="inpTxt form-control" style="float:none;text-align:right;display:inline" value="0" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countTotal();"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td>
                             <b>Limit Kredit</b>&nbsp;
-                            <asp:TextBox ID="txtDebitur5" runat="server" CssClass="inpTxt" style="float:none;"></asp:TextBox>
+                            <asp:TextBox ID="txtDebitur5" runat="server" Width="250px" CssClass="form-control" style="float:none;display:inline;"></asp:TextBox>
                         </td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtDebiturLimit5" runat="server" CssClass="inpTxt" style="float:none;text-align:right;" value="0" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countTotal();"></asp:TextBox>
+                            <asp:TextBox ID="txtDebiturLimit5" runat="server" Width="250px" CssClass="inpTxt form-control" style="float:none;text-align:right;display:inline" value="0" onkeypress="return isNumberKey(event)" onkeyup="this.value=formatCurrency(this.value);countTotal();"></asp:TextBox>
                         </td>
                     </tr>
 
@@ -397,14 +399,14 @@
                         <td><b>Total Eksposure Kredit</b></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtTotalExposureKredit" runat="server" CssClass="inpTxtDisabled" style="float:none;text-align:right;" value="0" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="txtTotalExposureKredit" runat="server" Width="250px" CssClass="inpTxtDisabled form-control" style="float:none;text-align:right;display:inline" value="0" ReadOnly="true"></asp:TextBox>
                         </td>
                     </tr>
 
                     <tr bgcolor="#f6f7f7">
                         <td><b>Type BMPK</b></td>
                         <td>
-                            <asp:DropDownList ID="ddlType" runat="server" CssClass="inpDdl" style="margin-left:23px;" onchange="countKelonggaran();">
+                            <asp:DropDownList ID="ddlType" runat="server" Width="250px" CssClass="form-control" style="margin-left:23px" onchange="countKelonggaran();">
                                 <asp:ListItem Value="Pilih">Pilih</asp:ListItem>
                                 <asp:ListItem Value="Debitur Terkait">Debitur Terkait</asp:ListItem>
                                 <asp:ListItem Value="Debitur Pihak Ketiga">Debitur Pihak Ketiga</asp:ListItem>
@@ -442,20 +444,20 @@
                         <td><b>Kelonggaran BMPK</b></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtKelonggaranBMPK" runat="server" CssClass="inpTxtDisabled" style="float:none;text-align:right;" value="0" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="txtKelonggaranBMPK" runat="server" Width="250px" CssClass="inpTxtDisabled form-control" style="float:none;text-align:right;display:inline" value="0" ReadOnly="true"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#f6f7f7">
                         <td><b>Kelonggaran House Limit BMPK House Limit</b></td>
                         <td>
                             Rp.&nbsp;
-                            <asp:TextBox ID="txtKelonggaranInhouse" runat="server" CssClass="inpTxtDisabled" style="float:none;text-align:right;" value="0" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="txtKelonggaranInhouse" runat="server" Width="250px" CssClass="inpTxtDisabled form-control" style="float:none;text-align:right;display:inline" value="0" ReadOnly="true"></asp:TextBox>
                         </td>
                     </tr>
                     <tr bgcolor="#ebecec">
                         <td><b>Persentase Kredit Terhadap BMPK</b></td>
                         <td>
-                            <asp:TextBox ID="txtProsentaseKreditToBMPK" runat="server" CssClass="inpTxtDisabled" style="float:none;margin-left:23px;text-align:right;" value="0" ReadOnly="true"></asp:TextBox>
+                            <asp:TextBox ID="txtProsentaseKreditToBMPK" runat="server" Width="250px" CssClass="inpTxtDisabled form-control" style="float:none;text-align:right;display:inline;margin-left:23px;" value="0" ReadOnly="true"></asp:TextBox>
                             &nbsp;%&nbsp;&nbsp;
                             <span id="spNotif" style="color:Red;display:none;"></span>
                         </td>
@@ -477,12 +479,12 @@
 
                     <tr bgcolor="#f6f7f7">
                         <td><b>Kesimpulan</b></td>
-                        <td><asp:TextBox ID="txtKesimpulan" runat="server" CssClass="inpTxt" TextMode="MultiLine" style="width:400px;margin-left:23px;" Rows="5"></asp:TextBox></td>
+                        <td><asp:TextBox ID="txtKesimpulan" runat="server" Width="250px" style="margin-left:23px" CssClass="form-control" TextMode="MultiLine" Rows="5"></asp:TextBox></td>
                     </tr>
                     <tr style="height:30px">
 				        <td background="../../styles/grid/footer.gif" colspan="4" style="border-radius: 0 0 5px 5px;">
-                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="inpBtn"></asp:button>
-                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="inpBtn"></asp:button>
+                            <asp:button id="btnSave" runat="server" Text="Simpan & Lanjut" CssClass="btn btn-primary"></asp:button>
+                            <asp:button id="btnNext" runat="server" Text="Lanjut" CssClass="btn btn-danger"></asp:button>
                             <%--<span style="color:Red;font-size:11pt;font-weight:bold;">* <span style="font-size:13px;">Harus Diisi</span></span>--%>
                         </td>
 			        </tr>

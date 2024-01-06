@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class callMemoDet
-
+    
     '''<summary>
     '''liBodyLoadAction control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class callMemoDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents liBodyLoadAction As Global.System.Web.UI.WebControls.Literal
-
+    
     '''<summary>
     '''form1 control.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class callMemoDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
-
+    
     '''<summary>
     '''appno control.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class callMemoDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents appno As Global.System.Web.UI.HtmlControls.HtmlInputHidden
-
+    
     '''<summary>
     '''txtTgl control.
     '''</summary>
@@ -48,7 +48,7 @@ Partial Public Class callMemoDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtTgl As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtNoTelp control.
     '''</summary>
@@ -57,7 +57,7 @@ Partial Public Class callMemoDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNoTelp As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtNama control.
     '''</summary>
@@ -66,7 +66,7 @@ Partial Public Class callMemoDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNama As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtNoTelpLain control.
     '''</summary>
@@ -75,7 +75,7 @@ Partial Public Class callMemoDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtNoTelpLain As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtBentukCall control.
     '''</summary>
@@ -84,7 +84,7 @@ Partial Public Class callMemoDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtBentukCall As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtPenjabatYangDiCall control.
     '''</summary>
@@ -93,7 +93,7 @@ Partial Public Class callMemoDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPenjabatYangDiCall As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtPenjabatYangMelakukanCall control.
     '''</summary>
@@ -102,7 +102,7 @@ Partial Public Class callMemoDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtPenjabatYangMelakukanCall As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtTujuanCall control.
     '''</summary>
@@ -111,7 +111,7 @@ Partial Public Class callMemoDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtTujuanCall As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtHasil control.
     '''</summary>
@@ -120,7 +120,7 @@ Partial Public Class callMemoDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtHasil As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''txtTindakLanjut control.
     '''</summary>
@@ -129,7 +129,7 @@ Partial Public Class callMemoDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtTindakLanjut As Global.System.Web.UI.WebControls.TextBox
-
+    
     '''<summary>
     '''btnSave control.
     '''</summary>
@@ -138,7 +138,7 @@ Partial Public Class callMemoDet
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSave As Global.System.Web.UI.WebControls.Button
-
+    
     '''<summary>
     '''btnCancel control.
     '''</summary>

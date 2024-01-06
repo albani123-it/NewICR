@@ -6,6 +6,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
     </asp:ScriptManager>
+    <link href="~/Content/Themes1/build/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/build/css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/Themes1/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <style type="text/css">
         .notif
         {
@@ -229,7 +232,7 @@
             </ul>
             <div class="bodyContent">
                 <div class="cont-header" stlye="width:100%;">
-                    <table width="100%" border="0">
+                    <table width="100%" border="0" class="table table-striped table-bordered">
                         <tr>
                             <td width="20%"><span><b>No. Aplikasi</b></span></td>
                             <td><asp:label ID="lblAppNo_header" runat="server"></asp:label></td>
@@ -240,10 +243,10 @@
                         </tr>
                     </table>
                 </div>
-                <table class="tbl" cellspacing="0" cellpadding="2" width="100%" style="text-align: left;
+                <table class="table table-striped table-bordered" cellspacing="0" cellpadding="2" width="100%" style="text-align: left;
                     border: thin solid #bcbcbc; border-radius: 5px;">
                     <tr>
-                        <td background="../../Images/bg-head.gif" bgcolor="#ddedf6" style="border-radius: 5px 5px 0 0;">
+                        <td bgcolor="#2A3F54" style="border-radius: 5px 5px 0 0;">
                             &nbsp;
                         </td>
                     </tr>
@@ -356,7 +359,7 @@
                     </tr>
                     <tr style="height: 30px">
                         <td background="../../styles/grid/footer.gif" style="border-radius: 0 0 5px 5px;">
-                            <input type="button" value="Lanjut" onclick="fDetail('<%= menuNext %>');" class="inpBtn" />
+                            <input type="button" value="Lanjut" onclick="fDetail('<%= menuNext %>');" class="btn btn-danger" />
                         </td>
                     </tr>
                 </table>
